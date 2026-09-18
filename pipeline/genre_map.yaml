@@ -1,0 +1,91 @@
+# Crate vocabulary and the tag -> crate mapping.
+#
+# This is a PRODUCT decision, not an implementation detail: it decides how many
+# crates sit on the shelf and what lands in each. Edit freely and re-run
+# `python -m pipeline.build --no-network` to re-bucket without refetching.
+#
+# Matching rules:
+#   * MusicBrainz tags/genres are lowercased and matched against `match` terms.
+#   * A term matches if it equals the tag, or appears in it as a whole word/phrase.
+#   * Crates are evaluated in the order listed; the first crate with any match
+#     wins ties only when scores are equal, so put the more specific crates first.
+#   * Tag vote counts from MusicBrainz are used as weights.
+#   * Anything unmatched falls through to `fallback`.
+
+fallback: other
+
+crates:
+  - id: hip-hop
+    label: Hip-Hop
+    match: [hip hop, hip-hop, hiphop, rap, boom bap, trap, gangsta rap, conscious hip hop,
+            east coast hip hop, west coast hip hop, southern hip hop, instrumental hip hop,
+            abstract hip hop, g-funk, turntablism, grime, drill]
+
+  - id: rnb-soul
+    label: R&B & Soul
+    match: [soul, r&b, rnb, rhythm and blues, neo soul, neo-soul, motown, northern soul,
+            funk, p-funk, disco, boogie, quiet storm, contemporary r&b, gospel, doo-wop]
+
+  - id: jazz
+    label: Jazz
+    match: [jazz, bebop, be-bop, hard bop, cool jazz, free jazz, jazz fusion, swing,
+            big band, modal jazz, spiritual jazz, post-bop, vocal jazz, latin jazz,
+            nu jazz, jazz-funk, avant-garde jazz, dixieland]
+
+  - id: blues
+    label: Blues
+    match: [blues, delta blues, electric blues, chicago blues, country blues,
+            blues rock, rhythm & blues, boogie-woogie]
+
+  - id: rock
+    label: Rock
+    match: [rock, classic rock, indie rock, alternative rock, psychedelic rock, garage rock,
+            britpop, art rock, progressive rock, glam rock, southern rock, surf rock,
+            soft rock, rock and roll, rock & roll, jam band, shoegaze, grunge, post-rock,
+            new wave, indie]
+
+  - id: punk-metal
+    label: Punk & Metal
+    match: [punk, hardcore, post-punk, pop punk, metal, heavy metal, death metal,
+            black metal, thrash metal, doom metal, metalcore, sludge, grindcore,
+            emo, screamo, industrial metal]
+
+  - id: pop
+    label: Pop
+    match: [pop, synthpop, synth-pop, dance-pop, electropop, power pop, teen pop,
+            k-pop, j-pop, city pop, chamber pop, dream pop, bubblegum, singer-songwriter]
+
+  - id: electronic
+    label: Electronic
+    match: [electronic, electronica, house, deep house, techno, trance, drum and bass,
+            drum & bass, jungle, dubstep, idm, breakbeat, downtempo, trip hop, trip-hop,
+            edm, garage house, uk garage, footwork, dance, synthwave, acid]
+
+  - id: folk-country
+    label: Folk & Country
+    match: [folk, country, americana, bluegrass, alt-country, folk rock, singer/songwriter,
+            country rock, outlaw country, honky tonk, celtic, traditional folk, roots]
+
+  - id: classical
+    label: Classical
+    match: [classical, baroque, romantic, opera, orchestral, chamber music, symphony,
+            contemporary classical, minimalism, piano, choral, early music]
+
+  - id: world
+    label: World
+    match: [world, reggae, dub, ska, dancehall, afrobeat, afrobeats, latin, salsa,
+            samba, bossa nova, mpb, cumbia, highlife, soukous, flamenco, fado, raï,
+            bhangra, tropicalia, african, brazilian, caribbean, roots reggae]
+
+  - id: ambient
+    label: Ambient & Field
+    match: [ambient, drone, field recording, nature sounds, new age, meditation,
+            soundscape, noise, musique concrete, experimental, avant-garde, minimal]
+
+  - id: soundtrack
+    label: Soundtrack
+    match: [soundtrack, score, film score, ost, video game music, musical, broadway]
+
+  - id: other
+    label: Other
+    match: []

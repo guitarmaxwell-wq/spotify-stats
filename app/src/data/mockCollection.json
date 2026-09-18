@@ -1,0 +1,918 @@
+{
+  "generated_at": "2026-09-17T04:12:09Z",
+  "stats": {
+    "total_plays": 136512,
+    "distinct_artists": 3430,
+    "first_play": "2020-04-01T09:22:00Z",
+    "last_play": "2026-08-14T20:15:00Z",
+    "unlocked_count": 20,
+    "in_progress_count": 25
+  },
+  "genres": [
+    {
+      "id": "hip-hop",
+      "label": "Hip-Hop",
+      "album_count": 5
+    },
+    {
+      "id": "jazz",
+      "label": "Jazz",
+      "album_count": 5
+    },
+    {
+      "id": "soul",
+      "label": "Soul & R&B",
+      "album_count": 5
+    },
+    {
+      "id": "rock",
+      "label": "Rock",
+      "album_count": 6
+    },
+    {
+      "id": "electronic",
+      "label": "Electronic",
+      "album_count": 5
+    },
+    {
+      "id": "punk",
+      "label": "Punk",
+      "album_count": 3
+    },
+    {
+      "id": "folk",
+      "label": "Folk",
+      "album_count": 4
+    },
+    {
+      "id": "metal",
+      "label": "Metal",
+      "album_count": 3
+    },
+    {
+      "id": "ambient",
+      "label": "Ambient",
+      "album_count": 3
+    },
+    {
+      "id": "pop",
+      "label": "Pop",
+      "album_count": 3
+    },
+    {
+      "id": "classical",
+      "label": "Classical",
+      "album_count": 3
+    }
+  ],
+  "albums": [
+    {
+      "id": "j-dilla-donuts",
+      "artist": "J Dilla",
+      "title": "Donuts",
+      "release_year": 2006,
+      "genre_id": "hip-hop",
+      "cover_url": "https://coverartarchive.org/release/j-dilla-donuts/front-500.jpg",
+      "total_tracks": 31,
+      "played_tracks": 31,
+      "completion": 1,
+      "unlocked": true,
+      "unlocked_at": "2020-04-01T00:00:00Z",
+      "play_count": 412,
+      "missing_tracks": [],
+      "source": "discogs"
+    },
+    {
+      "id": "mbid-00001eef-1991",
+      "artist": "Madvillain",
+      "title": "Madvillainy",
+      "release_year": 2004,
+      "genre_id": "hip-hop",
+      "cover_url": null,
+      "total_tracks": 22,
+      "played_tracks": 22,
+      "completion": 1,
+      "unlocked": true,
+      "unlocked_at": "2020-05-08T01:00:00Z",
+      "play_count": 338,
+      "missing_tracks": [],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-00003dde-3323",
+      "artist": "A Tribe Called Quest",
+      "title": "The Low End Theory",
+      "release_year": 1991,
+      "genre_id": "hip-hop",
+      "cover_url": null,
+      "total_tracks": 14,
+      "played_tracks": 14,
+      "completion": 1,
+      "unlocked": true,
+      "unlocked_at": "2020-06-14T02:00:00Z",
+      "play_count": 197,
+      "missing_tracks": [],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-00005ccd-4cb4",
+      "artist": "Kendrick Lamar",
+      "title": "good kid, m.A.A.d city",
+      "release_year": 2012,
+      "genre_id": "hip-hop",
+      "cover_url": "https://coverartarchive.org/release/kendrick-lamar-good-kid-m-a-a-d-city/front-500.jpg",
+      "total_tracks": 12,
+      "played_tracks": 10,
+      "completion": 0.833,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 151,
+      "missing_tracks": [
+        "Undertow",
+        "Telegraph - Remastered"
+      ],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mos-def-black-on-both-sides",
+      "artist": "Mos Def",
+      "title": "Black on Both Sides",
+      "release_year": 1999,
+      "genre_id": "hip-hop",
+      "cover_url": null,
+      "total_tracks": 17,
+      "played_tracks": 13,
+      "completion": 0.765,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 88,
+      "missing_tracks": [
+        "Glass House",
+        "Dust Jacket - Remastered",
+        "Golden Hour",
+        "Half Light"
+      ],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-00009aab-7fd7",
+      "artist": "John Coltrane",
+      "title": "A Love Supreme",
+      "release_year": 1965,
+      "genre_id": "jazz",
+      "cover_url": null,
+      "total_tracks": 4,
+      "played_tracks": 4,
+      "completion": 1,
+      "unlocked": true,
+      "unlocked_at": "2020-10-03T05:00:00Z",
+      "play_count": 264,
+      "missing_tracks": [],
+      "source": "discogs"
+    },
+    {
+      "id": "mbid-0000b99a-9969",
+      "artist": "Miles Davis",
+      "title": "Kind of Blue",
+      "release_year": 1959,
+      "genre_id": "jazz",
+      "cover_url": "https://coverartarchive.org/release/miles-davis-kind-of-blue/front-500.jpg",
+      "total_tracks": 5,
+      "played_tracks": 5,
+      "completion": 1,
+      "unlocked": true,
+      "unlocked_at": "2020-11-09T06:00:00Z",
+      "play_count": 301,
+      "missing_tracks": [],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-0000d889-b2fa",
+      "artist": "Alice Coltrane",
+      "title": "Journey in Satchidananda",
+      "release_year": 1971,
+      "genre_id": "jazz",
+      "cover_url": null,
+      "total_tracks": 5,
+      "played_tracks": 4,
+      "completion": 0.8,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 77,
+      "missing_tracks": [
+        "Nightswim"
+      ],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "bill-evans-trio-sunday-at-the-village-vanguard",
+      "artist": "Bill Evans Trio",
+      "title": "Sunday at the Village Vanguard",
+      "release_year": 1961,
+      "genre_id": "jazz",
+      "cover_url": null,
+      "total_tracks": 6,
+      "played_tracks": 5,
+      "completion": 0.833,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 64,
+      "missing_tracks": [
+        "Undertow"
+      ],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-00011667-e61e",
+      "artist": "Charles Mingus",
+      "title": "The Black Saint and the Sinner Lady",
+      "release_year": 1963,
+      "genre_id": "jazz",
+      "cover_url": "https://coverartarchive.org/release/charles-mingus-the-black-saint-and-the-sinner-lady/front-500.jpg",
+      "total_tracks": 6,
+      "played_tracks": 3,
+      "completion": 0.5,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 31,
+      "missing_tracks": [
+        "Glass House",
+        "Dust Jacket - Remastered",
+        "Golden Hour"
+      ],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-00013556-ffaf",
+      "artist": "Marvin Gaye",
+      "title": "What's Going On",
+      "release_year": 1971,
+      "genre_id": "soul",
+      "cover_url": null,
+      "total_tracks": 9,
+      "played_tracks": 9,
+      "completion": 1,
+      "unlocked": true,
+      "unlocked_at": "2021-04-06T03:00:00Z",
+      "play_count": 223,
+      "missing_tracks": [],
+      "source": "discogs"
+    },
+    {
+      "id": "mbid-00015445-1194",
+      "artist": "Bill Withers",
+      "title": "Still Bill",
+      "release_year": 1972,
+      "genre_id": "soul",
+      "cover_url": null,
+      "total_tracks": 10,
+      "played_tracks": 9,
+      "completion": 0.9,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 119,
+      "missing_tracks": [
+        "Pressed Flowers"
+      ],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "curtis-mayfield-curtis",
+      "artist": "Curtis Mayfield",
+      "title": "Curtis",
+      "release_year": 1970,
+      "genre_id": "soul",
+      "cover_url": "https://coverartarchive.org/release/curtis-mayfield-curtis/front-500.jpg",
+      "total_tracks": 8,
+      "played_tracks": 8,
+      "completion": 1,
+      "unlocked": true,
+      "unlocked_at": "2021-06-19T05:00:00Z",
+      "play_count": 143,
+      "missing_tracks": [],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-00019223-14c6",
+      "artist": "Al Green",
+      "title": "Let's Stay Together",
+      "release_year": 1972,
+      "genre_id": "soul",
+      "cover_url": null,
+      "total_tracks": 9,
+      "played_tracks": 6,
+      "completion": 0.667,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 58,
+      "missing_tracks": [
+        "Undertow",
+        "Telegraph - Remastered",
+        "Rewind"
+      ],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-0001b112-165f",
+      "artist": "Nat King Cole",
+      "title": "After Midnight",
+      "release_year": 1957,
+      "genre_id": "soul",
+      "cover_url": null,
+      "total_tracks": 12,
+      "played_tracks": 7,
+      "completion": 0.583,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 42,
+      "missing_tracks": [
+        "Glass House",
+        "Dust Jacket - Remastered",
+        "Golden Hour",
+        "Half Light",
+        "Tin Roof - Remastered"
+      ],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-0001d001-17f8",
+      "artist": "Fleetwood Mac",
+      "title": "Rumours",
+      "release_year": 1977,
+      "genre_id": "rock",
+      "cover_url": "https://coverartarchive.org/release/fleetwood-mac-rumours/front-500.jpg",
+      "total_tracks": 11,
+      "played_tracks": 11,
+      "completion": 1,
+      "unlocked": true,
+      "unlocked_at": "2021-10-08T01:00:00Z",
+      "play_count": 288,
+      "missing_tracks": [],
+      "source": "discogs"
+    },
+    {
+      "id": "the-velvet-underground-the-velvet-underground-nico",
+      "artist": "The Velvet Underground",
+      "title": "The Velvet Underground & Nico",
+      "release_year": 1967,
+      "genre_id": "rock",
+      "cover_url": null,
+      "total_tracks": 11,
+      "played_tracks": 11,
+      "completion": 1,
+      "unlocked": true,
+      "unlocked_at": "2021-11-14T02:00:00Z",
+      "play_count": 176,
+      "missing_tracks": [],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-00020ddf-1b2a",
+      "artist": "Big Thief",
+      "title": "Two Hands",
+      "release_year": 2019,
+      "genre_id": "rock",
+      "cover_url": null,
+      "total_tracks": 10,
+      "played_tracks": 9,
+      "completion": 0.9,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 96,
+      "missing_tracks": [
+        "Nightswim"
+      ],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-00022cce-1cc3",
+      "artist": "Radiohead",
+      "title": "In Rainbows",
+      "release_year": 2007,
+      "genre_id": "rock",
+      "cover_url": "https://coverartarchive.org/release/radiohead-in-rainbows/front-500.jpg",
+      "total_tracks": 10,
+      "played_tracks": 10,
+      "completion": 1,
+      "unlocked": true,
+      "unlocked_at": "2022-01-27T04:00:00Z",
+      "play_count": 341,
+      "missing_tracks": [],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-00024bbd-1e5c",
+      "artist": "Wilco",
+      "title": "Yankee Hotel Foxtrot",
+      "release_year": 2002,
+      "genre_id": "rock",
+      "cover_url": null,
+      "total_tracks": 11,
+      "played_tracks": 8,
+      "completion": 0.727,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 72,
+      "missing_tracks": [
+        "Glass House",
+        "Dust Jacket - Remastered",
+        "Golden Hour"
+      ],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "led-zeppelin-led-zeppelin-iv",
+      "artist": "Led Zeppelin",
+      "title": "Led Zeppelin IV",
+      "release_year": 1971,
+      "genre_id": "rock",
+      "cover_url": null,
+      "total_tracks": 8,
+      "played_tracks": 6,
+      "completion": 0.75,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 61,
+      "missing_tracks": [
+        "Blue Line",
+        "Winter Coat - Remastered"
+      ],
+      "source": "discogs"
+    },
+    {
+      "id": "mbid-0002899b-218f",
+      "artist": "Boards of Canada",
+      "title": "Music Has the Right to Children",
+      "release_year": 1998,
+      "genre_id": "electronic",
+      "cover_url": "https://coverartarchive.org/release/boards-of-canada-music-has-the-right-to-children/front-500.jpg",
+      "total_tracks": 18,
+      "played_tracks": 18,
+      "completion": 1,
+      "unlocked": true,
+      "unlocked_at": "2022-05-18T00:00:00Z",
+      "play_count": 209,
+      "missing_tracks": [],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-0002a88a-2328",
+      "artist": "Burial",
+      "title": "Untrue",
+      "release_year": 2007,
+      "genre_id": "electronic",
+      "cover_url": null,
+      "total_tracks": 13,
+      "played_tracks": 12,
+      "completion": 0.923,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 134,
+      "missing_tracks": [
+        "Nightswim"
+      ],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-0002c779-24c1",
+      "artist": "Aphex Twin",
+      "title": "Selected Ambient Works 85-92",
+      "release_year": 1992,
+      "genre_id": "electronic",
+      "cover_url": null,
+      "total_tracks": 13,
+      "played_tracks": 11,
+      "completion": 0.846,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 118,
+      "missing_tracks": [
+        "Undertow",
+        "Telegraph - Remastered"
+      ],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "four-tet-rounds",
+      "artist": "Four Tet",
+      "title": "Rounds",
+      "release_year": 2003,
+      "genre_id": "electronic",
+      "cover_url": "https://coverartarchive.org/release/four-tet-rounds/front-500.jpg",
+      "total_tracks": 10,
+      "played_tracks": 10,
+      "completion": 1,
+      "unlocked": true,
+      "unlocked_at": "2022-09-06T03:00:00Z",
+      "play_count": 97,
+      "missing_tracks": [],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-00030557-27f3",
+      "artist": "Floating Points",
+      "title": "Crush",
+      "release_year": 2019,
+      "genre_id": "electronic",
+      "cover_url": null,
+      "total_tracks": 11,
+      "played_tracks": 7,
+      "completion": 0.636,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 44,
+      "missing_tracks": [
+        "Blue Line",
+        "Winter Coat - Remastered",
+        "Longhand",
+        "Slow Burn"
+      ],
+      "source": "discogs"
+    },
+    {
+      "id": "mbid-00032446-298c",
+      "artist": "Fugazi",
+      "title": "Repeater",
+      "release_year": 1990,
+      "genre_id": "punk",
+      "cover_url": null,
+      "total_tracks": 11,
+      "played_tracks": 11,
+      "completion": 1,
+      "unlocked": true,
+      "unlocked_at": "2022-11-19T05:00:00Z",
+      "play_count": 132,
+      "missing_tracks": [],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-00034335-2b25",
+      "artist": "The Clash",
+      "title": "London Calling",
+      "release_year": 1979,
+      "genre_id": "punk",
+      "cover_url": "https://coverartarchive.org/release/the-clash-london-calling/front-500.jpg",
+      "total_tracks": 19,
+      "played_tracks": 15,
+      "completion": 0.789,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 88,
+      "missing_tracks": [
+        "Nightswim",
+        "Carousel - Remastered",
+        "Marlowe",
+        "Sparrow"
+      ],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "sleater-kinney-dig-me-out",
+      "artist": "Sleater-Kinney",
+      "title": "Dig Me Out",
+      "release_year": 1997,
+      "genre_id": "punk",
+      "cover_url": null,
+      "total_tracks": 13,
+      "played_tracks": 9,
+      "completion": 0.692,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 51,
+      "missing_tracks": [
+        "Undertow",
+        "Telegraph - Remastered",
+        "Rewind",
+        "The Long Way"
+      ],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-00038113-2e57",
+      "artist": "Nick Drake",
+      "title": "Pink Moon",
+      "release_year": 1972,
+      "genre_id": "folk",
+      "cover_url": null,
+      "total_tracks": 11,
+      "played_tracks": 11,
+      "completion": 1,
+      "unlocked": true,
+      "unlocked_at": "2023-03-10T01:00:00Z",
+      "play_count": 188,
+      "missing_tracks": [],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-0003a002-2ff0",
+      "artist": "Joni Mitchell",
+      "title": "Blue",
+      "release_year": 1971,
+      "genre_id": "folk",
+      "cover_url": "https://coverartarchive.org/release/joni-mitchell-blue/front-500.jpg",
+      "total_tracks": 10,
+      "played_tracks": 10,
+      "completion": 1,
+      "unlocked": true,
+      "unlocked_at": "2023-04-16T02:00:00Z",
+      "play_count": 212,
+      "missing_tracks": [],
+      "source": "discogs"
+    },
+    {
+      "id": "mbid-0003bef1-318a",
+      "artist": "Vashti Bunyan",
+      "title": "Just Another Diamond Day",
+      "release_year": 1970,
+      "genre_id": "folk",
+      "cover_url": null,
+      "total_tracks": 14,
+      "played_tracks": 10,
+      "completion": 0.714,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 39,
+      "missing_tracks": [
+        "Pressed Flowers",
+        "Old Money - Remastered",
+        "Paper Lantern",
+        "Fever Dream"
+      ],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "bon-iver-for-emma-forever-ago",
+      "artist": "Bon Iver",
+      "title": "For Emma, Forever Ago",
+      "release_year": 2007,
+      "genre_id": "folk",
+      "cover_url": null,
+      "total_tracks": 9,
+      "played_tracks": 8,
+      "completion": 0.889,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 103,
+      "missing_tracks": [
+        "Nightswim"
+      ],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-0003fccf-34bc",
+      "artist": "Black Sabbath",
+      "title": "Paranoid",
+      "release_year": 1970,
+      "genre_id": "metal",
+      "cover_url": "https://coverartarchive.org/release/black-sabbath-paranoid/front-500.jpg",
+      "total_tracks": 8,
+      "played_tracks": 8,
+      "completion": 1,
+      "unlocked": true,
+      "unlocked_at": "2023-08-05T05:00:00Z",
+      "play_count": 121,
+      "missing_tracks": [],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-00041bbe-3655",
+      "artist": "Deafheaven",
+      "title": "Sunbather",
+      "release_year": 2013,
+      "genre_id": "metal",
+      "cover_url": null,
+      "total_tracks": 7,
+      "played_tracks": 6,
+      "completion": 0.857,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 57,
+      "missing_tracks": [
+        "Glass House"
+      ],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-00043aad-37ee",
+      "artist": "Sleep",
+      "title": "Dopesmoker",
+      "release_year": 2003,
+      "genre_id": "metal",
+      "cover_url": null,
+      "total_tracks": 2,
+      "played_tracks": 2,
+      "completion": 1,
+      "unlocked": true,
+      "unlocked_at": "2023-10-18T00:00:00Z",
+      "play_count": 36,
+      "missing_tracks": [],
+      "source": "discogs"
+    },
+    {
+      "id": "brian-eno-ambient-1-music-for-airports",
+      "artist": "Brian Eno",
+      "title": "Ambient 1: Music for Airports",
+      "release_year": 1978,
+      "genre_id": "ambient",
+      "cover_url": "https://coverartarchive.org/release/brian-eno-ambient-1-music-for-airports/front-500.jpg",
+      "total_tracks": 4,
+      "played_tracks": 4,
+      "completion": 1,
+      "unlocked": true,
+      "unlocked_at": "2023-11-24T01:00:00Z",
+      "play_count": 156,
+      "missing_tracks": [],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-0004788b-3b20",
+      "artist": "Grouper",
+      "title": "Dragging a Dead Deer Up a Hill",
+      "release_year": 2008,
+      "genre_id": "ambient",
+      "cover_url": null,
+      "total_tracks": 11,
+      "played_tracks": 7,
+      "completion": 0.636,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 48,
+      "missing_tracks": [
+        "Nightswim",
+        "Carousel - Remastered",
+        "Marlowe",
+        "Sparrow"
+      ],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-0004977a-3cb9",
+      "artist": "Stars of the Lid",
+      "title": "The Tired Sounds of Stars of the Lid",
+      "release_year": 2001,
+      "genre_id": "ambient",
+      "cover_url": null,
+      "total_tracks": 12,
+      "played_tracks": 5,
+      "completion": 0.417,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 27,
+      "missing_tracks": [
+        "Undertow",
+        "Telegraph - Remastered",
+        "Rewind",
+        "The Long Way",
+        "Static - Remastered",
+        "Pressed Flowers",
+        "Old Money"
+      ],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-0004b669-3e52",
+      "artist": "Carly Rae Jepsen",
+      "title": "Emotion",
+      "release_year": 2015,
+      "genre_id": "pop",
+      "cover_url": "https://coverartarchive.org/release/carly-rae-jepsen-emotion/front-500.jpg",
+      "total_tracks": 12,
+      "played_tracks": 12,
+      "completion": 1,
+      "unlocked": true,
+      "unlocked_at": "2024-03-14T04:00:00Z",
+      "play_count": 164,
+      "missing_tracks": [],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "robyn-body-talk",
+      "artist": "Robyn",
+      "title": "Body Talk",
+      "release_year": 2010,
+      "genre_id": "pop",
+      "cover_url": null,
+      "total_tracks": 15,
+      "played_tracks": 11,
+      "completion": 0.733,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 79,
+      "missing_tracks": [
+        "Blue Line",
+        "Winter Coat - Remastered",
+        "Longhand",
+        "Slow Burn"
+      ],
+      "source": "discogs"
+    },
+    {
+      "id": "mbid-0004f447-4185",
+      "artist": "Caroline Polachek",
+      "title": "Desire, I Want to Turn Into You",
+      "release_year": 2023,
+      "genre_id": "pop",
+      "cover_url": null,
+      "total_tracks": 12,
+      "played_tracks": 9,
+      "completion": 0.75,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 66,
+      "missing_tracks": [
+        "Pressed Flowers",
+        "Old Money - Remastered",
+        "Paper Lantern"
+      ],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-00051336-431e",
+      "artist": "Glenn Gould",
+      "title": "Goldberg Variations (1981)",
+      "release_year": 1981,
+      "genre_id": "classical",
+      "cover_url": "https://coverartarchive.org/release/glenn-gould-goldberg-variations-1981/front-500.jpg",
+      "total_tracks": 32,
+      "played_tracks": 32,
+      "completion": 1,
+      "unlocked": true,
+      "unlocked_at": "2024-07-03T00:00:00Z",
+      "play_count": 198,
+      "missing_tracks": [],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "mbid-00053225-44b7",
+      "artist": "Arvo Part",
+      "title": "Tabula Rasa",
+      "release_year": 1984,
+      "genre_id": "classical",
+      "cover_url": null,
+      "total_tracks": 4,
+      "played_tracks": 3,
+      "completion": 0.75,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 33,
+      "missing_tracks": [
+        "Undertow"
+      ],
+      "source": "musicbrainz"
+    },
+    {
+      "id": "steve-reich-music-for-18-musicians",
+      "artist": "Steve Reich",
+      "title": "Music for 18 Musicians",
+      "release_year": 1978,
+      "genre_id": "classical",
+      "cover_url": null,
+      "total_tracks": 11,
+      "played_tracks": 6,
+      "completion": 0.545,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 45,
+      "missing_tracks": [
+        "Glass House",
+        "Dust Jacket - Remastered",
+        "Golden Hour",
+        "Half Light",
+        "Tin Roof - Remastered"
+      ],
+      "source": "musicbrainz"
+    }
+  ],
+  "unresolved": [
+    {
+      "artist": "Various Artists",
+      "album": "Now That's What I Call Music! 42",
+      "reason": "no_mb_match",
+      "play_count": 61
+    },
+    {
+      "artist": "The Nat King Cole Trio",
+      "album": "After Midnight (Remastered)",
+      "reason": "ambiguous_artist_variant",
+      "play_count": 19
+    },
+    {
+      "artist": "Unknown Artist",
+      "album": "Unknown Album",
+      "reason": "missing_metadata",
+      "play_count": 812
+    },
+    {
+      "artist": "Aphex Twin",
+      "album": "Selected Ambient Works Volume II",
+      "reason": "no_tracklist",
+      "play_count": 27
+    },
+    {
+      "artist": "Sufjan Stevens",
+      "album": "The Avalanche (Outtakes)",
+      "reason": "no_mb_match",
+      "play_count": 8
+    }
+  ]
+}

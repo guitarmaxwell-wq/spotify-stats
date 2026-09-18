@@ -42,6 +42,14 @@ export interface Album {
   play_count: number;
   missing_tracks: string[];
   source: string;
+  /**
+   * The two dominant colors of the album artwork, as hex, contrast-checked
+   * against the dark UI. Added by the pipeline and OPTIONAL here because it is
+   * not in `collection.json` yet: the "Almost there" progress bar derives an
+   * equivalent pair from `id` whenever this is missing (see
+   * `components/ProgressGradientBar.tsx`).
+   */
+  colors?: { primary: string; secondary: string };
 }
 
 export interface UnresolvedAlbum {

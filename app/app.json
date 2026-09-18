@@ -4,6 +4,8 @@
     "slug": "crates",
     "version": "1.0.0",
     "orientation": "portrait",
+    "//scheme": "Required for the Spotify PKCE redirect. Must match SPOTIFY_REDIRECT_URI and the redirect URI registered in the Spotify dashboard: crates://auth",
+    "scheme": "crates",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
     "ios": {
@@ -22,6 +24,10 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-web-browser"
+    ]
   }
 }

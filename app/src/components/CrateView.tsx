@@ -39,7 +39,7 @@ export default function CrateView({ crate, width, onPress }: Props) {
             const depth = behind.length - i;
             return (
               <View
-                key={album.id}
+                key={`${album.id}#${i}`}
                 style={[
                   styles.edge,
                   {

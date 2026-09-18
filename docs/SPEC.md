@@ -43,7 +43,10 @@ Both workstreams build against this file. The pipeline writes it; the app reads 
       "title": "Donuts",
       "release_year": 2006,
       "genre_id": "hip-hop",
-      "cover_url": null,
+      "cover_url": "https://coverartarchive.org/release/<mbid>/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": { "primary": "#d59602", "secondary": "#f12b1d" },
+      "color_strategy": "saturated",
       "total_tracks": 31,
       "played_tracks": 31,
       "completion": 1.0,
@@ -61,6 +64,18 @@ Both workstreams build against this file. The pipeline writes it; the app reads 
 ```
 
 Rules:
+- **`albums[].id` is unique.** It is the record's identity and the app's list
+  key. Grouping scrobbles on a normalized (artist, album) key cannot catch
+  every variant — "Cordae" / "YBN Cordae", a soundtrack credited to a different
+  collaborator, "(Extended Version)" — so dedup also happens *after* release
+  resolution: two groups that resolve to the same MusicBrainz release are the
+  same record, and their play sets are unioned, play counts summed, and
+  `completion` / `unlocked` / `unlocked_at` recomputed from the union. Without
+  that the plays split across two records and real unlocks are suppressed. The
+  build fails rather than emitting a duplicate id. A merged record is named
+  after the MusicBrainz release's own artist credit and title, and carries
+  `_merged_from` (how many scrobble groups it absorbed);
+  `stats.merged_groups` counts the merges.
 - `unlocked` is true only when every track on the canonical tracklist has at
   least one play. No partial credit.
 - `unlocked_at` is the timestamp of the play that completed the album.
@@ -69,6 +84,44 @@ Rules:
   plays themselves — that would make every album trivially 100%.
 - `genre_id` is a small controlled vocabulary (aim for 8-15 crates), not raw
   Last.fm/MusicBrainz tags. Map many tags onto few crates.
+- `cover_url` is Cover Art Archive or Deezer, **never Spotify** — a licensing
+  constraint, see `docs/CATALOG.md`. It is `null` when neither source has the
+  sleeve. `artwork_source` is `"coverartarchive"`, `"deezer"` or `"none"`.
+- `colors` are the two dominant colours of the sleeve, for the animated
+  gradient progress bar. Contract the app can rely on:
+  - **`colors` is never null, and neither `primary` nor `secondary` is ever
+    null.** Always present, always `#rrggbb` lowercase — an album with no
+    artwork anywhere gets a neutral fallback pair rather than nothing, so the
+    progress bar never has to branch.
+  - The two are always *visibly* different (CIE76 ΔE ≥ 18), even for a
+    single-colour or near-white sleeve, so the gradient never collapses into a
+    flat bar. For a monochrome sleeve the secondary is a tinted/shaded variant
+    of the primary.
+  - Both clear **3:1 contrast against `#121212`** — the WCAG 2.1 SC 1.4.11
+    minimum for a non-text UI component — so the bar reads on a dark UI. Dark
+    sleeves are lightened in HLS, preserving hue and saturation.
+  - The pair is not literally "the two most common colours". Sleeves are
+    scanned with a white border and many covers are a photo floating in white
+    space, so plain white or grey routinely wins on pixel count for a record
+    that is not remotely white. **Both ends are drawn from the sleeve's real
+    colours before greyscale is considered at all** — taking only the primary
+    from them just moves the white into the other slot, and gold-to-white is a
+    beige smear exactly like white-to-gold. A sleeve that really is monochrome
+    (the White Album, *Madvillainy*) gets a greyscale pair, which is honest.
+  - Every album carries **`color_strategy`**, so the rules stay auditable
+    against the artwork later:
+
+    | value | meaning |
+    |---|---|
+    | `saturated` | both ends are real colours off the sleeve |
+    | `saturated-derived` | one real colour leads; the partner is a tint of it, not the white it sat on |
+    | `saturated-partner` | greyscale sleeve whose only colour is too small (<4%) to lead |
+    | `derived` | muted sleeve; the dominant's own tint is carried through both ends |
+    | `dominant` | genuinely greyscale sleeve: the two most common colours |
+    | `neutral-fallback` | no artwork at all; a neutral pair so the bar still renders |
+
+  `stats.artwork` reports coverage: `with_cover`, `coverartarchive`, `deezer`,
+  `missing`, `with_colors`.
 
 ## Workstreams
 1. `pipeline/` — enrichment. Owns collection.json. Critical path.
@@ -86,19 +139,23 @@ builds. Those steps are the user's.
 venv/Scripts/python.exe -m pipeline.build --min-tracks 5   # the unlock candidates
 venv/Scripts/python.exe -m pipeline.build                  # all ~7,100 album groups
 venv/Scripts/python.exe -m pipeline.build --offline        # re-bucket genres from cache only
+venv/Scripts/python.exe -m pipeline.build --artwork-only   # artwork/colour backfill (MB from cache)
 venv/Scripts/python.exe -m pytest pipeline/tests -q        # unit tests
 ```
 
-Tracklists and genres come from MusicBrainz (1 req/s, descriptive User-Agent).
-Every response is cached in `pipeline/.cache/` (gitignored), so reruns are
-instant and an interrupted run resumes. `collection.json` is rewritten
-atomically every 25 groups and carries `stats.partial: true` until the run
-completes, so the app can read it while it is still filling.
+Tracklists and genres come from MusicBrainz (1 req/s, descriptive User-Agent);
+artwork from the Cover Art Archive with Deezer as a fallback. Every response is
+cached in `pipeline/.cache/` (gitignored) — raw HTTP shards plus
+`albums.sqlite3`, the structured per-MBID album cache described in
+`docs/CATALOG.md` — so reruns are instant and an interrupted run resumes.
+`collection.json` is rewritten atomically every 25 groups and carries
+`stats.partial: true` until the run completes, so the app can read it while it
+is still filling.
 
 Crates are defined in `pipeline/genre_map.yaml` — a readable tag -> crate table
 that is a product decision, not an implementation detail.
 
-Albums also carry two diagnostic fields outside the contract that the app may
-ignore: `_fuzzy_matches` and `_genre_tags`.
+Albums also carry diagnostic fields outside the contract that the app may
+ignore: `_fuzzy_matches`, `_genre_tags` and `_merged_from`.
 
 Full details, flags and known match-quality caveats: `pipeline/README.md`.

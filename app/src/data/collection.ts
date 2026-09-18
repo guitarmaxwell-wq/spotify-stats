@@ -10,7 +10,23 @@ import real from './collection.json';
 const SOURCE = real as unknown as Collection;
 
 export function loadCollection(): Collection {
-  return SOURCE;
+  return { ...SOURCE, albums: dedupeById(SOURCE.albums) };
+}
+
+/**
+ * Safety net: the contract says `albums[].id` is unique, but a release reached
+ * through two different scrobble spellings has escaped that before, leaving the
+ * same record both earned and not earned. Merging is the pipeline's job — here
+ * we only keep the furthest-along row so the UI never renders one record twice
+ * or drops it to a duplicate React key.
+ */
+function dedupeById(albums: Album[]): Album[] {
+  const best = new Map<string, Album>();
+  for (const album of albums) {
+    const seen = best.get(album.id);
+    if (!seen || album.played_tracks > seen.played_tracks) best.set(album.id, album);
+  }
+  return albums.length === best.size ? albums : [...best.values()];
 }
 
 /** Genres, each with its albums, unlocked-first then most complete. */

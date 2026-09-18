@@ -6,3 +6,14 @@ __pycache__/
 pipeline/.cache/
 data/collection.json.tmp
 .pytest_cache/
+
+# Credentials. Never commit these; .env.example documents what goes in them.
+.env
+.env.local
+app/.env
+app/.env.local
+
+# Ingested listening history — personal data, and regenerable from the sources.
+data/plays.jsonl
+data/plays.csv
+data/ingest_state.json

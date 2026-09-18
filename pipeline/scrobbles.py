@@ -52,6 +52,46 @@ class AlbumGroup:
         return self.artist_mbids.most_common(1)[0][0] if self.artist_mbids else None
 
 
+def merge_group(base: AlbumGroup, other: AlbumGroup) -> AlbumGroup:
+    """Fold ``other``'s plays into ``base`` and return ``base``.
+
+    Grouping on the normalized (artist, album) key cannot catch everything:
+    "Cordae" and "YBN Cordae" are the same person, a soundtrack is credited to
+    a different collaborator on different scrobbles, and "(Extended Version)"
+    is not in the edition-noise vocabulary. Those splits only become visible
+    *after* resolution, when two groups land on the same MusicBrainz release —
+    at which point they are the same record by definition and their play sets
+    have to be unioned, or completion is undercounted and real unlocks are
+    suppressed.
+
+    Track play counts are summed and first-play timestamps take the earlier of
+    the two, so ``unlocked_at`` is recomputed from the union rather than from
+    whichever half happened to be processed first.
+    """
+    base.play_count += other.play_count
+    base.first_uts = min(base.first_uts, other.first_uts)
+    base.last_uts = max(base.last_uts, other.last_uts)
+    base.album_mbids.update(other.album_mbids)
+    base.artist_mbids.update(other.artist_mbids)
+    base._artist_names.update(other._artist_names)
+    base._album_names.update(other._album_names)
+    for key, track in other.tracks.items():
+        current = base.tracks.get(key)
+        if current is None:
+            base.tracks[key] = PlayedTrack(
+                key=track.key,
+                display=track.display,
+                play_count=track.play_count,
+                first_uts=track.first_uts,
+                track_mbids=Counter(track.track_mbids),
+            )
+        else:
+            current.play_count += track.play_count
+            current.first_uts = min(current.first_uts, track.first_uts)
+            current.track_mbids.update(track.track_mbids)
+    return base
+
+
 def iso(uts: int) -> str:
     return datetime.fromtimestamp(int(uts), tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 

@@ -10,9 +10,10 @@ interface Props {
   onOpenCrate: (crate: Crate) => void;
   onOpenStats: () => void;
   onOpenAlmost: () => void;
+  onOpenLink: () => void;
 }
 
-export default function ShelfScreen({ onOpenCrate, onOpenStats, onOpenAlmost }: Props) {
+export default function ShelfScreen({ onOpenCrate, onOpenStats, onOpenAlmost, onOpenLink }: Props) {
   const collection = useMemo(loadCollection, []);
   const crates = useMemo(() => buildCrates(collection), [collection]);
   const { width } = useWindowDimensions();
@@ -38,6 +39,9 @@ export default function ShelfScreen({ onOpenCrate, onOpenStats, onOpenAlmost }: 
             </Pressable>
             <Pressable style={styles.button} onPress={onOpenAlmost}>
               <Text style={styles.buttonText}>Almost there</Text>
+            </Pressable>
+            <Pressable style={styles.button} onPress={onOpenLink}>
+              <Text style={styles.buttonText}>Link history</Text>
             </Pressable>
           </View>
         </View>

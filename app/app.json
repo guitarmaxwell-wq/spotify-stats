@@ -1,16 +1,16 @@
 {
   "expo": {
-    "name": "Crates",
-    "slug": "crates",
+    "name": "Milk",
+    "slug": "milk",
     "version": "1.0.0",
     "orientation": "portrait",
-    "//scheme": "Required for the Spotify PKCE redirect. Must match SPOTIFY_REDIRECT_URI and the redirect URI registered in the Spotify dashboard: crates://auth",
-    "scheme": "crates",
+    "//scheme": "Required for the Spotify PKCE redirect. Must match SPOTIFY_REDIRECT_URI and the redirect URI registered in the Spotify dashboard: milk://auth",
+    "scheme": "milk",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.maxwell.crates"
+      "bundleIdentifier": "com.maxwell.milk"
     },
     "android": {
       "adaptiveIcon": {
@@ -19,7 +19,7 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "package": "com.maxwell.crates",
+      "package": "com.maxwell.milk",
       "predictiveBackGestureEnabled": false
     },
     "web": {

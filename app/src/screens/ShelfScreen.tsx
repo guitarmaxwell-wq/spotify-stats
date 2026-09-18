@@ -29,7 +29,7 @@ export default function ShelfScreen({ onOpenCrate, onOpenStats, onOpenAlmost, on
     <ScrollView style={styles.room} contentContainerStyle={{ paddingBottom: 48 }}>
       <View style={{ width: maxContent, alignSelf: 'center' }}>
         <View style={styles.header}>
-          <Text style={styles.title}>CRATES</Text>
+          <Text style={styles.title}>MILK</Text>
           <Text style={styles.subtitle}>
             {collection.stats.unlocked_count} records earned · {collection.stats.in_progress_count} still filling
           </Text>

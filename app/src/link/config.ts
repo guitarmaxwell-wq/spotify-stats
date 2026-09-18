@@ -29,7 +29,7 @@ export const LASTFM_API_KEY: string | undefined =
   process.env.EXPO_PUBLIC_LASTFM_API_KEY || undefined;
 
 /** Must exactly match a redirect URI registered in the Spotify dashboard. */
-export const REDIRECT_SCHEME = 'crates';
+export const REDIRECT_SCHEME = 'milk';
 export const REDIRECT_PATH = 'auth';
 
 export const SPOTIFY_SCOPES = ['user-read-recently-played'];

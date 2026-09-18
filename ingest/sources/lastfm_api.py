@@ -160,16 +160,24 @@ class LastfmSource:
 
         total = IngestResult(source=self.name)
         truncated = False
+        total_pages_seen = 0
         for events, invalid, total_pages in self.fetch(from_uts, to_uts, max_pages):
+            total_pages_seen = total_pages
             # advance=False: pages arrive newest-first, so the high-water mark
             # is only trustworthy once the last page has landed.
             total.merge(collect(self.name, store, events, invalid=invalid, advance=False))
+            # `total_pages` is known from the first page, so this must NOT break
+            # out of the loop -- doing so stopped every run after one page and
+            # made a full backfill impossible. `fetch` already stops at
+            # max_pages; all that is left is to report it afterwards.
             if total_pages > max_pages:
                 truncated = True
-                total.warnings.append(
-                    f"stopped at page {max_pages} of {total_pages}; run again to continue"
-                )
-                break
+
+        if truncated:
+            total.warnings.append(
+                f"stopped at page {max_pages} of {total_pages_seen or max_pages}; "
+                "run again to continue"
+            )
 
         if not truncated:
             # The window was pinned at to_uts, so everything up to it is now in

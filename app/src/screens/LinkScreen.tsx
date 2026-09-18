@@ -197,7 +197,7 @@ export default function LinkScreen({ onBack }: { onBack: () => void }) {
 
       <View style={styles.body}>
         <Text style={styles.lede}>
-          A record only reaches your shelf once you have played every track on it, so Crates needs
+          A record only reaches your shelf once you have played every track on it, so Milk needs
           to know what you have listened to. There are three ways in, and they genuinely are not
           equivalent.
         </Text>

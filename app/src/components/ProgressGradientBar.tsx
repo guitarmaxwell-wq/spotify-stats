@@ -28,8 +28,94 @@ export interface AlbumColors {
  */
 export function albumColors(album: Album): AlbumColors {
   const c = album.colors;
-  if (c && c.primary && c.secondary) return c;
+  if (c && c.primary && c.secondary) return normalizePair(c);
   return fallbackColors(album.id);
+}
+
+/**
+ * The bright accent drawn from the album — used for the percentage readout.
+ * Real artwork secondaries run dark (median relative luminance ~0.19) and some
+ * are near-grey, so the raw color is not safe as text on the dark card. This
+ * keeps the artwork's hue and forces it up to a legible tone.
+ */
+export function albumAccent(album: Album): string {
+  const hsl = hexToHsl(albumColors(album).secondary);
+  if (!hsl) return albumColors(album).secondary;
+  return hslToHex(hsl.h, clamp(hsl.s, 38, 92), clamp(hsl.l, 62, 78));
+}
+
+interface Hsl {
+  h: number;
+  s: number;
+  l: number;
+}
+
+function clamp(v: number, lo: number, hi: number): number {
+  return Math.max(lo, Math.min(hi, v));
+}
+
+/** Smallest angle between two hues, in degrees. */
+function hueGap(a: number, b: number): number {
+  const d = Math.abs(a - b) % 360;
+  return d > 180 ? 360 - d : d;
+}
+
+/**
+ * Two dominant colors sampled from real artwork are not automatically a
+ * gradient: a sepia photo yields two browns 18 RGB units apart, which paints a
+ * flat bar. These guards keep the artwork's hues — the whole point of the
+ * feature — while guaranteeing the bar still reads as a lit ramp on a dark UI:
+ * a saturation floor for near-grey covers, a lightness window so neither end
+ * disappears into the card, and a minimum ramp when the two colors are close.
+ */
+function normalizePair(c: AlbumColors): AlbumColors {
+  let a = hexToHsl(c.primary);
+  let b = hexToHsl(c.secondary);
+  if (!a || !b) return c; // not hex: leave the pipeline's value untouched
+
+  if (a.s < 18) a.s = Math.min(34, a.s + 16);
+  if (b.s < 18) b.s = Math.min(34, b.s + 16);
+  a.l = clamp(a.l, 30, 78);
+  b.l = clamp(b.l, 30, 78);
+
+  // Both colors are the artwork's, and which is "primary" is about dominance,
+  // not about where it belongs on a bar. Putting the darker one first costs
+  // nothing and makes every bar brighten toward its leading edge.
+  if (b.l < a.l) {
+    const t = a;
+    a = b;
+    b = t;
+  }
+
+  // Close hues AND close lightness means no visible gradient at all: open the
+  // far end up so the ramp is always there to see.
+  if (hueGap(a.h, b.h) < 25 && b.l - a.l < 16) {
+    b.l = Math.min(80, a.l + 22);
+    b.h = (b.h + 14) % 360;
+  }
+
+  return { primary: hslToHex(a.h, a.s, a.l), secondary: hslToHex(b.h, b.s, b.l) };
+}
+
+function hexToHsl(color: string): Hsl | null {
+  const rgb = toRgb(color);
+  if (!rgb) return null;
+  const r = rgb[0] / 255;
+  const g = rgb[1] / 255;
+  const bl = rgb[2] / 255;
+  const max = Math.max(r, g, bl);
+  const min = Math.min(r, g, bl);
+  const d = max - min;
+  const l = (max + min) / 2;
+  let h = 0;
+  let s = 0;
+  if (d !== 0) {
+    s = d / (1 - Math.abs(2 * l - 1));
+    if (max === r) h = 60 * (((g - bl) / d) % 6);
+    else if (max === g) h = 60 * ((bl - r) / d + 2);
+    else h = 60 * ((r - g) / d + 4);
+  }
+  return { h: (h + 360) % 360, s: s * 100, l: l * 100 };
 }
 
 const HSL = /hsl\(\s*([\d.]+)\s*,\s*([\d.]+)%\s*,\s*([\d.]+)%\s*\)/;

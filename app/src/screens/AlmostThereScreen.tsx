@@ -2,7 +2,7 @@ import React, { useCallback, useMemo, useState } from 'react';
 import { FlatList, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 import RecordSleeve from '../components/RecordSleeve';
 import AlbumDetail from '../components/AlbumDetail';
-import ProgressGradientBar, { albumColors } from '../components/ProgressGradientBar';
+import ProgressGradientBar, { albumAccent } from '../components/ProgressGradientBar';
 import TopBar from '../components/TopBar';
 import { almostThere, loadCollection } from '../data/collection';
 import { theme } from '../theme';
@@ -10,7 +10,7 @@ import type { Album } from '../types';
 
 function AlmostThereRow({ album, onOpen }: { album: Album; onOpen: (a: Album) => void }) {
   const missing = album.total_tracks - album.played_tracks;
-  const colors = albumColors(album);
+  const accent = albumAccent(album);
   return (
     <Pressable style={styles.card} onPress={() => onOpen(album)}>
       <RecordSleeve album={album} size={74} showLock={false} />
@@ -28,7 +28,7 @@ function AlmostThereRow({ album, onOpen }: { album: Album; onOpen: (a: Album) =>
         </Text>
       </View>
       <View style={styles.readout}>
-        <Text style={[styles.pct, { color: colors.secondary }]}>
+        <Text style={[styles.pct, { color: accent }]}>
           {Math.round(album.completion * 100)}
           <Text style={styles.pctSign}>%</Text>
         </Text>

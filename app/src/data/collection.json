@@ -1,30 +1,30 @@
 {
-  "generated_at": "2026-09-18T06:19:14Z",
+  "generated_at": "2026-09-18T14:59:45Z",
   "stats": {
-    "total_plays": 136512,
-    "distinct_artists": 3347,
+    "total_plays": 138546,
+    "distinct_artists": 3408,
     "first_play": "2020-04-24T18:46:05Z",
-    "last_play": "2026-08-14T20:15:14Z",
-    "unlocked_count": 247,
-    "in_progress_count": 561,
-    "resolved_count": 808,
+    "last_play": "2026-09-18T14:51:54Z",
+    "unlocked_count": 248,
+    "in_progress_count": 568,
+    "resolved_count": 816,
     "unresolved_count": 36,
-    "merged_groups": 7,
-    "album_groups_total": 7132,
+    "merged_groups": 8,
+    "album_groups_total": 7244,
     "partial": false,
     "artwork": {
-      "with_cover": 801,
-      "coverartarchive": 698,
-      "deezer": 103,
+      "with_cover": 809,
+      "coverartarchive": 705,
+      "deezer": 104,
       "missing": 7,
-      "with_colors": 808
+      "with_colors": 816
     }
   },
   "genres": [
     {
       "id": "hip-hop",
       "label": "Hip-Hop",
-      "album_count": 370
+      "album_count": 371
     },
     {
       "id": "rnb-soul",
@@ -34,7 +34,7 @@
     {
       "id": "jazz",
       "label": "Jazz",
-      "album_count": 139
+      "album_count": 140
     },
     {
       "id": "blues",
@@ -44,7 +44,7 @@
     {
       "id": "rock",
       "label": "Rock",
-      "album_count": 94
+      "album_count": 96
     },
     {
       "id": "punk-metal",
@@ -59,7 +59,7 @@
     {
       "id": "electronic",
       "label": "Electronic",
-      "album_count": 31
+      "album_count": 32
     },
     {
       "id": "folk-country",
@@ -84,7 +84,7 @@
     {
       "id": "other",
       "label": "Other",
-      "album_count": 30
+      "album_count": 33
     }
   ],
   "albums": [
@@ -105,7 +105,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2021-03-14T04:23:48Z",
-      "play_count": 921,
+      "play_count": 971,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -134,7 +134,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2020-05-19T15:07:51Z",
-      "play_count": 896,
+      "play_count": 897,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated-partner",
@@ -216,7 +216,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2020-05-01T18:16:11Z",
-      "play_count": 764,
+      "play_count": 766,
       "missing_tracks": [],
       "source": "musicbrainz_search",
       "color_strategy": "saturated",
@@ -227,6 +227,35 @@
         "hip hop",
         "jazz rap",
         "pop rap"
+      ]
+    },
+    {
+      "id": "1e5803df-8923-4bed-9297-e707ffc8de92",
+      "artist": "Frank Ocean",
+      "title": "channel ORANGE",
+      "release_year": 2012,
+      "genre_id": "rnb-soul",
+      "cover_url": "https://coverartarchive.org/release/1e5803df-8923-4bed-9297-e707ffc8de92/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#e2721e",
+        "secondary": "#885d11"
+      },
+      "total_tracks": 17,
+      "played_tracks": 17,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2020-05-13T01:11:50Z",
+      "play_count": 736,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated-derived",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "alternative r&b",
+        "contemporary r&b",
+        "hip-hop/r&b",
+        "r&b"
       ]
     },
     {
@@ -253,35 +282,6 @@
       "_fuzzy_matches": 0,
       "_genre_tags": [
         "hip hop"
-      ]
-    },
-    {
-      "id": "1e5803df-8923-4bed-9297-e707ffc8de92",
-      "artist": "Frank Ocean",
-      "title": "channel ORANGE",
-      "release_year": 2012,
-      "genre_id": "rnb-soul",
-      "cover_url": "https://coverartarchive.org/release/1e5803df-8923-4bed-9297-e707ffc8de92/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#e2721e",
-        "secondary": "#885d11"
-      },
-      "total_tracks": 17,
-      "played_tracks": 17,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2020-05-13T01:11:50Z",
-      "play_count": 735,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated-derived",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "alternative r&b",
-        "contemporary r&b",
-        "hip-hop/r&b",
-        "r&b"
       ]
     },
     {
@@ -357,7 +357,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2025-11-12T20:28:55Z",
-      "play_count": 628,
+      "play_count": 632,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated-derived",
@@ -383,7 +383,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2022-01-25T20:12:01Z",
-      "play_count": 595,
+      "play_count": 596,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -409,7 +409,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2020-08-05T15:46:27Z",
-      "play_count": 555,
+      "play_count": 556,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "derived",
@@ -439,7 +439,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2021-03-11T00:30:44Z",
-      "play_count": 546,
+      "play_count": 547,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -465,7 +465,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2020-05-29T04:49:42Z",
-      "play_count": 543,
+      "play_count": 546,
       "missing_tracks": [],
       "source": "musicbrainz_search",
       "color_strategy": "saturated",
@@ -526,7 +526,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2020-05-25T02:55:40Z",
-      "play_count": 504,
+      "play_count": 506,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -552,7 +552,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2020-11-15T22:45:54Z",
-      "play_count": 482,
+      "play_count": 484,
       "missing_tracks": [],
       "source": "musicbrainz_search",
       "color_strategy": "saturated",
@@ -588,6 +588,37 @@
       ]
     },
     {
+      "id": "04944dc2-3736-45bc-b3b6-63fd42b86136",
+      "artist": "Kendrick Lamar",
+      "title": "To Pimp a Butterfly",
+      "release_year": 2015,
+      "genre_id": "hip-hop",
+      "cover_url": "https://coverartarchive.org/release/04944dc2-3736-45bc-b3b6-63fd42b86136/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#bcb2ab",
+        "secondary": "#897f6e"
+      },
+      "total_tracks": 16,
+      "played_tracks": 16,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2020-10-26T02:30:48Z",
+      "play_count": 465,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "derived",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "conscious hip hop",
+        "conscious hip-hop",
+        "experimental hip-hop",
+        "g-funk",
+        "hip hop",
+        "jazz rap"
+      ]
+    },
+    {
       "id": "0708f595-c841-4a97-86f0-cf8b2dfa5613",
       "artist": "JPEGMAFIA",
       "title": "All My Heroes Are Cornballs",
@@ -619,34 +650,61 @@
       ]
     },
     {
-      "id": "04944dc2-3736-45bc-b3b6-63fd42b86136",
-      "artist": "Kendrick Lamar",
-      "title": "To Pimp a Butterfly",
-      "release_year": 2015,
-      "genre_id": "hip-hop",
-      "cover_url": "https://coverartarchive.org/release/04944dc2-3736-45bc-b3b6-63fd42b86136/front-500",
+      "id": "20a7bedb-ff1e-3713-a55e-390f43180824",
+      "artist": "Mazzy Star",
+      "title": "She Hangs Brightly",
+      "release_year": 1990,
+      "genre_id": "rock",
+      "cover_url": "https://coverartarchive.org/release/20a7bedb-ff1e-3713-a55e-390f43180824/front-500",
       "artwork_source": "coverartarchive",
       "colors": {
-        "primary": "#bcb2ab",
-        "secondary": "#897f6e"
+        "primary": "#88554d",
+        "secondary": "#bc9b89"
       },
-      "total_tracks": 16,
-      "played_tracks": 16,
+      "total_tracks": 11,
+      "played_tracks": 11,
       "completion": 1.0,
       "unlocked": true,
-      "unlocked_at": "2020-10-26T02:30:48Z",
-      "play_count": 455,
+      "unlocked_at": "2026-04-06T05:05:19Z",
+      "play_count": 457,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
-      "color_strategy": "derived",
+      "color_strategy": "saturated-derived",
       "_fuzzy_matches": 0,
       "_genre_tags": [
-        "conscious hip hop",
-        "conscious hip-hop",
-        "experimental hip-hop",
-        "g-funk",
-        "hip hop",
-        "jazz rap"
+        "alternative rock",
+        "indie pop",
+        "indie rock",
+        "rock",
+        "shoegaze"
+      ]
+    },
+    {
+      "id": "07708c6b-b179-37f3-ae30-96d1482d8c44",
+      "artist": "The Sundays",
+      "title": "Blind",
+      "release_year": 1992,
+      "genre_id": "rock",
+      "cover_url": "https://cdn-images.dzcdn.net/images/cover/9f3b1feea1edde584b7396758156cf69/500x500-000000-80-0-0.jpg",
+      "artwork_source": "deezer",
+      "colors": {
+        "primary": "#7e5d3c",
+        "secondary": "#b79f6e"
+      },
+      "total_tracks": 11,
+      "played_tracks": 11,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2025-06-09T16:07:22Z",
+      "play_count": 449,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "indie pop",
+        "indie rock",
+        "rock"
       ]
     },
     {
@@ -666,7 +724,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2021-08-03T22:26:44Z",
-      "play_count": 445,
+      "play_count": 446,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -703,34 +761,6 @@
       ]
     },
     {
-      "id": "07708c6b-b179-37f3-ae30-96d1482d8c44",
-      "artist": "The Sundays",
-      "title": "Blind",
-      "release_year": 1992,
-      "genre_id": "rock",
-      "cover_url": "https://cdn-images.dzcdn.net/images/cover/9f3b1feea1edde584b7396758156cf69/500x500-000000-80-0-0.jpg",
-      "artwork_source": "deezer",
-      "colors": {
-        "primary": "#7e5d3c",
-        "secondary": "#b79f6e"
-      },
-      "total_tracks": 11,
-      "played_tracks": 11,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2025-06-09T16:07:22Z",
-      "play_count": 443,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "indie pop",
-        "indie rock",
-        "rock"
-      ]
-    },
-    {
       "id": "0d8d50e3-6899-4bad-8780-3713f2b87e10",
       "artist": "Tyler, The Creator",
       "title": "CALL ME IF YOU GET LOST",
@@ -747,7 +777,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2021-06-25T15:26:18Z",
-      "play_count": 438,
+      "play_count": 440,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -803,7 +833,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2020-10-14T00:03:05Z",
-      "play_count": 428,
+      "play_count": 429,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -829,7 +859,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2024-06-13T00:46:02Z",
-      "play_count": 411,
+      "play_count": 423,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -841,33 +871,6 @@
         "pop soul",
         "progressive soul",
         "r&b"
-      ]
-    },
-    {
-      "id": "e94f0249-70aa-4263-9ebd-e75113fd5762",
-      "artist": "DJ Harrison",
-      "title": "Stashboxxx",
-      "release_year": 2014,
-      "genre_id": "hip-hop",
-      "cover_url": "https://coverartarchive.org/release/e94f0249-70aa-4263-9ebd-e75113fd5762/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#88836a",
-        "secondary": "#507a64"
-      },
-      "total_tracks": 34,
-      "played_tracks": 34,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2024-02-09T16:52:41Z",
-      "play_count": 401,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 1,
-      "_genre_tags": [
-        "hip hop",
-        "instrumental hip hop"
       ]
     },
     {
@@ -887,7 +890,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2021-11-03T19:53:04Z",
-      "play_count": 401,
+      "play_count": 418,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -896,6 +899,33 @@
         "hip hop",
         "instrumental hip hop",
         "jazz rap"
+      ]
+    },
+    {
+      "id": "e94f0249-70aa-4263-9ebd-e75113fd5762",
+      "artist": "DJ Harrison",
+      "title": "Stashboxxx",
+      "release_year": 2014,
+      "genre_id": "hip-hop",
+      "cover_url": "https://coverartarchive.org/release/e94f0249-70aa-4263-9ebd-e75113fd5762/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#88836a",
+        "secondary": "#507a64"
+      },
+      "total_tracks": 34,
+      "played_tracks": 34,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2024-02-09T16:52:41Z",
+      "play_count": 404,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 1,
+      "_genre_tags": [
+        "hip hop",
+        "instrumental hip hop"
       ]
     },
     {
@@ -915,7 +945,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2022-03-02T16:05:01Z",
-      "play_count": 392,
+      "play_count": 398,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -926,33 +956,30 @@
       ]
     },
     {
-      "id": "20a7bedb-ff1e-3713-a55e-390f43180824",
-      "artist": "Mazzy Star",
-      "title": "She Hangs Brightly",
-      "release_year": 1990,
-      "genre_id": "rock",
-      "cover_url": "https://coverartarchive.org/release/20a7bedb-ff1e-3713-a55e-390f43180824/front-500",
+      "id": "151d2e60-8dad-4934-a8a3-6cccbd2f5d31",
+      "artist": "Cocteau Twins",
+      "title": "Heaven or Las Vegas",
+      "release_year": 2014,
+      "genre_id": "pop",
+      "cover_url": "https://coverartarchive.org/release/151d2e60-8dad-4934-a8a3-6cccbd2f5d31/front-500",
       "artwork_source": "coverartarchive",
       "colors": {
-        "primary": "#88554d",
-        "secondary": "#bc9b89"
+        "primary": "#eb4124",
+        "secondary": "#b23a2a"
       },
-      "total_tracks": 11,
-      "played_tracks": 11,
+      "total_tracks": 10,
+      "played_tracks": 10,
       "completion": 1.0,
       "unlocked": true,
-      "unlocked_at": "2026-04-06T05:05:19Z",
+      "unlocked_at": "2024-06-25T01:40:02Z",
       "play_count": 387,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
-      "color_strategy": "saturated-derived",
+      "color_strategy": "saturated",
       "_fuzzy_matches": 0,
       "_genre_tags": [
-        "alternative rock",
-        "indie pop",
-        "indie rock",
-        "rock",
-        "shoegaze"
+        "ambient pop",
+        "dream pop"
       ]
     },
     {
@@ -972,13 +999,44 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2020-08-30T15:40:28Z",
-      "play_count": 381,
+      "play_count": 382,
       "missing_tracks": [],
       "source": "musicbrainz_search",
       "color_strategy": "saturated",
       "_fuzzy_matches": 0,
       "_genre_tags": [
         "hip hop"
+      ]
+    },
+    {
+      "id": "488477d8-10b4-47fe-a482-549f011406a5",
+      "artist": "Daft Punk",
+      "title": "Discovery",
+      "release_year": 2021,
+      "genre_id": "electronic",
+      "cover_url": "https://coverartarchive.org/release/488477d8-10b4-47fe-a482-549f011406a5/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#616161",
+        "secondary": "#0b7117"
+      },
+      "total_tracks": 14,
+      "played_tracks": 14,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2020-07-05T02:45:55Z",
+      "play_count": 377,
+      "missing_tracks": [],
+      "source": "musicbrainz_search",
+      "color_strategy": "dominant",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "club/dance",
+        "dance",
+        "dance-pop",
+        "downtempo",
+        "electro house",
+        "electronic"
       ]
     },
     {
@@ -1012,37 +1070,6 @@
       ]
     },
     {
-      "id": "488477d8-10b4-47fe-a482-549f011406a5",
-      "artist": "Daft Punk",
-      "title": "Discovery",
-      "release_year": 2021,
-      "genre_id": "electronic",
-      "cover_url": "https://coverartarchive.org/release/488477d8-10b4-47fe-a482-549f011406a5/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#616161",
-        "secondary": "#0b7117"
-      },
-      "total_tracks": 14,
-      "played_tracks": 14,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2020-07-05T02:45:55Z",
-      "play_count": 376,
-      "missing_tracks": [],
-      "source": "musicbrainz_search",
-      "color_strategy": "dominant",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "club/dance",
-        "dance",
-        "dance-pop",
-        "downtempo",
-        "electro house",
-        "electronic"
-      ]
-    },
-    {
       "id": "0bb16545-9846-4c07-8863-222bf908a0e2",
       "artist": "Thundercat",
       "title": "It Is What It Is",
@@ -1059,7 +1086,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2022-02-16T00:55:40Z",
-      "play_count": 363,
+      "play_count": 364,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -1116,7 +1143,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2025-06-09T19:12:41Z",
-      "play_count": 354,
+      "play_count": 355,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "derived",
@@ -1126,6 +1153,30 @@
         "indie pop",
         "jangle pop"
       ]
+    },
+    {
+      "id": "40865526-026c-4d71-9d40-ba137be71224",
+      "artist": "DJ Grumble",
+      "title": "Freestyle Tools 2015",
+      "release_year": 2015,
+      "genre_id": "other",
+      "cover_url": "https://cdn-images.dzcdn.net/images/cover/8c72335f900c0f86c2648cd437060d47/500x500-000000-80-0-0.jpg",
+      "artwork_source": "deezer",
+      "colors": {
+        "primary": "#c68b84",
+        "secondary": "#d5bda2"
+      },
+      "total_tracks": 25,
+      "played_tracks": 25,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2023-07-12T14:47:07Z",
+      "play_count": 349,
+      "missing_tracks": [],
+      "source": "musicbrainz_search",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": []
     },
     {
       "id": "39db2518-ce7f-3c7d-b41a-744ae0295cce",
@@ -1152,30 +1203,6 @@
       "_genre_tags": [
         "hip hop"
       ]
-    },
-    {
-      "id": "40865526-026c-4d71-9d40-ba137be71224",
-      "artist": "DJ Grumble",
-      "title": "Freestyle Tools 2015",
-      "release_year": 2015,
-      "genre_id": "other",
-      "cover_url": "https://cdn-images.dzcdn.net/images/cover/8c72335f900c0f86c2648cd437060d47/500x500-000000-80-0-0.jpg",
-      "artwork_source": "deezer",
-      "colors": {
-        "primary": "#c68b84",
-        "secondary": "#d5bda2"
-      },
-      "total_tracks": 25,
-      "played_tracks": 25,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2023-07-12T14:47:07Z",
-      "play_count": 342,
-      "missing_tracks": [],
-      "source": "musicbrainz_search",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": []
     },
     {
       "id": "02d88d3e-8805-3e99-8fe7-e8708f74427d",
@@ -1208,30 +1235,30 @@
       ]
     },
     {
-      "id": "151d2e60-8dad-4934-a8a3-6cccbd2f5d31",
-      "artist": "Cocteau Twins",
-      "title": "Heaven or Las Vegas",
-      "release_year": 2014,
-      "genre_id": "pop",
-      "cover_url": "https://coverartarchive.org/release/151d2e60-8dad-4934-a8a3-6cccbd2f5d31/front-500",
+      "id": "27ee7d2d-4ea8-4849-8a4e-8e4b05d611e1",
+      "artist": "Little Simz",
+      "title": "Sometimes I Might Be Introvert",
+      "release_year": 2021,
+      "genre_id": "hip-hop",
+      "cover_url": "https://coverartarchive.org/release/27ee7d2d-4ea8-4849-8a4e-8e4b05d611e1/front-500",
       "artwork_source": "coverartarchive",
       "colors": {
-        "primary": "#eb4124",
-        "secondary": "#b23a2a"
+        "primary": "#a96a00",
+        "secondary": "#bc2809"
       },
-      "total_tracks": 10,
-      "played_tracks": 10,
+      "total_tracks": 19,
+      "played_tracks": 19,
       "completion": 1.0,
       "unlocked": true,
-      "unlocked_at": "2024-06-25T01:40:02Z",
-      "play_count": 331,
+      "unlocked_at": "2022-06-03T00:02:39Z",
+      "play_count": 338,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
       "_fuzzy_matches": 0,
       "_genre_tags": [
-        "ambient pop",
-        "dream pop"
+        "grime",
+        "uk hip hop"
       ]
     },
     {
@@ -1277,7 +1304,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2024-04-19T15:59:30Z",
-      "play_count": 324,
+      "play_count": 325,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -1287,33 +1314,6 @@
         "country rock",
         "folk rock",
         "rock"
-      ]
-    },
-    {
-      "id": "27ee7d2d-4ea8-4849-8a4e-8e4b05d611e1",
-      "artist": "Little Simz",
-      "title": "Sometimes I Might Be Introvert",
-      "release_year": 2021,
-      "genre_id": "hip-hop",
-      "cover_url": "https://coverartarchive.org/release/27ee7d2d-4ea8-4849-8a4e-8e4b05d611e1/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#a96a00",
-        "secondary": "#bc2809"
-      },
-      "total_tracks": 19,
-      "played_tracks": 19,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2022-06-03T00:02:39Z",
-      "play_count": 321,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "grime",
-        "uk hip hop"
       ]
     },
     {
@@ -1333,7 +1333,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2020-12-18T04:04:24Z",
-      "play_count": 320,
+      "play_count": 321,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "dominant",
@@ -1363,7 +1363,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2023-01-05T15:47:34Z",
-      "play_count": 316,
+      "play_count": 317,
       "missing_tracks": [],
       "source": "musicbrainz_search",
       "color_strategy": "saturated",
@@ -1390,7 +1390,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2020-11-25T17:11:31Z",
-      "play_count": 307,
+      "play_count": 308,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -1503,7 +1503,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2023-03-05T22:01:00Z",
-      "play_count": 297,
+      "play_count": 299,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "dominant",
@@ -1512,6 +1512,35 @@
         "cloud rap",
         "hip hop",
         "trap"
+      ]
+    },
+    {
+      "id": "3c9d9aa9-7cad-40a8-b7e0-6c6dbc8413a5",
+      "artist": "J Dilla",
+      "title": "The King of Beats, Vol 2: Lost Scrolls",
+      "release_year": 2016,
+      "genre_id": "hip-hop",
+      "cover_url": "https://coverartarchive.org/release/3c9d9aa9-7cad-40a8-b7e0-6c6dbc8413a5/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#616161",
+        "secondary": "#a3938f"
+      },
+      "total_tracks": 16,
+      "played_tracks": 16,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2024-08-23T01:37:01Z",
+      "play_count": 296,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "derived",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "experimental hip hop",
+        "hip hop",
+        "hip-hop",
+        "instrumental hip hop"
       ]
     },
     {
@@ -1531,7 +1560,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2025-11-18T02:40:21Z",
-      "play_count": 288,
+      "play_count": 290,
       "missing_tracks": [],
       "source": "musicbrainz_search",
       "color_strategy": "saturated",
@@ -1558,7 +1587,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2021-04-21T01:01:34Z",
-      "play_count": 286,
+      "play_count": 289,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -1571,6 +1600,33 @@
         "hardcore hip hop",
         "hip hop"
       ]
+    },
+    {
+      "id": "4f901cb7-8f54-4429-8d33-23968683cb61",
+      "artist": "J Dilla",
+      "title": "Jay Dee's Ma Dukes Collection",
+      "release_year": 2016,
+      "genre_id": "hip-hop",
+      "cover_url": "https://coverartarchive.org/release/4f901cb7-8f54-4429-8d33-23968683cb61/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#546277",
+        "secondary": "#8d93ae"
+      },
+      "total_tracks": 15,
+      "played_tracks": 15,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2023-04-25T18:42:43Z",
+      "play_count": 286,
+      "missing_tracks": [],
+      "source": "musicbrainz_search",
+      "color_strategy": "saturated-derived",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "hip hop"
+      ],
+      "_merged_from": 2
     },
     {
       "id": "07497a81-9635-4494-82be-3469f8137ed2",
@@ -1630,33 +1686,6 @@
       ]
     },
     {
-      "id": "4f901cb7-8f54-4429-8d33-23968683cb61",
-      "artist": "J Dilla",
-      "title": "Jay Dee's Ma Dukes Collection",
-      "release_year": 2016,
-      "genre_id": "hip-hop",
-      "cover_url": "https://coverartarchive.org/release/4f901cb7-8f54-4429-8d33-23968683cb61/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#546277",
-        "secondary": "#8d93ae"
-      },
-      "total_tracks": 15,
-      "played_tracks": 15,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2023-04-25T18:42:43Z",
-      "play_count": 284,
-      "missing_tracks": [],
-      "source": "musicbrainz_search",
-      "color_strategy": "saturated-derived",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "hip hop"
-      ],
-      "_merged_from": 2
-    },
-    {
       "id": "3d867a0d-e873-4854-b4b6-9566b3e15699",
       "artist": "Erykah Badu",
       "title": "Mama's Gun",
@@ -1688,35 +1717,6 @@
       ]
     },
     {
-      "id": "3c9d9aa9-7cad-40a8-b7e0-6c6dbc8413a5",
-      "artist": "J Dilla",
-      "title": "The King of Beats, Vol 2: Lost Scrolls",
-      "release_year": 2016,
-      "genre_id": "hip-hop",
-      "cover_url": "https://coverartarchive.org/release/3c9d9aa9-7cad-40a8-b7e0-6c6dbc8413a5/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#616161",
-        "secondary": "#a3938f"
-      },
-      "total_tracks": 16,
-      "played_tracks": 16,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2024-08-23T01:37:01Z",
-      "play_count": 274,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "derived",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "experimental hip hop",
-        "hip hop",
-        "hip-hop",
-        "instrumental hip hop"
-      ]
-    },
-    {
       "id": "741e4693-0457-471d-99bf-c708111de686",
       "artist": "Marvin Gaye",
       "title": "A Tribute to the Great Nat King Cole",
@@ -1740,6 +1740,34 @@
       "_fuzzy_matches": 0,
       "_genre_tags": [
         "vocal jazz"
+      ]
+    },
+    {
+      "id": "be5d492a-6603-4797-b313-b9cbc0da015a",
+      "artist": "フランク・クニモンド・トリオ",
+      "title": "イントロデューシング・リン・マリノ",
+      "release_year": 2022,
+      "genre_id": "jazz",
+      "cover_url": "https://coverartarchive.org/release/be5d492a-6603-4797-b313-b9cbc0da015a/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#5c56b1",
+        "secondary": "#8f90b6"
+      },
+      "total_tracks": 10,
+      "played_tracks": 10,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2024-08-11T17:30:55Z",
+      "play_count": 267,
+      "missing_tracks": [],
+      "source": "musicbrainz_search",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "jazz",
+        "latin jazz",
+        "soul jazz"
       ]
     },
     {
@@ -1785,7 +1813,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2020-10-02T15:39:02Z",
-      "play_count": 261,
+      "play_count": 262,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -1882,34 +1910,6 @@
       ]
     },
     {
-      "id": "be5d492a-6603-4797-b313-b9cbc0da015a",
-      "artist": "フランク・クニモンド・トリオ",
-      "title": "イントロデューシング・リン・マリノ",
-      "release_year": 2022,
-      "genre_id": "jazz",
-      "cover_url": "https://coverartarchive.org/release/be5d492a-6603-4797-b313-b9cbc0da015a/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#5c56b1",
-        "secondary": "#8f90b6"
-      },
-      "total_tracks": 10,
-      "played_tracks": 10,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2024-08-11T17:30:55Z",
-      "play_count": 247,
-      "missing_tracks": [],
-      "source": "musicbrainz_search",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "jazz",
-        "latin jazz",
-        "soul jazz"
-      ]
-    },
-    {
       "id": "6c433abe-415f-47e5-9bfa-44fbafee151b",
       "artist": "King Krule",
       "title": "6 Feet Beneath the Moon",
@@ -1990,6 +1990,36 @@
       "_fuzzy_matches": 0,
       "_genre_tags": [
         "hip hop"
+      ]
+    },
+    {
+      "id": "0492947a-0215-4508-af24-370a9880f12f",
+      "artist": "Cocteau Twins",
+      "title": "Blue Bell Knoll",
+      "release_year": 1996,
+      "genre_id": "rock",
+      "cover_url": "https://coverartarchive.org/release/0492947a-0215-4508-af24-370a9880f12f/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#5b674f",
+        "secondary": "#a47a63"
+      },
+      "total_tracks": 10,
+      "played_tracks": 10,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2025-07-02T14:47:11Z",
+      "play_count": 227,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "alternative rock",
+        "indie",
+        "indie rock",
+        "rock",
+        "shoegaze"
       ]
     },
     {
@@ -2097,7 +2127,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2024-03-02T18:23:19Z",
-      "play_count": 222,
+      "play_count": 225,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -2105,6 +2135,62 @@
       "_genre_tags": [
         "jazz",
         "vocal jazz"
+      ]
+    },
+    {
+      "id": "20aa9b51-08b4-4f09-b88c-7017eaaea971",
+      "artist": "Isaiah Rashad",
+      "title": "Cilvia Demo",
+      "release_year": 2014,
+      "genre_id": "hip-hop",
+      "cover_url": "https://coverartarchive.org/release/20aa9b51-08b4-4f09-b88c-7017eaaea971/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#755e4f",
+        "secondary": "#ae9e87"
+      },
+      "total_tracks": 14,
+      "played_tracks": 14,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2021-02-04T03:37:53Z",
+      "play_count": 222,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated-derived",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "hip hop"
+      ]
+    },
+    {
+      "id": "7454704c-a26d-471f-8d78-8828463782a6",
+      "artist": "Travis Scott",
+      "title": "ASTROWORLD",
+      "release_year": 2018,
+      "genre_id": "hip-hop",
+      "cover_url": "https://coverartarchive.org/release/7454704c-a26d-471f-8d78-8828463782a6/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#bda582",
+        "secondary": "#af3f13"
+      },
+      "total_tracks": 17,
+      "played_tracks": 17,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2020-06-07T01:09:31Z",
+      "play_count": 221,
+      "missing_tracks": [],
+      "source": "musicbrainz_search",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "cloud rap",
+        "hip hop",
+        "pop rap",
+        "southern hip hop",
+        "trap"
       ]
     },
     {
@@ -2140,32 +2226,6 @@
       "_merged_from": 2
     },
     {
-      "id": "20aa9b51-08b4-4f09-b88c-7017eaaea971",
-      "artist": "Isaiah Rashad",
-      "title": "Cilvia Demo",
-      "release_year": 2014,
-      "genre_id": "hip-hop",
-      "cover_url": "https://coverartarchive.org/release/20aa9b51-08b4-4f09-b88c-7017eaaea971/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#755e4f",
-        "secondary": "#ae9e87"
-      },
-      "total_tracks": 14,
-      "played_tracks": 14,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2021-02-04T03:37:53Z",
-      "play_count": 221,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated-derived",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "hip hop"
-      ]
-    },
-    {
       "id": "7586f269-cefc-4977-a7a1-a977bfab3a10",
       "artist": "J. Cole",
       "title": "2014 Forest Hills Drive",
@@ -2182,7 +2242,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2021-04-09T01:13:41Z",
-      "play_count": 220,
+      "play_count": 221,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated-derived",
@@ -2194,66 +2254,6 @@
         "hip hop",
         "jazz rap",
         "pop rap"
-      ]
-    },
-    {
-      "id": "7454704c-a26d-471f-8d78-8828463782a6",
-      "artist": "Travis Scott",
-      "title": "ASTROWORLD",
-      "release_year": 2018,
-      "genre_id": "hip-hop",
-      "cover_url": "https://coverartarchive.org/release/7454704c-a26d-471f-8d78-8828463782a6/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#bda582",
-        "secondary": "#af3f13"
-      },
-      "total_tracks": 17,
-      "played_tracks": 17,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2020-06-07T01:09:31Z",
-      "play_count": 219,
-      "missing_tracks": [],
-      "source": "musicbrainz_search",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "cloud rap",
-        "hip hop",
-        "pop rap",
-        "southern hip hop",
-        "trap"
-      ]
-    },
-    {
-      "id": "0492947a-0215-4508-af24-370a9880f12f",
-      "artist": "Cocteau Twins",
-      "title": "Blue Bell Knoll",
-      "release_year": 1996,
-      "genre_id": "rock",
-      "cover_url": "https://coverartarchive.org/release/0492947a-0215-4508-af24-370a9880f12f/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#5b674f",
-        "secondary": "#a47a63"
-      },
-      "total_tracks": 10,
-      "played_tracks": 10,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2025-07-02T14:47:11Z",
-      "play_count": 207,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "alternative rock",
-        "indie",
-        "indie rock",
-        "rock",
-        "shoegaze"
       ]
     },
     {
@@ -2273,7 +2273,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2024-10-12T02:06:34Z",
-      "play_count": 206,
+      "play_count": 208,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -2385,7 +2385,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2023-04-17T01:37:43Z",
-      "play_count": 193,
+      "play_count": 194,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "derived",
@@ -2416,7 +2416,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2023-08-13T15:54:08Z",
-      "play_count": 190,
+      "play_count": 192,
       "missing_tracks": [],
       "source": "musicbrainz_search",
       "color_strategy": "saturated",
@@ -2486,6 +2486,35 @@
       ]
     },
     {
+      "id": "141832c3-de98-4c4d-bcd7-1733b9141ba7",
+      "artist": "Kanye West",
+      "title": "Yeezus",
+      "release_year": 2013,
+      "genre_id": "hip-hop",
+      "cover_url": "https://coverartarchive.org/release/141832c3-de98-4c4d-bcd7-1733b9141ba7/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#797b79",
+        "secondary": "#f8e5f1"
+      },
+      "total_tracks": 10,
+      "played_tracks": 10,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2020-05-20T15:44:01Z",
+      "play_count": 185,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "dominant",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "experimental hip hop",
+        "hip hop",
+        "industrial hip hop",
+        "midwest hip hop"
+      ]
+    },
+    {
       "id": "00833c5d-da40-44d0-b5d7-a52328b251bc",
       "artist": "A Tribe Called Quest",
       "title": "The Low End Theory",
@@ -2512,32 +2541,34 @@
       ]
     },
     {
-      "id": "141832c3-de98-4c4d-bcd7-1733b9141ba7",
-      "artist": "Kanye West",
-      "title": "Yeezus",
-      "release_year": 2013,
-      "genre_id": "hip-hop",
-      "cover_url": "https://coverartarchive.org/release/141832c3-de98-4c4d-bcd7-1733b9141ba7/front-500",
-      "artwork_source": "coverartarchive",
+      "id": "000b188f-549f-4c11-a5fb-024fbfdb7a13",
+      "artist": "The Cranberries",
+      "title": "Everybody Else Is Doing It, So Why Can't We?",
+      "release_year": 1993,
+      "genre_id": "rock",
+      "cover_url": "https://cdn-images.dzcdn.net/images/cover/b8c8e4dae8b9ec2bd4b68b151838a003/500x500-000000-80-0-0.jpg",
+      "artwork_source": "deezer",
       "colors": {
-        "primary": "#797b79",
-        "secondary": "#f8e5f1"
+        "primary": "#675e74",
+        "secondary": "#a397ab"
       },
-      "total_tracks": 10,
-      "played_tracks": 10,
+      "total_tracks": 12,
+      "played_tracks": 12,
       "completion": 1.0,
       "unlocked": true,
-      "unlocked_at": "2020-05-20T15:44:01Z",
+      "unlocked_at": "2025-02-09T19:40:28Z",
       "play_count": 184,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
-      "color_strategy": "dominant",
+      "color_strategy": "derived",
       "_fuzzy_matches": 0,
       "_genre_tags": [
-        "experimental hip hop",
-        "hip hop",
-        "industrial hip hop",
-        "midwest hip hop"
+        "alt rock",
+        "alt-rock",
+        "alternative rock",
+        "alternative-rock",
+        "celtic rock",
+        "pop rock"
       ]
     },
     {
@@ -2647,7 +2678,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2025-09-07T03:46:37Z",
-      "play_count": 171,
+      "play_count": 172,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "derived",
@@ -2776,6 +2807,68 @@
       ]
     },
     {
+      "id": "0b59a84f-8dee-48c6-b802-22141eecdbd4",
+      "artist": "Stevie Wonder",
+      "title": "Innervisions",
+      "release_year": 1990,
+      "genre_id": "rnb-soul",
+      "cover_url": "https://cdn-images.dzcdn.net/images/cover/1cf2b7972e30a477b82f03302ec5453d/500x500-000000-80-0-0.jpg",
+      "artwork_source": "deezer",
+      "colors": {
+        "primary": "#ede7b3",
+        "secondary": "#d69f37"
+      },
+      "total_tracks": 9,
+      "played_tracks": 9,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2022-10-01T21:43:27Z",
+      "play_count": 155,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "funk",
+        "funk soul",
+        "psychedelic soul",
+        "rhythm and blues",
+        "smooth soul",
+        "soul"
+      ]
+    },
+    {
+      "id": "01aa589c-a7cb-45bd-89a3-c2cb8ddab0a9",
+      "artist": "Pink Floyd",
+      "title": "The Dark Side of the Moon",
+      "release_year": 1978,
+      "genre_id": "rock",
+      "cover_url": "https://coverartarchive.org/release/01aa589c-a7cb-45bd-89a3-c2cb8ddab0a9/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#994d4f",
+        "secondary": "#c79a8f"
+      },
+      "total_tracks": 10,
+      "played_tracks": 10,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2022-12-22T01:41:39Z",
+      "play_count": 154,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated-derived",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "acid rock",
+        "album rock",
+        "art rock",
+        "blues rock",
+        "classic rock",
+        "experimental rock"
+      ]
+    },
+    {
       "id": "45bbde2e-bfc1-48c6-8b58-491348cd5459",
       "artist": "Kendrick Lamar",
       "title": "GNX",
@@ -2804,37 +2897,6 @@
       ]
     },
     {
-      "id": "01aa589c-a7cb-45bd-89a3-c2cb8ddab0a9",
-      "artist": "Pink Floyd",
-      "title": "The Dark Side of the Moon",
-      "release_year": 1978,
-      "genre_id": "rock",
-      "cover_url": "https://coverartarchive.org/release/01aa589c-a7cb-45bd-89a3-c2cb8ddab0a9/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#994d4f",
-        "secondary": "#c79a8f"
-      },
-      "total_tracks": 10,
-      "played_tracks": 10,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2022-12-22T01:41:39Z",
-      "play_count": 153,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated-derived",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "acid rock",
-        "album rock",
-        "art rock",
-        "blues rock",
-        "classic rock",
-        "experimental rock"
-      ]
-    },
-    {
       "id": "045f64ce-d62f-4634-bdcf-74a3991e7bc4",
       "artist": "Aretha Franklin",
       "title": "Aretha Now",
@@ -2851,7 +2913,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2024-05-21T15:36:55Z",
-      "play_count": 151,
+      "play_count": 152,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -2890,68 +2952,6 @@
       ]
     },
     {
-      "id": "0b59a84f-8dee-48c6-b802-22141eecdbd4",
-      "artist": "Stevie Wonder",
-      "title": "Innervisions",
-      "release_year": 1990,
-      "genre_id": "rnb-soul",
-      "cover_url": "https://cdn-images.dzcdn.net/images/cover/1cf2b7972e30a477b82f03302ec5453d/500x500-000000-80-0-0.jpg",
-      "artwork_source": "deezer",
-      "colors": {
-        "primary": "#ede7b3",
-        "secondary": "#d69f37"
-      },
-      "total_tracks": 9,
-      "played_tracks": 9,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2022-10-01T21:43:27Z",
-      "play_count": 150,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "funk",
-        "funk soul",
-        "psychedelic soul",
-        "rhythm and blues",
-        "smooth soul",
-        "soul"
-      ]
-    },
-    {
-      "id": "000b188f-549f-4c11-a5fb-024fbfdb7a13",
-      "artist": "The Cranberries",
-      "title": "Everybody Else Is Doing It, So Why Can't We?",
-      "release_year": 1993,
-      "genre_id": "rock",
-      "cover_url": "https://cdn-images.dzcdn.net/images/cover/b8c8e4dae8b9ec2bd4b68b151838a003/500x500-000000-80-0-0.jpg",
-      "artwork_source": "deezer",
-      "colors": {
-        "primary": "#675e74",
-        "secondary": "#a397ab"
-      },
-      "total_tracks": 12,
-      "played_tracks": 12,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2025-02-09T19:40:28Z",
-      "play_count": 149,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "derived",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "alt rock",
-        "alt-rock",
-        "alternative rock",
-        "alternative-rock",
-        "celtic rock",
-        "pop rock"
-      ]
-    },
-    {
       "id": "5a0389d4-e29b-41fe-92a3-5b48933d46bc",
       "artist": "Nina Simone",
       "title": "Silk & Soul",
@@ -2976,6 +2976,61 @@
       "_genre_tags": [
         "jazz",
         "soul jazz"
+      ]
+    },
+    {
+      "id": "0ab2ffe7-9e67-4888-87bb-89c11c2057da",
+      "artist": "Cocteau Twins",
+      "title": "Milk & Kisses",
+      "release_year": 1996,
+      "genre_id": "rock",
+      "cover_url": "https://cdn-images.dzcdn.net/images/cover/f8c95b8fd77c50ac8e9b7cd9da9af9bb/500x500-000000-80-0-0.jpg",
+      "artwork_source": "deezer",
+      "colors": {
+        "primary": "#fbf7ec",
+        "secondary": "#f9e26f"
+      },
+      "total_tracks": 10,
+      "played_tracks": 10,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2025-07-02T01:59:56Z",
+      "play_count": 147,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated-partner",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "rock",
+        "shoegaze"
+      ]
+    },
+    {
+      "id": "6d50b672-4f8e-4b7a-917b-1ded22808632",
+      "artist": "Steve Lacy",
+      "title": "Gemini Rights",
+      "release_year": 2022,
+      "genre_id": "rnb-soul",
+      "cover_url": "https://coverartarchive.org/release/6d50b672-4f8e-4b7a-917b-1ded22808632/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#026cb7",
+        "secondary": "#d63e34"
+      },
+      "total_tracks": 10,
+      "played_tracks": 10,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2022-07-15T18:51:58Z",
+      "play_count": 145,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "alternative r&b",
+        "neo soul",
+        "r&b"
       ]
     },
     {
@@ -3005,34 +3060,6 @@
       ]
     },
     {
-      "id": "6d50b672-4f8e-4b7a-917b-1ded22808632",
-      "artist": "Steve Lacy",
-      "title": "Gemini Rights",
-      "release_year": 2022,
-      "genre_id": "rnb-soul",
-      "cover_url": "https://coverartarchive.org/release/6d50b672-4f8e-4b7a-917b-1ded22808632/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#026cb7",
-        "secondary": "#d63e34"
-      },
-      "total_tracks": 10,
-      "played_tracks": 10,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2022-07-15T18:51:58Z",
-      "play_count": 144,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "alternative r&b",
-        "neo soul",
-        "r&b"
-      ]
-    },
-    {
       "id": "5a027cce-b951-406c-927e-00d48013535e",
       "artist": "Toco",
       "title": "Outro Lugar",
@@ -3049,13 +3076,40 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2025-04-27T00:54:17Z",
-      "play_count": 142,
+      "play_count": 144,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated-partner",
       "_fuzzy_matches": 0,
       "_genre_tags": [
         "electronic"
+      ]
+    },
+    {
+      "id": "5e7edd16-01e7-4909-bf15-19b8b2b94752",
+      "artist": "Home",
+      "title": "Falling Into Place",
+      "release_year": 2016,
+      "genre_id": "electronic",
+      "cover_url": "https://coverartarchive.org/release/5e7edd16-01e7-4909-bf15-19b8b2b94752/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#6c664e",
+        "secondary": "#eccc3b"
+      },
+      "total_tracks": 15,
+      "played_tracks": 15,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2024-11-11T16:04:08Z",
+      "play_count": 141,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "electronic",
+        "synthwave"
       ]
     },
     {
@@ -3101,7 +3155,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2024-09-22T19:19:17Z",
-      "play_count": 138,
+      "play_count": 141,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -3113,33 +3167,6 @@
         "rap",
         "trap",
         "underground hip hop"
-      ]
-    },
-    {
-      "id": "5e7edd16-01e7-4909-bf15-19b8b2b94752",
-      "artist": "Home",
-      "title": "Falling Into Place",
-      "release_year": 2016,
-      "genre_id": "electronic",
-      "cover_url": "https://coverartarchive.org/release/5e7edd16-01e7-4909-bf15-19b8b2b94752/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#6c664e",
-        "secondary": "#eccc3b"
-      },
-      "total_tracks": 15,
-      "played_tracks": 15,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2024-11-11T16:04:08Z",
-      "play_count": 135,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "electronic",
-        "synthwave"
       ]
     },
     {
@@ -3159,7 +3186,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2025-07-05T21:03:02Z",
-      "play_count": 135,
+      "play_count": 137,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -3169,33 +3196,6 @@
         "alternative rock",
         "folk rock",
         "rock"
-      ]
-    },
-    {
-      "id": "0ab2ffe7-9e67-4888-87bb-89c11c2057da",
-      "artist": "Cocteau Twins",
-      "title": "Milk & Kisses",
-      "release_year": 1996,
-      "genre_id": "rock",
-      "cover_url": "https://cdn-images.dzcdn.net/images/cover/f8c95b8fd77c50ac8e9b7cd9da9af9bb/500x500-000000-80-0-0.jpg",
-      "artwork_source": "deezer",
-      "colors": {
-        "primary": "#fbf7ec",
-        "secondary": "#f9e26f"
-      },
-      "total_tracks": 10,
-      "played_tracks": 10,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2025-07-02T01:59:56Z",
-      "play_count": 135,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated-partner",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "rock",
-        "shoegaze"
       ]
     },
     {
@@ -3364,6 +3364,32 @@
       ]
     },
     {
+      "id": "ec873d45-a37c-4738-b817-36d8cc3591e9",
+      "artist": "Mk.gee",
+      "title": "Two Star & The Dream Police",
+      "release_year": 2024,
+      "genre_id": "rnb-soul",
+      "cover_url": "https://coverartarchive.org/release/ec873d45-a37c-4738-b817-36d8cc3591e9/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#056c8c",
+        "secondary": "#0b8df6"
+      },
+      "total_tracks": 12,
+      "played_tracks": 12,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2025-06-27T22:24:21Z",
+      "play_count": 119,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated-derived",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "alternative r&b"
+      ]
+    },
+    {
       "id": "7923aa4a-de8a-44df-8512-f2edf0c113eb",
       "artist": "Clairo",
       "title": "Charm",
@@ -3425,32 +3451,6 @@
       ]
     },
     {
-      "id": "ec873d45-a37c-4738-b817-36d8cc3591e9",
-      "artist": "Mk.gee",
-      "title": "Two Star & The Dream Police",
-      "release_year": 2024,
-      "genre_id": "rnb-soul",
-      "cover_url": "https://coverartarchive.org/release/ec873d45-a37c-4738-b817-36d8cc3591e9/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#056c8c",
-        "secondary": "#0b8df6"
-      },
-      "total_tracks": 12,
-      "played_tracks": 12,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2025-06-27T22:24:21Z",
-      "play_count": 115,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated-derived",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "alternative r&b"
-      ]
-    },
-    {
       "id": "05b2f6c8-f9fd-4499-bd70-6f7d629a9cd4",
       "artist": "The Beach Boys",
       "title": "Pet Sounds",
@@ -3467,7 +3467,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2026-07-09T16:47:11Z",
-      "play_count": 114,
+      "play_count": 116,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -3479,6 +3479,36 @@
         "pop",
         "pop rock",
         "psychedelic pop"
+      ]
+    },
+    {
+      "id": "56ad6149-5632-4d83-a0e9-689d00cecab9",
+      "artist": "The Police",
+      "title": "Zenyatta Mondatta",
+      "release_year": 1990,
+      "genre_id": "rock",
+      "cover_url": "https://coverartarchive.org/release/56ad6149-5632-4d83-a0e9-689d00cecab9/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#5b5e94",
+        "secondary": "#fce056"
+      },
+      "total_tracks": 11,
+      "played_tracks": 11,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2026-06-28T18:16:15Z",
+      "play_count": 114,
+      "missing_tracks": [],
+      "source": "musicbrainz_search",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "indie rock",
+        "new wave",
+        "pop rock",
+        "reggae rock",
+        "rock"
       ]
     },
     {
@@ -3498,7 +3528,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2024-03-20T18:33:38Z",
-      "play_count": 112,
+      "play_count": 114,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -3529,40 +3559,12 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2025-01-27T23:03:00Z",
-      "play_count": 111,
+      "play_count": 112,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated-derived",
       "_fuzzy_matches": 0,
       "_genre_tags": [
-        "rock"
-      ]
-    },
-    {
-      "id": "91975b77-c9f2-46d1-a03b-f1fffbda1d1c",
-      "artist": "Steely Dan",
-      "title": "Can't Buy A Thrill",
-      "release_year": 1972,
-      "genre_id": "rock",
-      "cover_url": "https://coverartarchive.org/release/91975b77-c9f2-46d1-a03b-f1fffbda1d1c/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#cdc981",
-        "secondary": "#bc2038"
-      },
-      "total_tracks": 10,
-      "played_tracks": 10,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2022-06-08T16:04:01Z",
-      "play_count": 111,
-      "missing_tracks": [],
-      "source": "musicbrainz_search",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "jazz rock",
-        "pop rock",
         "rock"
       ]
     },
@@ -3594,6 +3596,62 @@
       ]
     },
     {
+      "id": "91975b77-c9f2-46d1-a03b-f1fffbda1d1c",
+      "artist": "Steely Dan",
+      "title": "Can't Buy A Thrill",
+      "release_year": 1972,
+      "genre_id": "rock",
+      "cover_url": "https://coverartarchive.org/release/91975b77-c9f2-46d1-a03b-f1fffbda1d1c/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#cdc981",
+        "secondary": "#bc2038"
+      },
+      "total_tracks": 10,
+      "played_tracks": 10,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2022-06-08T16:04:01Z",
+      "play_count": 110,
+      "missing_tracks": [],
+      "source": "musicbrainz_search",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "jazz rock",
+        "pop rock",
+        "rock"
+      ]
+    },
+    {
+      "id": "0c288776-aed3-4680-b3a2-52046f92b5b9",
+      "artist": "Diana Krall",
+      "title": "The Look of Love",
+      "release_year": 2001,
+      "genre_id": "jazz",
+      "cover_url": "https://coverartarchive.org/release/0c288776-aed3-4680-b3a2-52046f92b5b9/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#586c3b",
+        "secondary": "#d08d5d"
+      },
+      "total_tracks": 10,
+      "played_tracks": 10,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2025-07-13T17:57:58Z",
+      "play_count": 108,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "contemporary jazz",
+        "jazz",
+        "vocal jazz"
+      ]
+    },
+    {
       "id": "a103f371-eb10-4adc-8456-a1b10a48d710",
       "artist": "Bill Withers",
       "title": "'Justments",
@@ -3618,34 +3676,6 @@
       "_genre_tags": [
         "rhythm and blues",
         "soul"
-      ]
-    },
-    {
-      "id": "0c288776-aed3-4680-b3a2-52046f92b5b9",
-      "artist": "Diana Krall",
-      "title": "The Look of Love",
-      "release_year": 2001,
-      "genre_id": "jazz",
-      "cover_url": "https://coverartarchive.org/release/0c288776-aed3-4680-b3a2-52046f92b5b9/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#586c3b",
-        "secondary": "#d08d5d"
-      },
-      "total_tracks": 10,
-      "played_tracks": 10,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2025-07-13T17:57:58Z",
-      "play_count": 107,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "contemporary jazz",
-        "jazz",
-        "vocal jazz"
       ]
     },
     {
@@ -3708,36 +3738,6 @@
       ]
     },
     {
-      "id": "56ad6149-5632-4d83-a0e9-689d00cecab9",
-      "artist": "The Police",
-      "title": "Zenyatta Mondatta",
-      "release_year": 1990,
-      "genre_id": "rock",
-      "cover_url": "https://coverartarchive.org/release/56ad6149-5632-4d83-a0e9-689d00cecab9/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#5b5e94",
-        "secondary": "#fce056"
-      },
-      "total_tracks": 11,
-      "played_tracks": 11,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2026-06-28T18:16:15Z",
-      "play_count": 103,
-      "missing_tracks": [],
-      "source": "musicbrainz_search",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "indie rock",
-        "new wave",
-        "pop rock",
-        "reggae rock",
-        "rock"
-      ]
-    },
-    {
       "id": "054d2a63-97a8-4e68-ace0-519d6dea7551",
       "artist": "Nirvana",
       "title": "In Utero",
@@ -3754,7 +3754,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2026-01-21T20:54:25Z",
-      "play_count": 101,
+      "play_count": 104,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -3785,7 +3785,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2024-08-11T18:15:30Z",
-      "play_count": 100,
+      "play_count": 101,
       "missing_tracks": [],
       "source": "musicbrainz_search",
       "color_strategy": "saturated-derived",
@@ -3813,7 +3813,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2023-04-20T02:29:12Z",
-      "play_count": 97,
+      "play_count": 98,
       "missing_tracks": [],
       "source": "musicbrainz_search",
       "color_strategy": "saturated",
@@ -3859,6 +3859,33 @@
       ]
     },
     {
+      "id": "3da7c423-7417-3983-ac8d-35cdac7589b5",
+      "artist": "Red Garland",
+      "title": "Red Garland's Piano",
+      "release_year": 2006,
+      "genre_id": "jazz",
+      "cover_url": "https://coverartarchive.org/release/3da7c423-7417-3983-ac8d-35cdac7589b5/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#ed0226",
+        "secondary": "#a63f46"
+      },
+      "total_tracks": 8,
+      "played_tracks": 8,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2023-07-20T18:43:56Z",
+      "play_count": 96,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "hard bop",
+        "jazz"
+      ]
+    },
+    {
       "id": "1746c68a-5a0a-4eae-a4dc-b5496251a1d5",
       "artist": "Joey Bada$$",
       "title": "2000",
@@ -3887,33 +3914,6 @@
         "jazz rap",
         "pop rap",
         "rap"
-      ]
-    },
-    {
-      "id": "3da7c423-7417-3983-ac8d-35cdac7589b5",
-      "artist": "Red Garland",
-      "title": "Red Garland's Piano",
-      "release_year": 2006,
-      "genre_id": "jazz",
-      "cover_url": "https://coverartarchive.org/release/3da7c423-7417-3983-ac8d-35cdac7589b5/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#ed0226",
-        "secondary": "#a63f46"
-      },
-      "total_tracks": 8,
-      "played_tracks": 8,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2023-07-20T18:43:56Z",
-      "play_count": 95,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "hard bop",
-        "jazz"
       ]
     },
     {
@@ -4160,7 +4160,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2025-06-29T17:38:17Z",
-      "play_count": 80,
+      "play_count": 81,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -4191,7 +4191,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2023-10-07T22:38:32Z",
-      "play_count": 78,
+      "play_count": 79,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "dominant",
@@ -4433,6 +4433,36 @@
       ]
     },
     {
+      "id": "03e42be9-909d-43d7-bc4b-c193a9676865",
+      "artist": "John Mayer",
+      "title": "Continuum",
+      "release_year": 2006,
+      "genre_id": "rock",
+      "cover_url": "https://coverartarchive.org/release/03e42be9-909d-43d7-bc4b-c193a9676865/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#5e6458",
+        "secondary": "#8fa785"
+      },
+      "total_tracks": 12,
+      "played_tracks": 12,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2021-03-24T01:07:09Z",
+      "play_count": 71,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "derived",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "alternative rock",
+        "blues rock",
+        "indie rock",
+        "pop rock",
+        "rock"
+      ]
+    },
+    {
       "id": "07d02411-6722-4071-8130-14fb8512288a",
       "artist": "Slowdive",
       "title": "Souvlaki",
@@ -4461,33 +4491,58 @@
       ]
     },
     {
-      "id": "03e42be9-909d-43d7-bc4b-c193a9676865",
-      "artist": "John Mayer",
-      "title": "Continuum",
-      "release_year": 2006,
-      "genre_id": "rock",
-      "cover_url": "https://coverartarchive.org/release/03e42be9-909d-43d7-bc4b-c193a9676865/front-500",
+      "id": "95fb59ed-1ece-419b-b62f-aef31e0ebf36",
+      "artist": "Brent Faiyaz",
+      "title": "WASTELAND",
+      "release_year": 2022,
+      "genre_id": "rnb-soul",
+      "cover_url": "https://coverartarchive.org/release/95fb59ed-1ece-419b-b62f-aef31e0ebf36/front-500",
       "artwork_source": "coverartarchive",
       "colors": {
-        "primary": "#5e6458",
-        "secondary": "#8fa785"
+        "primary": "#a76667",
+        "secondary": "#d0b4ad"
       },
-      "total_tracks": 12,
-      "played_tracks": 12,
+      "total_tracks": 19,
+      "played_tracks": 19,
       "completion": 1.0,
       "unlocked": true,
-      "unlocked_at": "2021-03-24T01:07:09Z",
-      "play_count": 70,
+      "unlocked_at": "2022-07-09T02:04:17Z",
+      "play_count": 68,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
-      "color_strategy": "derived",
+      "color_strategy": "saturated-derived",
+      "_fuzzy_matches": 1,
+      "_genre_tags": [
+        "alternative r&b",
+        "contemporary r&b",
+        "r&b"
+      ]
+    },
+    {
+      "id": "6ed25a3d-6d9e-4ff2-b164-180608b8569b",
+      "artist": "TV Girl",
+      "title": "Who Really Cares",
+      "release_year": 2016,
+      "genre_id": "pop",
+      "cover_url": "https://coverartarchive.org/release/6ed25a3d-6d9e-4ff2-b164-180608b8569b/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#ea1886",
+        "secondary": "#3755d7"
+      },
+      "total_tracks": 10,
+      "played_tracks": 10,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2026-07-06T20:26:19Z",
+      "play_count": 68,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated",
       "_fuzzy_matches": 0,
       "_genre_tags": [
-        "alternative rock",
-        "blues rock",
-        "indie rock",
-        "pop rock",
-        "rock"
+        "indie pop",
+        "pop"
       ]
     },
     {
@@ -4520,58 +4575,58 @@
       ]
     },
     {
-      "id": "6ed25a3d-6d9e-4ff2-b164-180608b8569b",
-      "artist": "TV Girl",
-      "title": "Who Really Cares",
-      "release_year": 2016,
-      "genre_id": "pop",
-      "cover_url": "https://coverartarchive.org/release/6ed25a3d-6d9e-4ff2-b164-180608b8569b/front-500",
-      "artwork_source": "coverartarchive",
+      "id": "065fecd2-191d-4a16-aa82-36050974a0a3",
+      "artist": "Blind Melon",
+      "title": "Blind Melon",
+      "release_year": 1992,
+      "genre_id": "rock",
+      "cover_url": "https://cdn-images.dzcdn.net/images/cover/628f914a70ae6d6f0e21055373c152b3/500x500-000000-80-0-0.jpg",
+      "artwork_source": "deezer",
       "colors": {
-        "primary": "#ea1886",
-        "secondary": "#3755d7"
+        "primary": "#88564d",
+        "secondary": "#da9062"
       },
-      "total_tracks": 10,
-      "played_tracks": 10,
+      "total_tracks": 13,
+      "played_tracks": 13,
       "completion": 1.0,
       "unlocked": true,
-      "unlocked_at": "2026-07-06T20:26:19Z",
-      "play_count": 67,
+      "unlocked_at": "2025-08-18T16:39:30Z",
+      "play_count": 66,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
       "_fuzzy_matches": 0,
       "_genre_tags": [
-        "indie pop",
-        "pop"
+        "alternative rock",
+        "rock"
       ]
     },
     {
-      "id": "95fb59ed-1ece-419b-b62f-aef31e0ebf36",
-      "artist": "Brent Faiyaz",
-      "title": "WASTELAND",
-      "release_year": 2022,
-      "genre_id": "rnb-soul",
-      "cover_url": "https://coverartarchive.org/release/95fb59ed-1ece-419b-b62f-aef31e0ebf36/front-500",
+      "id": "e461c1b4-4eb5-46c2-8eb1-1b29e1befdf4",
+      "artist": "TV Girl",
+      "title": "French Exit",
+      "release_year": 2014,
+      "genre_id": "pop",
+      "cover_url": "https://coverartarchive.org/release/e461c1b4-4eb5-46c2-8eb1-1b29e1befdf4/front-500",
       "artwork_source": "coverartarchive",
       "colors": {
-        "primary": "#a76667",
-        "secondary": "#d0b4ad"
+        "primary": "#db4a4a",
+        "secondary": "#eeb6a8"
       },
-      "total_tracks": 19,
-      "played_tracks": 19,
+      "total_tracks": 12,
+      "played_tracks": 12,
       "completion": 1.0,
       "unlocked": true,
-      "unlocked_at": "2022-07-09T02:04:17Z",
-      "play_count": 65,
+      "unlocked_at": "2026-07-06T19:46:34Z",
+      "play_count": 66,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated-derived",
-      "_fuzzy_matches": 1,
+      "_fuzzy_matches": 0,
       "_genre_tags": [
-        "alternative r&b",
-        "contemporary r&b",
-        "r&b"
+        "bedroom pop",
+        "indie pop",
+        "pop"
       ]
     },
     {
@@ -4598,33 +4653,6 @@
       "_fuzzy_matches": 0,
       "_genre_tags": [
         "trap"
-      ]
-    },
-    {
-      "id": "065fecd2-191d-4a16-aa82-36050974a0a3",
-      "artist": "Blind Melon",
-      "title": "Blind Melon",
-      "release_year": 1992,
-      "genre_id": "rock",
-      "cover_url": "https://cdn-images.dzcdn.net/images/cover/628f914a70ae6d6f0e21055373c152b3/500x500-000000-80-0-0.jpg",
-      "artwork_source": "deezer",
-      "colors": {
-        "primary": "#88564d",
-        "secondary": "#da9062"
-      },
-      "total_tracks": 13,
-      "played_tracks": 13,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2025-08-18T16:39:30Z",
-      "play_count": 65,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "alternative rock",
-        "rock"
       ]
     },
     {
@@ -4659,31 +4687,31 @@
       ]
     },
     {
-      "id": "e461c1b4-4eb5-46c2-8eb1-1b29e1befdf4",
-      "artist": "TV Girl",
-      "title": "French Exit",
-      "release_year": 2014,
-      "genre_id": "pop",
-      "cover_url": "https://coverartarchive.org/release/e461c1b4-4eb5-46c2-8eb1-1b29e1befdf4/front-500",
+      "id": "27966ec1-8941-44e2-9833-52762e00444d",
+      "artist": "Diana Krall",
+      "title": "This Dream Of You",
+      "release_year": 2020,
+      "genre_id": "jazz",
+      "cover_url": "https://coverartarchive.org/release/27966ec1-8941-44e2-9833-52762e00444d/front-500",
       "artwork_source": "coverartarchive",
       "colors": {
-        "primary": "#db4a4a",
-        "secondary": "#eeb6a8"
+        "primary": "#7f5287",
+        "secondary": "#836f86"
       },
       "total_tracks": 12,
       "played_tracks": 12,
       "completion": 1.0,
       "unlocked": true,
-      "unlocked_at": "2026-07-06T19:46:34Z",
-      "play_count": 65,
+      "unlocked_at": "2025-09-16T17:04:32Z",
+      "play_count": 63,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
-      "color_strategy": "saturated-derived",
+      "color_strategy": "saturated",
       "_fuzzy_matches": 0,
       "_genre_tags": [
-        "bedroom pop",
-        "indie pop",
-        "pop"
+        "contemporary jazz",
+        "jazz",
+        "vocal jazz"
       ]
     },
     {
@@ -4741,31 +4769,32 @@
       ]
     },
     {
-      "id": "27966ec1-8941-44e2-9833-52762e00444d",
-      "artist": "Diana Krall",
-      "title": "This Dream Of You",
-      "release_year": 2020,
-      "genre_id": "jazz",
-      "cover_url": "https://coverartarchive.org/release/27966ec1-8941-44e2-9833-52762e00444d/front-500",
+      "id": "84d8867f-02fb-4154-b115-fec4926ddc31",
+      "artist": "Ray Charles",
+      "title": "Ray Charles (aka: Hallelujah, I Love Her So)",
+      "release_year": 2005,
+      "genre_id": "blues",
+      "cover_url": "https://coverartarchive.org/release/84d8867f-02fb-4154-b115-fec4926ddc31/front-500",
       "artwork_source": "coverartarchive",
       "colors": {
-        "primary": "#7f5287",
-        "secondary": "#836f86"
+        "primary": "#1c6d86",
+        "secondary": "#0a699e"
       },
-      "total_tracks": 12,
-      "played_tracks": 12,
+      "total_tracks": 14,
+      "played_tracks": 14,
       "completion": 1.0,
       "unlocked": true,
-      "unlocked_at": "2025-09-16T17:04:32Z",
+      "unlocked_at": "2026-08-08T19:25:00Z",
       "play_count": 61,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
       "_fuzzy_matches": 0,
       "_genre_tags": [
-        "contemporary jazz",
-        "jazz",
-        "vocal jazz"
+        "blues",
+        "jump blues",
+        "rhythm and blues",
+        "soul blues"
       ]
     },
     {
@@ -4800,6 +4829,34 @@
       ]
     },
     {
+      "id": "07fa21fa-235b-4ead-8466-daf8a42899d8",
+      "artist": "Malcolm Todd",
+      "title": "Sweet Boy",
+      "release_year": 2023,
+      "genre_id": "pop",
+      "cover_url": "https://coverartarchive.org/release/07fa21fa-235b-4ead-8466-daf8a42899d8/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#626262",
+        "secondary": "#cccccc"
+      },
+      "total_tracks": 1,
+      "played_tracks": 1,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2026-02-14T20:16:00Z",
+      "play_count": 60,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "dominant",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "alternative pop",
+        "bedroom pop",
+        "indie pop"
+      ]
+    },
+    {
       "id": "d948ce00-9c77-4599-a62d-b89e7b3de79a",
       "artist": "Kid Cudi",
       "title": "Entergalactic",
@@ -4823,34 +4880,6 @@
       "_fuzzy_matches": 0,
       "_genre_tags": [
         "hip hop"
-      ]
-    },
-    {
-      "id": "07fa21fa-235b-4ead-8466-daf8a42899d8",
-      "artist": "Malcolm Todd",
-      "title": "Sweet Boy",
-      "release_year": 2023,
-      "genre_id": "pop",
-      "cover_url": "https://coverartarchive.org/release/07fa21fa-235b-4ead-8466-daf8a42899d8/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#626262",
-        "secondary": "#cccccc"
-      },
-      "total_tracks": 1,
-      "played_tracks": 1,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2026-02-14T20:16:00Z",
-      "play_count": 59,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "dominant",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "alternative pop",
-        "bedroom pop",
-        "indie pop"
       ]
     },
     {
@@ -4914,35 +4943,6 @@
       ]
     },
     {
-      "id": "84d8867f-02fb-4154-b115-fec4926ddc31",
-      "artist": "Ray Charles",
-      "title": "Ray Charles (aka: Hallelujah, I Love Her So)",
-      "release_year": 2005,
-      "genre_id": "blues",
-      "cover_url": "https://coverartarchive.org/release/84d8867f-02fb-4154-b115-fec4926ddc31/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#1c6d86",
-        "secondary": "#0a699e"
-      },
-      "total_tracks": 14,
-      "played_tracks": 14,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2026-08-08T19:25:00Z",
-      "play_count": 54,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "blues",
-        "jump blues",
-        "rhythm and blues",
-        "soul blues"
-      ]
-    },
-    {
       "id": "03b381ba-f859-3da0-873c-e359c56f25dd",
       "artist": "Toro y Moi",
       "title": "Underneath the Pine",
@@ -4969,6 +4969,33 @@
         "pop",
         "psychedelic pop",
         "synth-pop"
+      ]
+    },
+    {
+      "id": "09aff2d8-a861-49e4-b502-eedd05ed5fe2",
+      "artist": "BROCKHAMPTON",
+      "title": "GINGER",
+      "release_year": 2019,
+      "genre_id": "hip-hop",
+      "cover_url": "https://coverartarchive.org/release/09aff2d8-a861-49e4-b502-eedd05ed5fe2/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#58627d",
+        "secondary": "#9394b3"
+      },
+      "total_tracks": 12,
+      "played_tracks": 12,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2021-04-23T01:19:42Z",
+      "play_count": 53,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated-derived",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "hip hop",
+        "pop rap"
       ]
     },
     {
@@ -5026,33 +5053,6 @@
       "_fuzzy_matches": 0,
       "_genre_tags": [
         "lo-fi hip hop"
-      ]
-    },
-    {
-      "id": "09aff2d8-a861-49e4-b502-eedd05ed5fe2",
-      "artist": "BROCKHAMPTON",
-      "title": "GINGER",
-      "release_year": 2019,
-      "genre_id": "hip-hop",
-      "cover_url": "https://coverartarchive.org/release/09aff2d8-a861-49e4-b502-eedd05ed5fe2/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#58627d",
-        "secondary": "#9394b3"
-      },
-      "total_tracks": 12,
-      "played_tracks": 12,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2021-04-23T01:19:42Z",
-      "play_count": 52,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated-derived",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "hip hop",
-        "pop rap"
       ]
     },
     {
@@ -5285,6 +5285,32 @@
       ]
     },
     {
+      "id": "d1b17629-b09d-48ad-afba-a29e05742d80",
+      "artist": "Action Bronson",
+      "title": "Johann Sebastian Bachlava The Doctor",
+      "release_year": 2024,
+      "genre_id": "hip-hop",
+      "cover_url": "https://coverartarchive.org/release/d1b17629-b09d-48ad-afba-a29e05742d80/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#e7c11e",
+        "secondary": "#065ec6"
+      },
+      "total_tracks": 11,
+      "played_tracks": 11,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2024-07-11T15:28:01Z",
+      "play_count": 45,
+      "missing_tracks": [],
+      "source": "musicbrainz_search",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "hip hop"
+      ]
+    },
+    {
       "id": "0b69d11e-6145-4ade-9adf-a5e195f767d6",
       "artist": "KOTA The Friend",
       "title": "To Kill A Sunrise",
@@ -5334,32 +5360,6 @@
       "_fuzzy_matches": 0,
       "_genre_tags": [
         "uk hip hop"
-      ]
-    },
-    {
-      "id": "d1b17629-b09d-48ad-afba-a29e05742d80",
-      "artist": "Action Bronson",
-      "title": "Johann Sebastian Bachlava The Doctor",
-      "release_year": 2024,
-      "genre_id": "hip-hop",
-      "cover_url": "https://coverartarchive.org/release/d1b17629-b09d-48ad-afba-a29e05742d80/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#e7c11e",
-        "secondary": "#065ec6"
-      },
-      "total_tracks": 11,
-      "played_tracks": 11,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2024-07-11T15:28:01Z",
-      "play_count": 44,
-      "missing_tracks": [],
-      "source": "musicbrainz_search",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "hip hop"
       ]
     },
     {
@@ -5471,6 +5471,34 @@
         "hip hop",
         "jazz rap",
         "pop rap"
+      ]
+    },
+    {
+      "id": "e2bd4e4f-b972-472f-adcb-3d3cea15d461",
+      "artist": "Kero One",
+      "title": "Windmills of the Soul",
+      "release_year": 2006,
+      "genre_id": "hip-hop",
+      "cover_url": "https://coverartarchive.org/release/e2bd4e4f-b972-472f-adcb-3d3cea15d461/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#c70000",
+        "secondary": "#ea5401"
+      },
+      "total_tracks": 13,
+      "played_tracks": 13,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2026-09-17T22:37:55Z",
+      "play_count": 38,
+      "missing_tracks": [],
+      "source": "musicbrainz_search",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "boom bap",
+        "conscious hip hop",
+        "hip hop"
       ]
     },
     {
@@ -5617,6 +5645,36 @@
       ]
     },
     {
+      "id": "e468d23a-aa67-4301-ab2a-61bae72c175a",
+      "artist": "Lynyrd Skynyrd",
+      "title": "Pronounced' Leh-'Nerd 'Skin-'Nerd",
+      "release_year": 2014,
+      "genre_id": "rock",
+      "cover_url": "https://coverartarchive.org/release/e468d23a-aa67-4301-ab2a-61bae72c175a/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#b09982",
+        "secondary": "#ab7b51"
+      },
+      "total_tracks": 8,
+      "played_tracks": 8,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2025-06-29T16:42:09Z",
+      "play_count": 37,
+      "missing_tracks": [],
+      "source": "musicbrainz_search",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "blues rock",
+        "classic rock",
+        "hard rock",
+        "rock",
+        "southern rock"
+      ]
+    },
+    {
       "id": "e4579e0f-268d-4623-a1bb-a9b8bca61f7c",
       "artist": "Tyler, The Creator",
       "title": "Music Inspired by Illumination & Dr. Seuss' The Grinch",
@@ -5640,36 +5698,6 @@
       "_fuzzy_matches": 0,
       "_genre_tags": [
         "hip hop"
-      ]
-    },
-    {
-      "id": "e468d23a-aa67-4301-ab2a-61bae72c175a",
-      "artist": "Lynyrd Skynyrd",
-      "title": "Pronounced' Leh-'Nerd 'Skin-'Nerd",
-      "release_year": 2014,
-      "genre_id": "rock",
-      "cover_url": "https://coverartarchive.org/release/e468d23a-aa67-4301-ab2a-61bae72c175a/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#b09982",
-        "secondary": "#ab7b51"
-      },
-      "total_tracks": 8,
-      "played_tracks": 8,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2025-06-29T16:42:09Z",
-      "play_count": 36,
-      "missing_tracks": [],
-      "source": "musicbrainz_search",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "blues rock",
-        "classic rock",
-        "hard rock",
-        "rock",
-        "southern rock"
       ]
     },
     {
@@ -5858,13 +5886,44 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2025-01-15T15:47:56Z",
-      "play_count": 30,
+      "play_count": 31,
       "missing_tracks": [],
       "source": "musicbrainz_search",
       "color_strategy": "derived",
       "_fuzzy_matches": 2,
       "_genre_tags": [
         "jazz"
+      ]
+    },
+    {
+      "id": "03c93d2c-430c-4961-97b0-56e0d7cb754b",
+      "artist": "Coldplay",
+      "title": "A Rush of Blood to the Head",
+      "release_year": 2013,
+      "genre_id": "rock",
+      "cover_url": "https://coverartarchive.org/release/03c93d2c-430c-4961-97b0-56e0d7cb754b/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#f5f9fb",
+        "secondary": "#c0c4c5"
+      },
+      "total_tracks": 11,
+      "played_tracks": 11,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2022-07-12T17:36:37Z",
+      "play_count": 30,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "dominant",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "alt rock",
+        "alt-rock",
+        "alternative rock",
+        "alternative rock / pop",
+        "art rock",
+        "piano rock"
       ]
     },
     {
@@ -5923,6 +5982,33 @@
         "hip hop",
         "instrumental hip hop",
         "lo-fi hip hop"
+      ]
+    },
+    {
+      "id": "085f4fe6-97a4-4e7f-b88c-5225370f153d",
+      "artist": "Mazzy Star",
+      "title": "Seasons of Your Day",
+      "release_year": 2013,
+      "genre_id": "rock",
+      "cover_url": "https://coverartarchive.org/release/085f4fe6-97a4-4e7f-b88c-5225370f153d/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#616161",
+        "secondary": "#971fd9"
+      },
+      "total_tracks": 10,
+      "played_tracks": 10,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2026-06-01T20:16:32Z",
+      "play_count": 29,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated-partner",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "alternative rock",
+        "rock"
       ]
     },
     {
@@ -6005,33 +6091,6 @@
       ]
     },
     {
-      "id": "085f4fe6-97a4-4e7f-b88c-5225370f153d",
-      "artist": "Mazzy Star",
-      "title": "Seasons of Your Day",
-      "release_year": 2013,
-      "genre_id": "rock",
-      "cover_url": "https://coverartarchive.org/release/085f4fe6-97a4-4e7f-b88c-5225370f153d/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#616161",
-        "secondary": "#971fd9"
-      },
-      "total_tracks": 10,
-      "played_tracks": 10,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2026-06-01T20:16:32Z",
-      "play_count": 27,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated-partner",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "alternative rock",
-        "rock"
-      ]
-    },
-    {
       "id": "dfb0eb62-e729-4fc3-b198-c50283d9ed17",
       "artist": "Beyoncé",
       "title": "RENAISSANCE",
@@ -6063,6 +6122,32 @@
       ]
     },
     {
+      "id": "28edd186-1646-48f7-a158-b90615fc9fc4",
+      "artist": "BROCKHAMPTON",
+      "title": "TM",
+      "release_year": 2022,
+      "genre_id": "hip-hop",
+      "cover_url": "https://coverartarchive.org/release/28edd186-1646-48f7-a158-b90615fc9fc4/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#e6e4da",
+        "secondary": "#b7b997"
+      },
+      "total_tracks": 11,
+      "played_tracks": 11,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2022-11-18T05:37:52Z",
+      "play_count": 25,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "derived",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "hip hop"
+      ]
+    },
+    {
       "id": "44514482-c3a3-3f26-9f75-356241ba4a3f",
       "artist": "Minnie Riperton",
       "title": "Come to My Garden",
@@ -6088,6 +6173,36 @@
         "funk soul",
         "r&b",
         "soul"
+      ]
+    },
+    {
+      "id": "1a17bdfe-2707-388f-a546-8d3a2b629cf9",
+      "artist": "Hall & Oates",
+      "title": "Abandoned Luncheonette",
+      "release_year": 1973,
+      "genre_id": "rock",
+      "cover_url": "https://coverartarchive.org/release/1a17bdfe-2707-388f-a546-8d3a2b629cf9/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#6ad172",
+        "secondary": "#e2303c"
+      },
+      "total_tracks": 9,
+      "played_tracks": 9,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2026-02-13T18:02:45Z",
+      "play_count": 24,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "classic rock",
+        "pop rock",
+        "rock",
+        "soft rock",
+        "yacht rock"
       ]
     },
     {
@@ -6137,7 +6252,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2021-11-13T04:17:29Z",
-      "play_count": 22,
+      "play_count": 23,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated-derived",
@@ -6177,32 +6292,6 @@
         "gangsta rap",
         "hip hop",
         "jazz rap"
-      ]
-    },
-    {
-      "id": "28edd186-1646-48f7-a158-b90615fc9fc4",
-      "artist": "BROCKHAMPTON",
-      "title": "TM",
-      "release_year": 2022,
-      "genre_id": "hip-hop",
-      "cover_url": "https://coverartarchive.org/release/28edd186-1646-48f7-a158-b90615fc9fc4/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#e6e4da",
-        "secondary": "#b7b997"
-      },
-      "total_tracks": 11,
-      "played_tracks": 11,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2022-11-18T05:37:52Z",
-      "play_count": 22,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "derived",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "hip hop"
       ]
     },
     {
@@ -6285,67 +6374,6 @@
       ]
     },
     {
-      "id": "03c93d2c-430c-4961-97b0-56e0d7cb754b",
-      "artist": "Coldplay",
-      "title": "A Rush of Blood to the Head",
-      "release_year": 2013,
-      "genre_id": "rock",
-      "cover_url": "https://coverartarchive.org/release/03c93d2c-430c-4961-97b0-56e0d7cb754b/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#f5f9fb",
-        "secondary": "#c0c4c5"
-      },
-      "total_tracks": 11,
-      "played_tracks": 11,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2022-07-12T17:36:37Z",
-      "play_count": 21,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "dominant",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "alt rock",
-        "alt-rock",
-        "alternative rock",
-        "alternative rock / pop",
-        "art rock",
-        "piano rock"
-      ]
-    },
-    {
-      "id": "1a17bdfe-2707-388f-a546-8d3a2b629cf9",
-      "artist": "Hall & Oates",
-      "title": "Abandoned Luncheonette",
-      "release_year": 1973,
-      "genre_id": "rock",
-      "cover_url": "https://coverartarchive.org/release/1a17bdfe-2707-388f-a546-8d3a2b629cf9/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#6ad172",
-        "secondary": "#e2303c"
-      },
-      "total_tracks": 9,
-      "played_tracks": 9,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2026-02-13T18:02:45Z",
-      "play_count": 21,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "classic rock",
-        "pop rock",
-        "rock",
-        "soft rock",
-        "yacht rock"
-      ]
-    },
-    {
       "id": "067c4d0a-665c-4e00-9650-168236febac5",
       "artist": "Larry Lovestein & The Velvet Revival",
       "title": "You",
@@ -6388,7 +6416,7 @@
       "completion": 1.0,
       "unlocked": true,
       "unlocked_at": "2022-07-11T02:35:12Z",
-      "play_count": 18,
+      "play_count": 19,
       "missing_tracks": [],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
@@ -6670,6 +6698,33 @@
       ]
     },
     {
+      "id": "8271bf8a-4831-4cc6-b927-467fc387f3f6",
+      "artist": "Home",
+      "title": "Hold",
+      "release_year": 2019,
+      "genre_id": "electronic",
+      "cover_url": "https://coverartarchive.org/release/8271bf8a-4831-4cc6-b927-467fc387f3f6/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#c70004",
+        "secondary": "#b63714"
+      },
+      "total_tracks": 6,
+      "played_tracks": 6,
+      "completion": 1.0,
+      "unlocked": true,
+      "unlocked_at": "2024-11-11T16:18:29Z",
+      "play_count": 15,
+      "missing_tracks": [],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "electronic",
+        "synthwave"
+      ]
+    },
+    {
       "id": "ea91d111-1cbe-434a-a52e-fb9a3bd75a1a",
       "artist": "jazzinuf",
       "title": "Sun Dance",
@@ -6808,33 +6863,6 @@
         "r&b",
         "smooth soul",
         "soul"
-      ]
-    },
-    {
-      "id": "8271bf8a-4831-4cc6-b927-467fc387f3f6",
-      "artist": "Home",
-      "title": "Hold",
-      "release_year": 2019,
-      "genre_id": "electronic",
-      "cover_url": "https://coverartarchive.org/release/8271bf8a-4831-4cc6-b927-467fc387f3f6/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#c70004",
-        "secondary": "#b63714"
-      },
-      "total_tracks": 6,
-      "played_tracks": 6,
-      "completion": 1.0,
-      "unlocked": true,
-      "unlocked_at": "2024-11-11T16:18:29Z",
-      "play_count": 13,
-      "missing_tracks": [],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "electronic",
-        "synthwave"
       ]
     },
     {
@@ -7078,7 +7106,7 @@
       "completion": 0.9737,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 1980,
+      "play_count": 1994,
       "missing_tracks": [
         "Jay Dee 19 (alternative)"
       ],
@@ -7109,7 +7137,7 @@
       "completion": 0.963,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 216,
+      "play_count": 217,
       "missing_tracks": [
         "Ratha Be Ya Nigga"
       ],
@@ -7170,7 +7198,7 @@
       "completion": 0.9524,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 619,
+      "play_count": 689,
       "missing_tracks": [
         "Fall n Love"
       ],
@@ -7198,7 +7226,7 @@
       "completion": 0.95,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 336,
+      "play_count": 338,
       "missing_tracks": [
         "Cartoons (Redone&Remastered)"
       ],
@@ -7258,7 +7286,7 @@
       "completion": 0.9412,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 434,
+      "play_count": 437,
       "missing_tracks": [
         "Piñata"
       ],
@@ -7315,7 +7343,7 @@
       "completion": 0.9412,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 196,
+      "play_count": 199,
       "missing_tracks": [
         "Loverman"
       ],
@@ -7344,7 +7372,7 @@
       "completion": 0.9412,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 61,
+      "play_count": 63,
       "missing_tracks": [
         "四季ノ唄"
       ],
@@ -7405,7 +7433,7 @@
       "completion": 0.9412,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 25,
+      "play_count": 26,
       "missing_tracks": [
         "make this ramen"
       ],
@@ -7434,7 +7462,7 @@
       "completion": 0.9375,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 512,
+      "play_count": 514,
       "missing_tracks": [
         "MM..FOOD Drive Tour"
       ],
@@ -7464,7 +7492,7 @@
       "completion": 0.9375,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 240,
+      "play_count": 245,
       "missing_tracks": [
         "Fuckin’ Problems"
       ],
@@ -7497,7 +7525,7 @@
       "completion": 0.9375,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 137,
+      "play_count": 138,
       "missing_tracks": [
         "3AM on Glenwood"
       ],
@@ -7653,7 +7681,7 @@
       "completion": 0.9355,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 1014,
+      "play_count": 1017,
       "missing_tracks": [
         "Donuts (outro)",
         "Donuts (intro)"
@@ -7684,7 +7712,7 @@
       "completion": 0.9333,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 546,
+      "play_count": 549,
       "missing_tracks": [
         "Suspect"
       ],
@@ -7716,7 +7744,7 @@
       "completion": 0.9333,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 372,
+      "play_count": 385,
       "missing_tracks": [
         "Something Big"
       ],
@@ -7744,7 +7772,7 @@
       "completion": 0.9333,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 351,
+      "play_count": 353,
       "missing_tracks": [
         "Slow Jamz"
       ],
@@ -7800,7 +7828,7 @@
       "completion": 0.9333,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 276,
+      "play_count": 277,
       "missing_tracks": [
         "Obrigado"
       ],
@@ -7828,7 +7856,7 @@
       "completion": 0.9333,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 199,
+      "play_count": 201,
       "missing_tracks": [
         "Constellations (demo version)"
       ],
@@ -7957,7 +7985,7 @@
       "completion": 0.9333,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 58,
+      "play_count": 59,
       "missing_tracks": [
         "Sparkle (Mr. Midnight mix)"
       ],
@@ -7987,7 +8015,7 @@
       "completion": 0.9286,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 577,
+      "play_count": 587,
       "missing_tracks": [
         "Luv (sic.), Part 3"
       ],
@@ -8078,7 +8106,7 @@
       "completion": 0.9286,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 353,
+      "play_count": 355,
       "missing_tracks": [
         "[untitled]"
       ],
@@ -8111,7 +8139,7 @@
       "completion": 0.9286,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 207,
+      "play_count": 208,
       "missing_tracks": [
         "Interlude"
       ],
@@ -8139,7 +8167,7 @@
       "completion": 0.9286,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 196,
+      "play_count": 197,
       "missing_tracks": [
         "I Get Along Without You Very Well"
       ],
@@ -8196,7 +8224,7 @@
       "completion": 0.9286,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 109,
+      "play_count": 110,
       "missing_tracks": [
         "D4L"
       ],
@@ -8290,7 +8318,7 @@
       "completion": 0.9231,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 177,
+      "play_count": 179,
       "missing_tracks": [
         "Blueprint (Momma Loves Me) / Breathe Easy (Lyrical Exercise) / Girls, Girls, Girls (remix)"
       ],
@@ -8387,7 +8415,7 @@
       "completion": 0.9167,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 481,
+      "play_count": 519,
       "missing_tracks": [
         "EXACTLY WHAT YOU RUN FROM YOU END UP CHASING"
       ],
@@ -8416,7 +8444,7 @@
       "completion": 0.9167,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 326,
+      "play_count": 327,
       "missing_tracks": [
         "Pinocchio Story (freestyle live from Singapore)"
       ],
@@ -8447,7 +8475,7 @@
       "completion": 0.9167,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 257,
+      "play_count": 259,
       "missing_tracks": [
         "Linus and Lucy (alternate reprise take 1)",
         "Charlie Brown Theme (alternate reprise take 2)"
@@ -8477,7 +8505,7 @@
       "completion": 0.9167,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 186,
+      "play_count": 187,
       "missing_tracks": [
         "Hard Target"
       ],
@@ -8507,7 +8535,7 @@
       "completion": 0.9167,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 174,
+      "play_count": 175,
       "missing_tracks": [
         "Cool Breeze on the Rocks",
         "Plug Tunin’ (original 12″ version)"
@@ -8552,6 +8580,35 @@
       ]
     },
     {
+      "id": "308f00da-a3ac-3940-9290-516ef142ce86",
+      "artist": "Q-Tip",
+      "title": "The Renaissance",
+      "release_year": 2008,
+      "genre_id": "hip-hop",
+      "cover_url": "https://cdn-images.dzcdn.net/images/cover/e6d5b7d75349318a2368fdb6bc9c865c/500x500-000000-80-0-0.jpg",
+      "artwork_source": "deezer",
+      "colors": {
+        "primary": "#9b9f9e",
+        "secondary": "#d2d2d2"
+      },
+      "total_tracks": 12,
+      "played_tracks": 11,
+      "completion": 0.9167,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 63,
+      "missing_tracks": [
+        "Dance on Glass"
+      ],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "dominant",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "alternative hip hop",
+        "hip hop"
+      ]
+    },
+    {
       "id": "b16469da-9d26-46d2-bf05-3a3193956d65",
       "artist": "Roberto Menescal E Seu Conjunto",
       "title": "A Bossa Nova De Roberto Menescal E Seu Conjunto",
@@ -8577,35 +8634,6 @@
       "_fuzzy_matches": 2,
       "_genre_tags": [
         "jazz"
-      ]
-    },
-    {
-      "id": "308f00da-a3ac-3940-9290-516ef142ce86",
-      "artist": "Q-Tip",
-      "title": "The Renaissance",
-      "release_year": 2008,
-      "genre_id": "hip-hop",
-      "cover_url": "https://cdn-images.dzcdn.net/images/cover/e6d5b7d75349318a2368fdb6bc9c865c/500x500-000000-80-0-0.jpg",
-      "artwork_source": "deezer",
-      "colors": {
-        "primary": "#9b9f9e",
-        "secondary": "#d2d2d2"
-      },
-      "total_tracks": 12,
-      "played_tracks": 11,
-      "completion": 0.9167,
-      "unlocked": false,
-      "unlocked_at": null,
-      "play_count": 62,
-      "missing_tracks": [
-        "Dance on Glass"
-      ],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "dominant",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "alternative hip hop",
-        "hip hop"
       ]
     },
     {
@@ -8712,7 +8740,7 @@
       "completion": 0.9091,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 285,
+      "play_count": 311,
       "missing_tracks": [
         "Steamroller"
       ],
@@ -8836,7 +8864,7 @@
       "completion": 0.9091,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 48,
+      "play_count": 50,
       "missing_tracks": [
         "Jesus Is Lord"
       ],
@@ -8927,7 +8955,7 @@
       "completion": 0.9062,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 392,
+      "play_count": 393,
       "missing_tracks": [
         "Never Abandon Your Family",
         "Ok Ok, Pt. 2",
@@ -8990,7 +9018,7 @@
       "completion": 0.9,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 541,
+      "play_count": 542,
       "missing_tracks": [
         "O mapa"
       ],
@@ -9020,7 +9048,7 @@
       "completion": 0.9,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 213,
+      "play_count": 216,
       "missing_tracks": [
         "Everything’s Not Lost / Life Is for Living"
       ],
@@ -9082,7 +9110,7 @@
       "completion": 0.9,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 146,
+      "play_count": 147,
       "missing_tracks": [
         "Redemption",
         "Faithful"
@@ -9139,7 +9167,7 @@
       "completion": 0.9,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 106,
+      "play_count": 122,
       "missing_tracks": [
         "The Last Time I Saw Richard"
       ],
@@ -9198,7 +9226,7 @@
       "completion": 0.8947,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 189,
+      "play_count": 191,
       "missing_tracks": [
         "Pull Up",
         "Top"
@@ -9262,7 +9290,7 @@
       "completion": 0.8889,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 101,
+      "play_count": 103,
       "missing_tracks": [
         "Public Service Announcement 2000",
         "Paul (skit)"
@@ -9291,7 +9319,7 @@
       "completion": 0.8889,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 87,
+      "play_count": 89,
       "missing_tracks": [
         "MADMIX 2"
       ],
@@ -9321,7 +9349,7 @@
       "completion": 0.8889,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 86,
+      "play_count": 87,
       "missing_tracks": [
         "Donald Trump",
         "Loud"
@@ -9416,7 +9444,7 @@
       "completion": 0.8889,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 30,
+      "play_count": 31,
       "missing_tracks": [
         "ほのかなイリュージョン"
       ],
@@ -9446,7 +9474,7 @@
       "completion": 0.8824,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 456,
+      "play_count": 464,
       "missing_tracks": [
         "transcendence",
         "shiki no uta"
@@ -9571,7 +9599,7 @@
       "completion": 0.8824,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 49,
+      "play_count": 50,
       "missing_tracks": [
         "Gold Teeth",
         "All That"
@@ -9600,7 +9628,7 @@
       "completion": 0.875,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 141,
+      "play_count": 143,
       "missing_tracks": [
         "And the Gods Made Love",
         "Come On, Part 1"
@@ -9634,7 +9662,7 @@
       "completion": 0.875,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 107,
+      "play_count": 108,
       "missing_tracks": [
         "All About Love"
       ],
@@ -10145,7 +10173,7 @@
       "completion": 0.8571,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 56,
+      "play_count": 58,
       "missing_tracks": [
         "Joga bonito"
       ],
@@ -10294,7 +10322,7 @@
       "completion": 0.8421,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 351,
+      "play_count": 352,
       "missing_tracks": [
         "The Mystery of DOOM (skit)",
         "?",
@@ -10324,7 +10352,7 @@
       "completion": 0.8421,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 334,
+      "play_count": 335,
       "missing_tracks": [
         "Machine Gun Funk (Parliament sample removed)",
         "Ready to Die (Bridgeport sample removed)",
@@ -10359,7 +10387,7 @@
       "completion": 0.8421,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 294,
+      "play_count": 295,
       "missing_tracks": [
         "Collect Calls",
         "Swimming Pools (Drank)",
@@ -10424,7 +10452,7 @@
       "completion": 0.8333,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 513,
+      "play_count": 514,
       "missing_tracks": [
         "Traffic in the Sky",
         "Mad Flava, Heavy Flow (interlude)",
@@ -10539,34 +10567,6 @@
       ]
     },
     {
-      "id": "0090ccfe-6a92-4b87-b055-bee3b129124c",
-      "artist": "Peggy Lee",
-      "title": "Rendezvous With Peggy Lee",
-      "release_year": 1948,
-      "genre_id": "jazz",
-      "cover_url": "https://coverartarchive.org/release/0090ccfe-6a92-4b87-b055-bee3b129124c/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#a5655c",
-        "secondary": "#b79278"
-      },
-      "total_tracks": 6,
-      "played_tracks": 5,
-      "completion": 0.8333,
-      "unlocked": false,
-      "unlocked_at": null,
-      "play_count": 25,
-      "missing_tracks": [
-        "Why Don’t You Do Right"
-      ],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "jazz"
-      ]
-    },
-    {
       "id": "217e89e9-02b4-4f5a-b553-ef5ff30eb48d",
       "artist": "Home",
       "title": "Odyssey",
@@ -10583,7 +10583,7 @@
       "completion": 0.8333,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 24,
+      "play_count": 27,
       "missing_tracks": [
         "Odyssey",
         "Half Moon"
@@ -10594,6 +10594,34 @@
       "_genre_tags": [
         "electronic",
         "synthwave"
+      ]
+    },
+    {
+      "id": "0090ccfe-6a92-4b87-b055-bee3b129124c",
+      "artist": "Peggy Lee",
+      "title": "Rendezvous With Peggy Lee",
+      "release_year": 1948,
+      "genre_id": "jazz",
+      "cover_url": "https://coverartarchive.org/release/0090ccfe-6a92-4b87-b055-bee3b129124c/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#a5655c",
+        "secondary": "#b79278"
+      },
+      "total_tracks": 6,
+      "played_tracks": 5,
+      "completion": 0.8333,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 26,
+      "missing_tracks": [
+        "Why Don’t You Do Right"
+      ],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "jazz"
       ]
     },
     {
@@ -10613,7 +10641,7 @@
       "completion": 0.8235,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 118,
+      "play_count": 120,
       "missing_tracks": [
         "Carry That Weight",
         "The End",
@@ -10679,7 +10707,7 @@
       "completion": 0.8182,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 474,
+      "play_count": 476,
       "missing_tracks": [
         "Schroeder",
         "Linus and Lucy"
@@ -10708,7 +10736,7 @@
       "completion": 0.8182,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 401,
+      "play_count": 403,
       "missing_tracks": [
         "Cherokee",
         "Billy Boy"
@@ -10737,7 +10765,7 @@
       "completion": 0.8182,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 104,
+      "play_count": 125,
       "missing_tracks": [
         "Love You To",
         "I Want to Tell You"
@@ -10768,7 +10796,7 @@
       "completion": 0.8182,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 78,
+      "play_count": 79,
       "missing_tracks": [
         "Big Rings",
         "Jersey"
@@ -10867,7 +10895,7 @@
       "completion": 0.8182,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 56,
+      "play_count": 58,
       "missing_tracks": [
         "April in Paris",
         "A Foggy Day"
@@ -10962,7 +10990,7 @@
       "completion": 0.8125,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 208,
+      "play_count": 212,
       "missing_tracks": [
         "Geto Heaven, Part Two",
         "A Song for Assata",
@@ -10992,7 +11020,7 @@
       "completion": 0.8125,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 201,
+      "play_count": 204,
       "missing_tracks": [
         "3500",
         "Antidote",
@@ -11005,6 +11033,41 @@
         "hip hop",
         "hip-hop",
         "rap"
+      ]
+    },
+    {
+      "id": "281e76e2-bc53-4b8d-b047-f2d6ae72274d",
+      "artist": "Pete Rock & C.L. Smooth",
+      "title": "The Main Ingredient",
+      "release_year": 1994,
+      "genre_id": "hip-hop",
+      "cover_url": "https://coverartarchive.org/release/281e76e2-bc53-4b8d-b047-f2d6ae72274d/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#655e7f",
+        "secondary": "#d3bb8d"
+      },
+      "total_tracks": 16,
+      "played_tracks": 13,
+      "completion": 0.8125,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 133,
+      "missing_tracks": [
+        "Searching",
+        "Check It Out",
+        "Get on the Mic"
+      ],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "boom bap",
+        "conscious hip hop",
+        "east coast hip hop",
+        "hip hop",
+        "jazz rap",
+        "turntablism"
       ]
     },
     {
@@ -11043,41 +11106,6 @@
       ]
     },
     {
-      "id": "281e76e2-bc53-4b8d-b047-f2d6ae72274d",
-      "artist": "Pete Rock & C.L. Smooth",
-      "title": "The Main Ingredient",
-      "release_year": 1994,
-      "genre_id": "hip-hop",
-      "cover_url": "https://coverartarchive.org/release/281e76e2-bc53-4b8d-b047-f2d6ae72274d/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#655e7f",
-        "secondary": "#d3bb8d"
-      },
-      "total_tracks": 16,
-      "played_tracks": 13,
-      "completion": 0.8125,
-      "unlocked": false,
-      "unlocked_at": null,
-      "play_count": 128,
-      "missing_tracks": [
-        "Searching",
-        "Check It Out",
-        "Get on the Mic"
-      ],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "boom bap",
-        "conscious hip hop",
-        "east coast hip hop",
-        "hip hop",
-        "jazz rap",
-        "turntablism"
-      ]
-    },
-    {
       "id": "f4f95248-52c4-4c94-a88a-6e31efcd76e4",
       "artist": "Mach-Hommy",
       "title": "Pray For Haiti",
@@ -11094,7 +11122,7 @@
       "completion": 0.8125,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 71,
+      "play_count": 72,
       "missing_tracks": [
         "Kreyol (skit)",
         "Au revoir",
@@ -11253,7 +11281,7 @@
       "completion": 0.8,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 142,
+      "play_count": 143,
       "missing_tracks": [
         "Flex",
         "Kelly K",
@@ -11415,7 +11443,7 @@
       "completion": 0.8,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 48,
+      "play_count": 49,
       "missing_tracks": [
         "Big Poe",
         "Sugar on My Tongue"
@@ -11496,6 +11524,35 @@
         "hardcore rap",
         "hip hop",
         "hip hop rap"
+      ]
+    },
+    {
+      "id": "994acea1-22a7-4d4d-b886-a8c230ad6834",
+      "artist": "Mazzy Star",
+      "title": "So Tonight That I Might See",
+      "release_year": 1993,
+      "genre_id": "rock",
+      "cover_url": "https://coverartarchive.org/release/994acea1-22a7-4d4d-b886-a8c230ad6834/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#7354a2",
+        "secondary": "#886f93"
+      },
+      "total_tracks": 10,
+      "played_tracks": 8,
+      "completion": 0.8,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 27,
+      "missing_tracks": [
+        "Mary of Silence",
+        "Wasted"
+      ],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "alternative rock"
       ]
     },
     {
@@ -11623,6 +11680,40 @@
       "_genre_tags": [
         "hip hop",
         "hip-hop"
+      ]
+    },
+    {
+      "id": "091a2150-56ae-4089-a9a1-ff15e7eb4255",
+      "artist": "Temple of the Dog",
+      "title": "Temple of the Dog",
+      "release_year": 1991,
+      "genre_id": "rock",
+      "cover_url": "https://cdn-images.dzcdn.net/images/cover/b4c355f85f6a46e69a2e5626a8dbdcc4/500x500-000000-80-0-0.jpg",
+      "artwork_source": "deezer",
+      "colors": {
+        "primary": "#597695",
+        "secondary": "#82567e"
+      },
+      "total_tracks": 14,
+      "played_tracks": 11,
+      "completion": 0.7857,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 44,
+      "missing_tracks": [
+        "Hey Baby (Land of the New Rising Sun)",
+        "Black Cat (Demo)",
+        "Hunger Strike"
+      ],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 1,
+      "_genre_tags": [
+        "alternative rock",
+        "alternative/indie rock",
+        "grunge",
+        "hard rock",
+        "rock"
       ]
     },
     {
@@ -11800,7 +11891,7 @@
       "completion": 0.7692,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 210,
+      "play_count": 217,
       "missing_tracks": [
         "Music Makes the World Go Round (20syl remix)",
         "After Party (Jazz Liberatorz remix)",
@@ -11834,7 +11925,7 @@
       "completion": 0.7692,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 72,
+      "play_count": 73,
       "missing_tracks": [
         "Goes By So Fast",
         "Magazine",
@@ -11991,7 +12082,7 @@
       "completion": 0.7647,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 106,
+      "play_count": 108,
       "missing_tracks": [
         "Marvins Room / Buried Alive Interlude",
         "The Real Her",
@@ -12056,7 +12147,7 @@
       "completion": 0.7619,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 118,
+      "play_count": 120,
       "missing_tracks": [
         "The Very Thought Of You",
         "Perfidia",
@@ -12184,7 +12275,7 @@
       "completion": 0.75,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 41,
+      "play_count": 43,
       "missing_tracks": [
         "Mona",
         "The Man Who Shot Liberty Valance",
@@ -12217,7 +12308,7 @@
       "completion": 0.75,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 36,
+      "play_count": 39,
       "missing_tracks": [
         "If I Could Build My Whole World Around You",
         "Somethin’ Stupid",
@@ -12442,7 +12533,7 @@
       "completion": 0.7273,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 168,
+      "play_count": 169,
       "missing_tracks": [
         "Blem",
         "Skepta Interlude",
@@ -12478,7 +12569,7 @@
       "completion": 0.7273,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 70,
+      "play_count": 71,
       "missing_tracks": [
         "All the Small Things",
         "My Brother, the Wind",
@@ -12673,7 +12764,7 @@
       "completion": 0.7143,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 211,
+      "play_count": 213,
       "missing_tracks": [
         "The Prisoner",
         "Chains",
@@ -12707,7 +12798,7 @@
       "completion": 0.7143,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 56,
+      "play_count": 57,
       "missing_tracks": [
         "a&t",
         "all my friends",
@@ -12740,7 +12831,7 @@
       "completion": 0.7143,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 31,
+      "play_count": 32,
       "missing_tracks": [
         "Problemz",
         "Good at Breaking Hearts",
@@ -12802,7 +12893,7 @@
       "completion": 0.7083,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 452,
+      "play_count": 455,
       "missing_tracks": [
         "Norton Commander",
         "Tailwhip",
@@ -12984,6 +13075,38 @@
       ]
     },
     {
+      "id": "3655ad4d-6cfa-490f-a3f6-9f1906b3ecc8",
+      "artist": "Cocteau Twins",
+      "title": "Four-Calendar Café",
+      "release_year": 1993,
+      "genre_id": "pop",
+      "cover_url": "https://cdn-images.dzcdn.net/images/cover/e52cc3eab20655b3b2ad5c0e572d9bab/500x500-000000-80-0-0.jpg",
+      "artwork_source": "deezer",
+      "colors": {
+        "primary": "#684dc7",
+        "secondary": "#5f5aac"
+      },
+      "total_tracks": 10,
+      "played_tracks": 7,
+      "completion": 0.7,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 50,
+      "missing_tracks": [
+        "Evangeline",
+        "Theft, and Wandering Around Lost",
+        "Essence"
+      ],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "dream pop",
+        "jangle pop",
+        "pop"
+      ]
+    },
+    {
       "id": "2570867b-b745-4521-8505-d3e631339fbc",
       "artist": "The Cure",
       "title": "Disintegration",
@@ -13000,7 +13123,7 @@
       "completion": 0.7,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 34,
+      "play_count": 38,
       "missing_tracks": [
         "The Same Deep Water as You",
         "Disintegration",
@@ -13045,36 +13168,6 @@
       "_fuzzy_matches": 0,
       "_genre_tags": [
         "jazz"
-      ]
-    },
-    {
-      "id": "994acea1-22a7-4d4d-b886-a8c230ad6834",
-      "artist": "Mazzy Star",
-      "title": "So Tonight That I Might See",
-      "release_year": 1993,
-      "genre_id": "rock",
-      "cover_url": "https://coverartarchive.org/release/994acea1-22a7-4d4d-b886-a8c230ad6834/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#7354a2",
-        "secondary": "#886f93"
-      },
-      "total_tracks": 10,
-      "played_tracks": 7,
-      "completion": 0.7,
-      "unlocked": false,
-      "unlocked_at": null,
-      "play_count": 26,
-      "missing_tracks": [
-        "Mary of Silence",
-        "Wasted",
-        "So Tonight That I Might See"
-      ],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "alternative rock"
       ]
     },
     {
@@ -13254,7 +13347,7 @@
       "completion": 0.6818,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 31,
+      "play_count": 33,
       "missing_tracks": [
         "Pitfalls (instrumental)",
         "Do It For Dilla Dawg (instrumental)",
@@ -13758,7 +13851,7 @@
       "completion": 0.6522,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 74,
+      "play_count": 76,
       "missing_tracks": [
         "日出ズルSTYLE",
         "bracelet",
@@ -14010,7 +14103,7 @@
       "completion": 0.6429,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 80,
+      "play_count": 81,
       "missing_tracks": [
         "Walking After Midnight",
         "Careless Love",
@@ -14553,7 +14646,7 @@
       "completion": 0.6111,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 266,
+      "play_count": 281,
       "missing_tracks": [
         "absolute",
         "adapt myself",
@@ -14851,6 +14944,39 @@
       ]
     },
     {
+      "id": "2e3c18a2-94fb-40ec-a0a4-12eec793dead",
+      "artist": "Chet Baker",
+      "title": "Chet Baker Sings: It Could Happen To You [Original Jazz Classics Remasters] (OJC Remaster)",
+      "release_year": 1958,
+      "genre_id": "jazz",
+      "cover_url": "https://coverartarchive.org/release/2e3c18a2-94fb-40ec-a0a4-12eec793dead/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#b33e15",
+        "secondary": "#c60505"
+      },
+      "total_tracks": 10,
+      "played_tracks": 6,
+      "completion": 0.6,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 17,
+      "missing_tracks": [
+        "You’re Driving Me Crazy",
+        "My Heart Stood Still",
+        "Everything Happens to Me",
+        "How Long Has This Been Going On?"
+      ],
+      "source": "musicbrainz_search",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "free jazz",
+        "jazz",
+        "smooth jazz"
+      ]
+    },
+    {
       "id": "0fc8bcf7-c35a-4ea0-a5dc-468a4e2b0feb",
       "artist": "Hampton Hawes Trio",
       "title": "Hampton Hawes Trio, Vol. 1",
@@ -14880,39 +15006,6 @@
       "_genre_tags": [
         "hard bop",
         "jazz"
-      ]
-    },
-    {
-      "id": "2e3c18a2-94fb-40ec-a0a4-12eec793dead",
-      "artist": "Chet Baker",
-      "title": "Chet Baker Sings: It Could Happen To You [Original Jazz Classics Remasters] (OJC Remaster)",
-      "release_year": 1958,
-      "genre_id": "jazz",
-      "cover_url": "https://coverartarchive.org/release/2e3c18a2-94fb-40ec-a0a4-12eec793dead/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#b33e15",
-        "secondary": "#c60505"
-      },
-      "total_tracks": 10,
-      "played_tracks": 6,
-      "completion": 0.6,
-      "unlocked": false,
-      "unlocked_at": null,
-      "play_count": 15,
-      "missing_tracks": [
-        "You’re Driving Me Crazy",
-        "My Heart Stood Still",
-        "Everything Happens to Me",
-        "How Long Has This Been Going On?"
-      ],
-      "source": "musicbrainz_search",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "free jazz",
-        "jazz",
-        "smooth jazz"
       ]
     },
     {
@@ -15415,6 +15508,42 @@
       ]
     },
     {
+      "id": "e30a985d-bf3f-4f70-b26c-397187d0502a",
+      "artist": "Masters Of Sound",
+      "title": "The Legend of Zelda: Breath of the Wild - Covers",
+      "release_year": 2021,
+      "genre_id": "other",
+      "cover_url": "https://coverartarchive.org/release/e30a985d-bf3f-4f70-b26c-397187d0502a/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#616a44",
+        "secondary": "#e8eac6"
+      },
+      "total_tracks": 26,
+      "played_tracks": 15,
+      "completion": 0.5769,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 44,
+      "missing_tracks": [
+        "Link's Memories (From 'the Legend of Zelda- Breath of the Wild') [Cover]",
+        "Stables (From 'the Legend of Zelda- Breath of the Wild') [Cover]",
+        "Rune Extraction (From 'the Legend of Zelda- Breath of the Wild') [Cover]",
+        "Kass' Theme (From 'the Legend of Zelda- Breath of the Wild') [Cover]",
+        "Goran City (From 'the Legend of Zelda- Breath of the Wild') [Cover]",
+        "Daruk's Theme (From 'the Legend of Zelda- Breath of the Wild') [Cover]",
+        "Gerudo Town (From 'the Legend of Zelda- Breath of the Wild') [Cover]",
+        "Urbosa's Theme (From 'the Legend of Zelda- Breath of the Wild') [Cover]",
+        "Korok Forest (From 'the Legend of Zelda- Breath of the Wild') [Cover]",
+        "Hyrule Castle (From 'the Legend of Zelda- Breath of the Wild') [Cover]",
+        "Zelda's Lullaby (From 'the Legend of Zelda- Breath of the Wild') [Cover]"
+      ],
+      "source": "musicbrainz_search",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": []
+    },
+    {
       "id": "542d7165-12d6-4b50-8a12-19ef0a78d374",
       "artist": "J. Cole",
       "title": "Born Sinner",
@@ -15431,7 +15560,7 @@
       "completion": 0.5714,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 137,
+      "play_count": 138,
       "missing_tracks": [
         "Kerney Sermon (skit)",
         "Trouble",
@@ -15507,7 +15636,7 @@
       "completion": 0.5714,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 78,
+      "play_count": 80,
       "missing_tracks": [
         "LL BOOL GUNN",
         "Babylon Bis",
@@ -16106,7 +16235,7 @@
       "completion": 0.55,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 310,
+      "play_count": 311,
       "missing_tracks": [
         "Afro",
         "Sometimes",
@@ -16147,7 +16276,7 @@
       "completion": 0.5455,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 428,
+      "play_count": 431,
       "missing_tracks": [
         "Linus and Lucy",
         "Charlie’s Blues (variation)",
@@ -16264,6 +16393,38 @@
       ]
     },
     {
+      "id": "f67bb4ba-6940-430b-b470-fb571631aba7",
+      "artist": "Home",
+      "title": "Before The Night",
+      "release_year": 2014,
+      "genre_id": "electronic",
+      "cover_url": "https://coverartarchive.org/release/f67bb4ba-6940-430b-b470-fb571631aba7/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#f2f0f1",
+        "secondary": "#6d616a"
+      },
+      "total_tracks": 11,
+      "played_tracks": 6,
+      "completion": 0.5455,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 19,
+      "missing_tracks": [
+        "Synchronize",
+        "Overflow",
+        "Without a Sound",
+        "Sun",
+        "Sleep"
+      ],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "dominant",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "synthwave"
+      ]
+    },
+    {
       "id": "1804b163-7165-426c-8cf4-23a59ddeabca",
       "artist": "Oscar Peterson Trio",
       "title": "Night Train",
@@ -16298,38 +16459,6 @@
         "jazz",
         "smooth jazz",
         "swing"
-      ]
-    },
-    {
-      "id": "f67bb4ba-6940-430b-b470-fb571631aba7",
-      "artist": "Home",
-      "title": "Before The Night",
-      "release_year": 2014,
-      "genre_id": "electronic",
-      "cover_url": "https://coverartarchive.org/release/f67bb4ba-6940-430b-b470-fb571631aba7/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#f2f0f1",
-        "secondary": "#6d616a"
-      },
-      "total_tracks": 11,
-      "played_tracks": 6,
-      "completion": 0.5455,
-      "unlocked": false,
-      "unlocked_at": null,
-      "play_count": 16,
-      "missing_tracks": [
-        "Synchronize",
-        "Overflow",
-        "Without a Sound",
-        "Sun",
-        "Sleep"
-      ],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "dominant",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "synthwave"
       ]
     },
     {
@@ -16453,7 +16582,7 @@
       "completion": 0.5385,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 76,
+      "play_count": 78,
       "missing_tracks": [
         "Keep Holding On",
         "It’s On",
@@ -16526,7 +16655,7 @@
       "completion": 0.5385,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 53,
+      "play_count": 54,
       "missing_tracks": [
         "True Insurance",
         "BM2",
@@ -16539,6 +16668,42 @@
       "color_strategy": "saturated-derived",
       "_fuzzy_matches": 0,
       "_genre_tags": []
+    },
+    {
+      "id": "6da384d2-ccdb-444b-a40a-5c0e103517c9",
+      "artist": "Kitty Craft",
+      "title": "Beats and Breaks from the Flower Patch",
+      "release_year": 2019,
+      "genre_id": "pop",
+      "cover_url": "https://coverartarchive.org/release/6da384d2-ccdb-444b-a40a-5c0e103517c9/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#ebee95",
+        "secondary": "#b7b654"
+      },
+      "total_tracks": 13,
+      "played_tracks": 7,
+      "completion": 0.5385,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 32,
+      "missing_tracks": [
+        "When Fortune Smiles",
+        "Locked Groove",
+        "Down For",
+        "Shine On",
+        "All to You",
+        "Leaves Your Breath"
+      ],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "indie pop",
+        "singer-songwriter",
+        "sunshine pop",
+        "twee pop"
+      ]
     },
     {
       "id": "4cfc5cf4-dea5-4d16-9844-d783c0fdb387",
@@ -16868,7 +17033,7 @@
       "completion": 0.52,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 423,
+      "play_count": 450,
       "missing_tracks": [
         "Let's Face the Music and Dance (5.1 mix)",
         "Devil May Care (5.1 mix)",
@@ -16908,7 +17073,7 @@
       "completion": 0.52,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 72,
+      "play_count": 73,
       "missing_tracks": [
         "Valentine’s Day Freestyle ’26",
         "Mask On",
@@ -16952,7 +17117,7 @@
       "completion": 0.5102,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 265,
+      "play_count": 268,
       "missing_tracks": [
         "Bewitched",
         "Mountain Greenery",
@@ -17006,7 +17171,7 @@
       "completion": 0.5,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 294,
+      "play_count": 299,
       "missing_tracks": [
         "Smells Like Teen Spirit",
         "In Bloom",
@@ -17129,7 +17294,7 @@
       "completion": 0.5,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 112,
+      "play_count": 114,
       "missing_tracks": [
         "You've Got It Bad Girl",
         "Big Brother",
@@ -17202,7 +17367,7 @@
       "completion": 0.5,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 92,
+      "play_count": 93,
       "missing_tracks": [
         "Wish (Trippie mix)",
         "BANG!",
@@ -17275,7 +17440,7 @@
       "completion": 0.5,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 82,
+      "play_count": 83,
       "missing_tracks": [
         "Push It Along",
         "After Hours",
@@ -17314,7 +17479,7 @@
       "completion": 0.5,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 77,
+      "play_count": 80,
       "missing_tracks": [
         "Movin’ Out (Anthony’s Song)",
         "The Stranger",
@@ -17355,7 +17520,7 @@
       "completion": 0.5,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 75,
+      "play_count": 76,
       "missing_tracks": [
         "I’ve Just Seen a Face",
         "You Won’t See Me",
@@ -17392,7 +17557,7 @@
       "completion": 0.5,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 70,
+      "play_count": 72,
       "missing_tracks": [
         "Boulevard of Broken Dreams",
         "Baby Baby All the Time",
@@ -17427,7 +17592,7 @@
       "completion": 0.5,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 68,
+      "play_count": 71,
       "missing_tracks": [
         "Angie Girl"
       ],
@@ -17435,6 +17600,41 @@
       "color_strategy": "saturated",
       "_fuzzy_matches": 0,
       "_genre_tags": []
+    },
+    {
+      "id": "296bf4cf-e3ee-4c73-abe5-4f52f72a929b",
+      "artist": "Earth, Wind & Fire",
+      "title": "The Best of Earth, Wind & Fire Vol. 1",
+      "release_year": 1978,
+      "genre_id": "rnb-soul",
+      "cover_url": "https://coverartarchive.org/release/296bf4cf-e3ee-4c73-abe5-4f52f72a929b/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#c33b2f",
+        "secondary": "#ecc143"
+      },
+      "total_tracks": 10,
+      "played_tracks": 5,
+      "completion": 0.5,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 68,
+      "missing_tracks": [
+        "Can’t Hide Love",
+        "Love Music",
+        "Getaway",
+        "That’s the Way of the World",
+        "September"
+      ],
+      "source": "musicbrainz_search",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "disco",
+        "funk",
+        "smooth soul",
+        "soul"
+      ]
     },
     {
       "id": "08407d5d-757e-415b-8a4b-db113c105678",
@@ -17536,41 +17736,6 @@
       "_genre_tags": []
     },
     {
-      "id": "296bf4cf-e3ee-4c73-abe5-4f52f72a929b",
-      "artist": "Earth, Wind & Fire",
-      "title": "The Best of Earth, Wind & Fire Vol. 1",
-      "release_year": 1978,
-      "genre_id": "rnb-soul",
-      "cover_url": "https://coverartarchive.org/release/296bf4cf-e3ee-4c73-abe5-4f52f72a929b/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#c33b2f",
-        "secondary": "#ecc143"
-      },
-      "total_tracks": 10,
-      "played_tracks": 5,
-      "completion": 0.5,
-      "unlocked": false,
-      "unlocked_at": null,
-      "play_count": 58,
-      "missing_tracks": [
-        "Can’t Hide Love",
-        "Love Music",
-        "Getaway",
-        "That’s the Way of the World",
-        "September"
-      ],
-      "source": "musicbrainz_search",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "disco",
-        "funk",
-        "smooth soul",
-        "soul"
-      ]
-    },
-    {
       "id": "78096d0b-00ce-4195-95e5-2980defdf156",
       "artist": "猫 シ Corp.",
       "title": "lofi",
@@ -17587,7 +17752,7 @@
       "completion": 0.5,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 55,
+      "play_count": 57,
       "missing_tracks": [
         "Shinjuku Gyoen",
         "Rainy Sunday",
@@ -17820,40 +17985,6 @@
       ]
     },
     {
-      "id": "3655ad4d-6cfa-490f-a3f6-9f1906b3ecc8",
-      "artist": "Cocteau Twins",
-      "title": "Four-Calendar Café",
-      "release_year": 1993,
-      "genre_id": "pop",
-      "cover_url": "https://cdn-images.dzcdn.net/images/cover/e52cc3eab20655b3b2ad5c0e572d9bab/500x500-000000-80-0-0.jpg",
-      "artwork_source": "deezer",
-      "colors": {
-        "primary": "#684dc7",
-        "secondary": "#5f5aac"
-      },
-      "total_tracks": 10,
-      "played_tracks": 5,
-      "completion": 0.5,
-      "unlocked": false,
-      "unlocked_at": null,
-      "play_count": 45,
-      "missing_tracks": [
-        "Evangeline",
-        "Theft, and Wandering Around Lost",
-        "Oil of Angels",
-        "My Truth",
-        "Essence"
-      ],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "dream pop",
-        "jangle pop",
-        "pop"
-      ]
-    },
-    {
       "id": "b3b73377-cc32-499c-ae35-743daeff9d69",
       "artist": "Garoto",
       "title": "Projeto Memoria Brasileira : Viva Garoto",
@@ -17884,6 +18015,41 @@
       "color_strategy": "saturated",
       "_fuzzy_matches": 1,
       "_genre_tags": []
+    },
+    {
+      "id": "4abb7376-f2b2-4fb4-a003-1f80d877ae63",
+      "artist": "Diana Krall",
+      "title": "Live In Paris",
+      "release_year": 2002,
+      "genre_id": "jazz",
+      "cover_url": "https://coverartarchive.org/release/4abb7376-f2b2-4fb4-a003-1f80d877ae63/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#96978c",
+        "secondary": "#5f674c"
+      },
+      "total_tracks": 12,
+      "played_tracks": 6,
+      "completion": 0.5,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 33,
+      "missing_tracks": [
+        "’Deed I Do",
+        "East of the Sun (and West of the Moon)",
+        "Devil May Care",
+        "Maybe You’ll Be There",
+        "’S Wonderful",
+        "A Case of You"
+      ],
+      "source": "musicbrainz_search",
+      "color_strategy": "derived",
+      "_fuzzy_matches": 2,
+      "_genre_tags": [
+        "contemporary jazz",
+        "jazz",
+        "vocal jazz"
+      ]
     },
     {
       "id": "b2755937-9da1-44b1-86f0-0f2e53bd9e74",
@@ -17958,41 +18124,6 @@
       "_genre_tags": []
     },
     {
-      "id": "4abb7376-f2b2-4fb4-a003-1f80d877ae63",
-      "artist": "Diana Krall",
-      "title": "Live In Paris",
-      "release_year": 2002,
-      "genre_id": "jazz",
-      "cover_url": "https://coverartarchive.org/release/4abb7376-f2b2-4fb4-a003-1f80d877ae63/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#96978c",
-        "secondary": "#5f674c"
-      },
-      "total_tracks": 12,
-      "played_tracks": 6,
-      "completion": 0.5,
-      "unlocked": false,
-      "unlocked_at": null,
-      "play_count": 32,
-      "missing_tracks": [
-        "’Deed I Do",
-        "East of the Sun (and West of the Moon)",
-        "Devil May Care",
-        "Maybe You’ll Be There",
-        "’S Wonderful",
-        "A Case of You"
-      ],
-      "source": "musicbrainz_search",
-      "color_strategy": "derived",
-      "_fuzzy_matches": 2,
-      "_genre_tags": [
-        "contemporary jazz",
-        "jazz",
-        "vocal jazz"
-      ]
-    },
-    {
       "id": "18056805-33f5-3e99-aa4b-5f5919c4f8af",
       "artist": "The Radio Dept.",
       "title": "Pet Grief",
@@ -18009,7 +18140,7 @@
       "completion": 0.5,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 28,
+      "play_count": 29,
       "missing_tracks": [
         "It’s Personal",
         "South Side",
@@ -18128,6 +18259,38 @@
       ]
     },
     {
+      "id": "fe94ce7e-2ab4-4cc2-932a-66f821f9fc74",
+      "artist": "Etta Jones",
+      "title": "Don't Go To Strangers (Rudy Van Gelder Remaster)",
+      "release_year": 2006,
+      "genre_id": "jazz",
+      "cover_url": "https://coverartarchive.org/release/fe94ce7e-2ab4-4cc2-932a-66f821f9fc74/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#fe00ae",
+        "secondary": "#ba1588"
+      },
+      "total_tracks": 10,
+      "played_tracks": 5,
+      "completion": 0.5,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 22,
+      "missing_tracks": [
+        "Yes Sir, That’s My Baby",
+        "Fine and Mellow",
+        "On the Street Where You Live",
+        "Something to Remember You By",
+        "All the Way"
+      ],
+      "source": "musicbrainz_search",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "jazz"
+      ]
+    },
+    {
       "id": "26c0e53e-f6e6-4608-89ec-02ce3238bca4",
       "artist": "杏里",
       "title": "TIMELY!!",
@@ -18159,38 +18322,6 @@
         "boogie",
         "disco",
         "synth funk"
-      ]
-    },
-    {
-      "id": "fe94ce7e-2ab4-4cc2-932a-66f821f9fc74",
-      "artist": "Etta Jones",
-      "title": "Don't Go To Strangers (Rudy Van Gelder Remaster)",
-      "release_year": 2006,
-      "genre_id": "jazz",
-      "cover_url": "https://coverartarchive.org/release/fe94ce7e-2ab4-4cc2-932a-66f821f9fc74/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#fe00ae",
-        "secondary": "#ba1588"
-      },
-      "total_tracks": 10,
-      "played_tracks": 5,
-      "completion": 0.5,
-      "unlocked": false,
-      "unlocked_at": null,
-      "play_count": 21,
-      "missing_tracks": [
-        "Yes Sir, That’s My Baby",
-        "Fine and Mellow",
-        "On the Street Where You Live",
-        "Something to Remember You By",
-        "All the Way"
-      ],
-      "source": "musicbrainz_search",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "jazz"
       ]
     },
     {
@@ -18424,7 +18555,7 @@
       "completion": 0.4762,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 109,
+      "play_count": 111,
       "missing_tracks": [
         "Caravan (take 4)",
         "Nobody Knows You When You're Down and Out (outtake)",
@@ -18465,7 +18596,7 @@
       "completion": 0.4667,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 118,
+      "play_count": 120,
       "missing_tracks": [
         "Best Friend",
         "Keep It Playa",
@@ -18501,7 +18632,7 @@
       "completion": 0.4667,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 100,
+      "play_count": 101,
       "missing_tracks": [
         "Downtown",
         "Give It to Me",
@@ -18536,7 +18667,7 @@
       "completion": 0.4667,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 85,
+      "play_count": 86,
       "missing_tracks": [
         "Intro",
         "Pulchritudinous",
@@ -18609,7 +18740,7 @@
       "completion": 0.4615,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 123,
+      "play_count": 124,
       "missing_tracks": [
         "Madmix 3",
         "Mashup 2",
@@ -18699,40 +18830,38 @@
       ]
     },
     {
-      "id": "6da384d2-ccdb-444b-a40a-5c0e103517c9",
-      "artist": "Kitty Craft",
-      "title": "Beats and Breaks from the Flower Patch",
-      "release_year": 2019,
-      "genre_id": "pop",
-      "cover_url": "https://coverartarchive.org/release/6da384d2-ccdb-444b-a40a-5c0e103517c9/front-500",
+      "id": "a28713ce-5546-402f-b3a1-6193068180df",
+      "artist": "LJONES",
+      "title": "Soul Below",
+      "release_year": 2012,
+      "genre_id": "hip-hop",
+      "cover_url": "https://coverartarchive.org/release/a28713ce-5546-402f-b3a1-6193068180df/front-500",
       "artwork_source": "coverartarchive",
       "colors": {
-        "primary": "#ebee95",
-        "secondary": "#b7b654"
+        "primary": "#c58583",
+        "secondary": "#b23736"
       },
       "total_tracks": 13,
       "played_tracks": 6,
       "completion": 0.4615,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 29,
+      "play_count": 50,
       "missing_tracks": [
-        "When Fortune Smiles",
-        "Half Court Press",
-        "Locked Groove",
-        "Down For",
-        "Shine On",
-        "All to You",
-        "Leaves Your Breath"
+        "Introductions",
+        "Cruising Blue",
+        "July",
+        "Always Find You",
+        "Nakanaide",
+        "To the grove",
+        "It ain't hard to tell (LJ RMX)"
       ],
       "source": "musicbrainz_mbid",
       "color_strategy": "saturated",
       "_fuzzy_matches": 0,
       "_genre_tags": [
-        "indie pop",
-        "singer-songwriter",
-        "sunshine pop",
-        "twee pop"
+        "boom bap",
+        "hip hop"
       ]
     },
     {
@@ -18898,7 +19027,7 @@
       "completion": 0.4545,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 58,
+      "play_count": 60,
       "missing_tracks": [
         "Ramble Tamble",
         "Before You Accuse Me",
@@ -19136,7 +19265,7 @@
       "completion": 0.45,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 231,
+      "play_count": 232,
       "missing_tracks": [
         "You'd Be So Easy for Love",
         "Ahmad's Waltz",
@@ -19254,7 +19383,7 @@
       "completion": 0.4444,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 95,
+      "play_count": 96,
       "missing_tracks": [
         "The Right Profile",
         "Clampdown",
@@ -19405,7 +19534,7 @@
       "completion": 0.4375,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 74,
+      "play_count": 76,
       "missing_tracks": [
         "Karaoke",
         "The Resistance",
@@ -19631,7 +19760,7 @@
       "completion": 0.4286,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 237,
+      "play_count": 239,
       "missing_tracks": [
         "Volga Boatman",
         "On Green Dolphin Street",
@@ -19909,7 +20038,7 @@
       "completion": 0.4231,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 116,
+      "play_count": 121,
       "missing_tracks": [
         "Luv(sic) Grand Finale",
         "Luv(sic) (12″ remix)",
@@ -19934,46 +20063,6 @@
         "hip hop",
         "jazz rap"
       ]
-    },
-    {
-      "id": "e30a985d-bf3f-4f70-b26c-397187d0502a",
-      "artist": "Masters Of Sound",
-      "title": "The Legend of Zelda: Breath of the Wild - Covers",
-      "release_year": 2021,
-      "genre_id": "other",
-      "cover_url": "https://coverartarchive.org/release/e30a985d-bf3f-4f70-b26c-397187d0502a/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#616a44",
-        "secondary": "#e8eac6"
-      },
-      "total_tracks": 26,
-      "played_tracks": 11,
-      "completion": 0.4231,
-      "unlocked": false,
-      "unlocked_at": null,
-      "play_count": 26,
-      "missing_tracks": [
-        "Link's Memories (From 'the Legend of Zelda- Breath of the Wild') [Cover]",
-        "Stables (From 'the Legend of Zelda- Breath of the Wild') [Cover]",
-        "Riding (Day) [From 'the Legend of Zelda- Breath of the Wild'] [Cover]",
-        "Riding (Night) [From 'the Legend of Zelda- Breath of the Wild'] [Cover]",
-        "Rune Extraction (From 'the Legend of Zelda- Breath of the Wild') [Cover]",
-        "Kass' Theme (From 'the Legend of Zelda- Breath of the Wild') [Cover]",
-        "Cave Theme (From 'the Legend of Zelda- Breath of the Wild') [Cover]",
-        "Goran City (From 'the Legend of Zelda- Breath of the Wild') [Cover]",
-        "Daruk's Theme (From 'the Legend of Zelda- Breath of the Wild') [Cover]",
-        "Parasail (From 'the Legend of Zelda- Breath of the Wild') [Cover]",
-        "Gerudo Town (From 'the Legend of Zelda- Breath of the Wild') [Cover]",
-        "Urbosa's Theme (From 'the Legend of Zelda- Breath of the Wild') [Cover]",
-        "Korok Forest (From 'the Legend of Zelda- Breath of the Wild') [Cover]",
-        "Hyrule Castle (From 'the Legend of Zelda- Breath of the Wild') [Cover]",
-        "Zelda's Lullaby (From 'the Legend of Zelda- Breath of the Wild') [Cover]"
-      ],
-      "source": "musicbrainz_search",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": []
     },
     {
       "id": "de9954c1-682d-4be4-90e0-ac416be9cefe",
@@ -20038,7 +20127,7 @@
       "completion": 0.4167,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 83,
+      "play_count": 86,
       "missing_tracks": [
         "GripnSip",
         "PS‐3",
@@ -20179,7 +20268,7 @@
       "completion": 0.4167,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 49,
+      "play_count": 50,
       "missing_tracks": [
         "You Turned the Tables on Me",
         "Easy to Love",
@@ -20267,6 +20356,42 @@
       "_fuzzy_matches": 0,
       "_genre_tags": [
         "contemporary r&b"
+      ]
+    },
+    {
+      "id": "d812de39-0988-4d13-82a2-bcb795a802e1",
+      "artist": "The Beatles",
+      "title": "Let It Be",
+      "release_year": 1977,
+      "genre_id": "rock",
+      "cover_url": "https://coverartarchive.org/release/d812de39-0988-4d13-82a2-bcb795a802e1/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#836b56",
+        "secondary": "#b7ab92"
+      },
+      "total_tracks": 12,
+      "played_tracks": 5,
+      "completion": 0.4167,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 23,
+      "missing_tracks": [
+        "Two of Us",
+        "Dig a Pony",
+        "Dig It",
+        "Maggie Mae",
+        "I’ve Got a Feeling",
+        "One After 909",
+        "For You Blue"
+      ],
+      "source": "musicbrainz_search",
+      "color_strategy": "saturated-derived",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "blues rock",
+        "pop rock",
+        "rock"
       ]
     },
     {
@@ -20392,7 +20517,7 @@
       "completion": 0.4118,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 85,
+      "play_count": 86,
       "missing_tracks": [
         "Whatcha Need",
         "It’s All About U",
@@ -20429,7 +20554,7 @@
       "completion": 0.4118,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 69,
+      "play_count": 70,
       "missing_tracks": [
         "Trust Issues",
         "Days in the East",
@@ -20512,7 +20637,7 @@
       "completion": 0.4103,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 79,
+      "play_count": 80,
       "missing_tracks": [
         "Violent fighting to come again! (Remastered)",
         "Ballad of a Poor Man",
@@ -20564,7 +20689,7 @@
       "completion": 0.4,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 86,
+      "play_count": 87,
       "missing_tracks": [
         "Phony Rappers",
         "Motivators",
@@ -20600,7 +20725,7 @@
       "completion": 0.4,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 78,
+      "play_count": 80,
       "missing_tracks": [
         "Just a Gigolo / I Ain't Got Nobody",
         "The Lip",
@@ -20707,7 +20832,7 @@
       "completion": 0.3929,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 124,
+      "play_count": 125,
       "missing_tracks": [
         "I Want You (intro jam)",
         "I Want You (vocal, promo only version)",
@@ -20753,7 +20878,7 @@
       "completion": 0.3889,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 44,
+      "play_count": 45,
       "missing_tracks": [
         "Where I Like to Stand",
         "Window Over the Bay",
@@ -20851,42 +20976,6 @@
       "color_strategy": "saturated",
       "_fuzzy_matches": 0,
       "_genre_tags": []
-    },
-    {
-      "id": "a28713ce-5546-402f-b3a1-6193068180df",
-      "artist": "LJONES",
-      "title": "Soul Below",
-      "release_year": 2012,
-      "genre_id": "hip-hop",
-      "cover_url": "https://coverartarchive.org/release/a28713ce-5546-402f-b3a1-6193068180df/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#c58583",
-        "secondary": "#b23736"
-      },
-      "total_tracks": 13,
-      "played_tracks": 5,
-      "completion": 0.3846,
-      "unlocked": false,
-      "unlocked_at": null,
-      "play_count": 44,
-      "missing_tracks": [
-        "Introductions",
-        "Mango Kimono",
-        "Cruising Blue",
-        "July",
-        "Always Find You",
-        "Nakanaide",
-        "To the grove",
-        "It ain't hard to tell (LJ RMX)"
-      ],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "boom bap",
-        "hip hop"
-      ]
     },
     {
       "id": "910bcc4b-00f5-4ad3-86b4-a5a9d214b503",
@@ -21124,7 +21213,7 @@
       "completion": 0.375,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 128,
+      "play_count": 130,
       "missing_tracks": [
         "You Don’t Know What Love Is",
         "Ivy",
@@ -21236,7 +21325,7 @@
       "completion": 0.375,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 17,
+      "play_count": 19,
       "missing_tracks": [
         "Intro",
         "Get Your Mind Right Mami",
@@ -21386,7 +21475,7 @@
       "completion": 0.3636,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 41,
+      "play_count": 42,
       "missing_tracks": [
         "Aruanda (Take Me to Aruanda)",
         "Manha de Carnaval",
@@ -21420,7 +21509,7 @@
       "completion": 0.3582,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 339,
+      "play_count": 353,
       "missing_tracks": [
         "All for You",
         "F.S.T. (Fine, Sweet & Tasty)",
@@ -21672,7 +21761,7 @@
       "completion": 0.3571,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 57,
+      "play_count": 58,
       "missing_tracks": [
         "Quand le soleil dit bonjour aux montagnes",
         "Petit matin",
@@ -21709,7 +21798,7 @@
       "completion": 0.3571,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 23,
+      "play_count": 25,
       "missing_tracks": [
         "Climbed Mountain",
         "One Dream",
@@ -21764,6 +21853,43 @@
       "_genre_tags": [
         "bossa nova",
         "mpb"
+      ]
+    },
+    {
+      "id": "03c9158f-07ba-455e-a20a-d6a7af1f1338",
+      "artist": "Jazz Liberatorz",
+      "title": "Clin d'oeil",
+      "release_year": 2007,
+      "genre_id": "jazz",
+      "cover_url": "https://coverartarchive.org/release/03c9158f-07ba-455e-a20a-d6a7af1f1338/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#725d54",
+        "secondary": "#aa9b8c"
+      },
+      "total_tracks": 14,
+      "played_tracks": 5,
+      "completion": 0.3571,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 13,
+      "missing_tracks": [
+        "Clin d’œil",
+        "When the Clock Ticks",
+        "Genius at Work",
+        "Indonesia",
+        "The Process",
+        "The Return",
+        "U Do",
+        "Take a Time",
+        "Qîdar"
+      ],
+      "source": "musicbrainz_search",
+      "color_strategy": "derived",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "jazz",
+        "jazz rap"
       ]
     },
     {
@@ -21859,7 +21985,7 @@
       "completion": 0.35,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 74,
+      "play_count": 75,
       "missing_tracks": [
         "Workin'",
         "Keep On",
@@ -22084,7 +22210,7 @@
       "completion": 0.3415,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 50,
+      "play_count": 53,
       "missing_tracks": [
         "Dillatronic 14",
         "Dillatronic 15",
@@ -22139,7 +22265,7 @@
       "completion": 0.3333,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 81,
+      "play_count": 82,
       "missing_tracks": [
         "If You Were There",
         "You Walk Your Way",
@@ -22215,7 +22341,7 @@
       "completion": 0.3333,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 30,
+      "play_count": 32,
       "missing_tracks": [
         "LamboTruck",
         "Swivel (from the upcoming album “Mirrorland”)",
@@ -22235,41 +22361,6 @@
       "_fuzzy_matches": 0,
       "_genre_tags": [
         "hip hop"
-      ]
-    },
-    {
-      "id": "0c3eb66e-3318-43a1-a3a8-0cb3471e8c26",
-      "artist": "Labi Siffre",
-      "title": "Crying, Laughing, Loving, Lying",
-      "release_year": 1972,
-      "genre_id": "pop",
-      "cover_url": "https://coverartarchive.org/release/0c3eb66e-3318-43a1-a3a8-0cb3471e8c26/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#d0cfcc",
-        "secondary": "#7c776a"
-      },
-      "total_tracks": 12,
-      "played_tracks": 4,
-      "completion": 0.3333,
-      "unlocked": false,
-      "unlocked_at": null,
-      "play_count": 29,
-      "missing_tracks": [
-        "Saved",
-        "Fool Me a Good Night",
-        "It Must Be Love",
-        "Gimme Some More",
-        "Blue Lady",
-        "Love Oh Love Oh Love",
-        "Hotel Room Song",
-        "Come On Michael"
-      ],
-      "source": "musicbrainz_mbid",
-      "color_strategy": "dominant",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "pop"
       ]
     },
     {
@@ -22310,6 +22401,74 @@
       ]
     },
     {
+      "id": "0c3eb66e-3318-43a1-a3a8-0cb3471e8c26",
+      "artist": "Labi Siffre",
+      "title": "Crying, Laughing, Loving, Lying",
+      "release_year": 1972,
+      "genre_id": "pop",
+      "cover_url": "https://coverartarchive.org/release/0c3eb66e-3318-43a1-a3a8-0cb3471e8c26/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#d0cfcc",
+        "secondary": "#7c776a"
+      },
+      "total_tracks": 12,
+      "played_tracks": 4,
+      "completion": 0.3333,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 27,
+      "missing_tracks": [
+        "Saved",
+        "Fool Me a Good Night",
+        "It Must Be Love",
+        "Gimme Some More",
+        "Blue Lady",
+        "Love Oh Love Oh Love",
+        "Hotel Room Song",
+        "Come On Michael"
+      ],
+      "source": "musicbrainz_mbid",
+      "color_strategy": "dominant",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "pop"
+      ]
+    },
+    {
+      "id": "a2253430-be26-4fca-b6ba-dfd1dad2098f",
+      "artist": "Wu-Tang Clan",
+      "title": "Enter The Wu-Tang (36 Chambers)",
+      "release_year": 1993,
+      "genre_id": "hip-hop",
+      "cover_url": "https://cdn-images.dzcdn.net/images/cover/0e67999d3167516146a3ff182c0692f8/500x500-000000-80-0-0.jpg",
+      "artwork_source": "deezer",
+      "colors": {
+        "primary": "#875856",
+        "secondary": "#e6ca48"
+      },
+      "total_tracks": 9,
+      "played_tracks": 3,
+      "completion": 0.3333,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 10,
+      "missing_tracks": [
+        "Shame on a Nuh",
+        "Can It Be All So Simple",
+        "Da Mystery of Chessboxin’",
+        "Wu‐Tang Clan Ain’t",
+        "Protect Ya Neck",
+        "Tearz / Conclusion"
+      ],
+      "source": "musicbrainz_search",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "hip hop"
+      ]
+    },
+    {
       "id": "3f5e17ae-ed32-4941-8709-dd17f4af74ed",
       "artist": "Uyama Hiroto",
       "title": "freeform jazz",
@@ -22346,39 +22505,6 @@
       "_fuzzy_matches": 0,
       "_genre_tags": [
         "downtempo"
-      ]
-    },
-    {
-      "id": "a2253430-be26-4fca-b6ba-dfd1dad2098f",
-      "artist": "Wu-Tang Clan",
-      "title": "Enter The Wu-Tang (36 Chambers)",
-      "release_year": 1993,
-      "genre_id": "hip-hop",
-      "cover_url": "https://cdn-images.dzcdn.net/images/cover/0e67999d3167516146a3ff182c0692f8/500x500-000000-80-0-0.jpg",
-      "artwork_source": "deezer",
-      "colors": {
-        "primary": "#875856",
-        "secondary": "#e6ca48"
-      },
-      "total_tracks": 9,
-      "played_tracks": 3,
-      "completion": 0.3333,
-      "unlocked": false,
-      "unlocked_at": null,
-      "play_count": 9,
-      "missing_tracks": [
-        "Shame on a Nuh",
-        "Can It Be All So Simple",
-        "Da Mystery of Chessboxin’",
-        "Wu‐Tang Clan Ain’t",
-        "Protect Ya Neck",
-        "Tearz / Conclusion"
-      ],
-      "source": "musicbrainz_search",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "hip hop"
       ]
     },
     {
@@ -22549,7 +22675,7 @@
       "completion": 0.3226,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 385,
+      "play_count": 386,
       "missing_tracks": [
         "Brown Sugar (a cappella)",
         "Me and Those Dreamin’ Eyes of Mine (a cappella)",
@@ -22602,7 +22728,7 @@
       "completion": 0.3158,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 67,
+      "play_count": 69,
       "missing_tracks": [
         "Swim in the Light",
         "Releaser",
@@ -22642,7 +22768,7 @@
       "completion": 0.3158,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 46,
+      "play_count": 48,
       "missing_tracks": [
         "Motor City 1",
         "Motor City 2",
@@ -22786,7 +22912,7 @@
       "completion": 0.3125,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 60,
+      "play_count": 62,
       "missing_tracks": [
         "Your Love Is King",
         "Jezebel",
@@ -22826,7 +22952,7 @@
       "completion": 0.3125,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 54,
+      "play_count": 55,
       "missing_tracks": [
         "Ooh",
         "What Goes Around Comes Around",
@@ -22867,7 +22993,7 @@
       "completion": 0.3125,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 35,
+      "play_count": 36,
       "missing_tracks": [
         "Fire Starter",
         "Toxic Waste",
@@ -23019,7 +23145,7 @@
       "completion": 0.3043,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 48,
+      "play_count": 49,
       "missing_tracks": [
         "I Love You Dwayne",
         "Don’t Cry",
@@ -23198,7 +23324,7 @@
       "completion": 0.2917,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 32,
+      "play_count": 33,
       "missing_tracks": [
         "You Stepped Out of a Dream",
         "Lullaby in Rhythm",
@@ -23242,7 +23368,7 @@
       "completion": 0.2857,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 54,
+      "play_count": 56,
       "missing_tracks": [
         "To Forgive",
         "Fuck You (An Ode to No One)",
@@ -23519,7 +23645,7 @@
       "completion": 0.2692,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 103,
+      "play_count": 105,
       "missing_tracks": [
         "Introspection",
         "Underground Sounds",
@@ -23604,7 +23730,7 @@
       "completion": 0.2667,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 23,
+      "play_count": 24,
       "missing_tracks": [
         "If I Love Again",
         "Until I Met You",
@@ -23727,7 +23853,7 @@
       "completion": 0.2609,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 57,
+      "play_count": 58,
       "missing_tracks": [
         "I'm Old Fashioned",
         "Macho's Lullaby",
@@ -23868,7 +23994,7 @@
       "completion": 0.2581,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 60,
+      "play_count": 61,
       "missing_tracks": [
         "Canto (anche se sono stonato)",
         "Vecchia America",
@@ -23970,7 +24096,7 @@
       "completion": 0.2571,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 431,
+      "play_count": 443,
       "missing_tracks": [
         "What’s Going On",
         "What’s Happening Brother",
@@ -24329,7 +24455,7 @@
       "completion": 0.2368,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 232,
+      "play_count": 234,
       "missing_tracks": [
         "Dumb",
         "Polly",
@@ -24436,7 +24562,7 @@
       "completion": 0.2308,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 36,
+      "play_count": 43,
       "missing_tracks": [
         "Lucy in the Sky With Diamonds",
         "Getting Better",
@@ -24814,7 +24940,7 @@
       "completion": 0.2083,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 33,
+      "play_count": 34,
       "missing_tracks": [
         "Birthday",
         "Return",
@@ -25018,7 +25144,7 @@
       "completion": 0.2,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 62,
+      "play_count": 63,
       "missing_tracks": [
         "Night Fever",
         "Tragedy",
@@ -25194,6 +25320,117 @@
       ]
     },
     {
+      "id": "37354455-ef20-455d-a79f-a11511f9d888",
+      "artist": "The Seatbelts",
+      "title": "Cowboy Bebop LP-Box",
+      "release_year": 2023,
+      "genre_id": "jazz",
+      "cover_url": "https://coverartarchive.org/release/37354455-ef20-455d-a79f-a11511f9d888/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#775c48",
+        "secondary": "#e93f25"
+      },
+      "total_tracks": 98,
+      "played_tracks": 19,
+      "completion": 0.1939,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 162,
+      "missing_tracks": [
+        "Rush",
+        "Spokey Dokey",
+        "Bad Dog No Biscuits",
+        "Cat Blues",
+        "Waltz for Zizi",
+        "Too Good Too Bad",
+        "Felt Tip Pen",
+        "Rain",
+        "The Real Folk Blues",
+        "Doggy Dog",
+        "Fantaisie Sign",
+        "American Money",
+        "Fantaisie Sign",
+        "Don’t bother none",
+        "Vitamin A",
+        "LIVE in Baghdad",
+        "Cats on Mars",
+        "Want it all back",
+        "Bindy",
+        "You make me cool",
+        "Vitamin B",
+        "Green Bird",
+        "ELM",
+        "Vitamin C",
+        "Gateway",
+        "The Singing Sea",
+        "The EGG and YOU",
+        "Forever Broke",
+        "POWER OF KUNG FOOD REMIX",
+        "Blue",
+        "Words That We Couldn’t Say",
+        "Autumn in Ganymede",
+        "Go Go Cactus Man",
+        "Chicken Bone",
+        "The Real Man",
+        "Adieu",
+        "Call Me Call Me",
+        "Ave Maria",
+        "Flying Teapot",
+        "Wo Qui Non Coin",
+        "See You Space Cowboy Not Final Mix Mountain Root",
+        "Radio Free Mars Talk1",
+        "Tank! (Luke Vibert remix)",
+        "Radio Free Mars Talk2",
+        "Forever Broke (Fila Brazillia remix)",
+        "Radio Free Mars Talk3",
+        "Cats on Mars (DMX Krew remix)",
+        "Radio Free Mars Talk4",
+        "Piano Black (Ian O’Brien remix)",
+        "Cat Blues {Mr.Scuff remix)",
+        "Radio Free Mars Talk5",
+        "Fe (DJ Vadim remix)",
+        "Fantaisie Sign (Ian Pooley remix)",
+        "Radio Free Mars Talk6",
+        "Space Lion (4hero remix)",
+        "Radio Free Mars Talk7",
+        "What Planet Is This.",
+        "Ask DNA",
+        "Cosmic Dare (Pretty with a Pistol)",
+        "Hamduche",
+        "Is It Real?",
+        "24hours OPEN",
+        "Pushing the Sky",
+        "Time to Know～be Waltz",
+        "Clutch",
+        "MUSAWE",
+        "Yo Pumpkin Head",
+        "Diggin’",
+        "3.14",
+        "What Planet Is This?！",
+        "7minutes",
+        "Fingers",
+        "Powder",
+        "Butterfly",
+        "No Reply",
+        "Dijurido",
+        "Gotta Knock a Little Harder",
+        "No Money",
+        "Rain (demo ver.)"
+      ],
+      "source": "musicbrainz_search",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "cool jazz",
+        "free jazz",
+        "hard bop",
+        "jazz",
+        "swing"
+      ],
+      "_merged_from": 3
+    },
+    {
       "id": "4f0b2499-2bcf-437e-b473-8bf4053b5dcb",
       "artist": "Dean Martin",
       "title": "This Time I'm Swingin'",
@@ -25210,7 +25447,7 @@
       "completion": 0.1923,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 56,
+      "play_count": 58,
       "missing_tracks": [
         "You’re Nobody ’Til Somebody Loves You",
         "Imagination",
@@ -25260,7 +25497,7 @@
       "completion": 0.1905,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 73,
+      "play_count": 74,
       "missing_tracks": [
         "Fingertips, Part 2 (live at the Regal Theater 1963, single version)",
         "Uptight (Everything’s Alright)",
@@ -25308,7 +25545,7 @@
       "completion": 0.1905,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 54,
+      "play_count": 55,
       "missing_tracks": [
         "Geek Down",
         "Love Jones",
@@ -25921,7 +26158,7 @@
       "completion": 0.16,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 49,
+      "play_count": 50,
       "missing_tracks": [
         "The Usual Fools",
         "TANK! (Flix Mix)",
@@ -25969,7 +26206,7 @@
       "completion": 0.1538,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 58,
+      "play_count": 60,
       "missing_tracks": [
         "The Medium",
         "Magazine",
@@ -26007,7 +26244,7 @@
       "completion": 0.1509,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 139,
+      "play_count": 141,
       "missing_tracks": [
         "Another Brick in the Wall, Part 1",
         "The Happiest Days of Our Lives",
@@ -26208,122 +26445,6 @@
       ]
     },
     {
-      "id": "37354455-ef20-455d-a79f-a11511f9d888",
-      "artist": "The Seatbelts",
-      "title": "Cowboy Bebop LP-Box",
-      "release_year": 2023,
-      "genre_id": "jazz",
-      "cover_url": "https://coverartarchive.org/release/37354455-ef20-455d-a79f-a11511f9d888/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#775c48",
-        "secondary": "#e93f25"
-      },
-      "total_tracks": 98,
-      "played_tracks": 14,
-      "completion": 0.1429,
-      "unlocked": false,
-      "unlocked_at": null,
-      "play_count": 97,
-      "missing_tracks": [
-        "Rush",
-        "Spokey Dokey",
-        "Bad Dog No Biscuits",
-        "Cat Blues",
-        "Waltz for Zizi",
-        "Too Good Too Bad",
-        "Felt Tip Pen",
-        "Rain",
-        "The Real Folk Blues",
-        "Doggy Dog",
-        "Fantaisie Sign",
-        "American Money",
-        "Fantaisie Sign",
-        "Don’t bother none",
-        "Vitamin A",
-        "LIVE in Baghdad",
-        "Cats on Mars",
-        "Want it all back",
-        "Bindy",
-        "You make me cool",
-        "Vitamin B",
-        "Green Bird",
-        "ELM",
-        "Vitamin C",
-        "Gateway",
-        "The Singing Sea",
-        "The EGG and YOU",
-        "Forever Broke",
-        "POWER OF KUNG FOOD REMIX",
-        "Blue",
-        "Words That We Couldn’t Say",
-        "Autumn in Ganymede",
-        "Mushroom Hunting",
-        "Go Go Cactus Man",
-        "Chicken Bone",
-        "The Real Man",
-        "N.Y Rush",
-        "Adieu",
-        "Call Me Call Me",
-        "Ave Maria",
-        "Stella by Moor",
-        "Flying Teapot",
-        "Wo Qui Non Coin",
-        "Road to the West",
-        "Farewell Blues",
-        "See You Space Cowboy Not Final Mix Mountain Root",
-        "Radio Free Mars Talk1",
-        "Tank! (Luke Vibert remix)",
-        "Radio Free Mars Talk2",
-        "Forever Broke (Fila Brazillia remix)",
-        "Radio Free Mars Talk3",
-        "Cats on Mars (DMX Krew remix)",
-        "Radio Free Mars Talk4",
-        "Piano Black (Ian O’Brien remix)",
-        "Cat Blues {Mr.Scuff remix)",
-        "Radio Free Mars Talk5",
-        "Fe (DJ Vadim remix)",
-        "Fantaisie Sign (Ian Pooley remix)",
-        "Radio Free Mars Talk6",
-        "Space Lion (4hero remix)",
-        "Radio Free Mars Talk7",
-        "What Planet Is This.",
-        "Ask DNA",
-        "Cosmic Dare (Pretty with a Pistol)",
-        "Hamduche",
-        "Is It Real?",
-        "24hours OPEN",
-        "Pushing the Sky",
-        "Time to Know～be Waltz",
-        "Clutch",
-        "MUSAWE",
-        "Yo Pumpkin Head",
-        "Diggin’",
-        "3.14",
-        "What Planet Is This?！",
-        "7minutes",
-        "Fingers",
-        "Powder",
-        "Butterfly",
-        "No Reply",
-        "Dijurido",
-        "Gotta Knock a Little Harder",
-        "No Money",
-        "Rain (demo ver.)"
-      ],
-      "source": "musicbrainz_search",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "cool jazz",
-        "free jazz",
-        "hard bop",
-        "jazz",
-        "swing"
-      ],
-      "_merged_from": 2
-    },
-    {
       "id": "599a9163-0c99-4aad-9a93-56c0721a36ab",
       "artist": "Mac Miller",
       "title": "The High Life",
@@ -26492,7 +26613,7 @@
       "completion": 0.1111,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 457,
+      "play_count": 458,
       "missing_tracks": [
         "Gorgeous",
         "I Need to Know",
@@ -26532,7 +26653,7 @@
       "completion": 0.1111,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 14,
+      "play_count": 15,
       "missing_tracks": [
         "Un Casa",
         "Juelz Santana (interlude)",
@@ -26587,7 +26708,7 @@
       "completion": 0.1042,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 257,
+      "play_count": 265,
       "missing_tracks": [
         "Nothing Ever Happens",
         "Gone With the Draft",
@@ -26658,7 +26779,7 @@
       "completion": 0.0943,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 57,
+      "play_count": 58,
       "missing_tracks": [
         "Introduction (instructions)",
         "ALONE, PART 3",
@@ -26959,7 +27080,7 @@
       "completion": 0.0351,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 99,
+      "play_count": 108,
       "missing_tracks": [
         "Back in the U.S.S.R. (2018 mix)",
         "Dear Prudence (2018 mix)",
@@ -27149,7 +27270,7 @@
       "completion": 0.0,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 131,
+      "play_count": 142,
       "missing_tracks": [
         "The Introduction",
         "The Anthem",
@@ -27191,7 +27312,7 @@
       "completion": 0.0,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 81,
+      "play_count": 82,
       "missing_tracks": [
         "Mood Indigo",
         "Don’t Smoke in Bed",
@@ -27281,7 +27402,7 @@
       "completion": 0.0,
       "unlocked": false,
       "unlocked_at": null,
-      "play_count": 73,
+      "play_count": 74,
       "missing_tracks": [
         "Doomsday (remix)",
         "No Snakes Alive",
@@ -27654,6 +27775,49 @@
       ]
     },
     {
+      "id": "103f2304-d125-416a-9bbc-bb13f13455aa",
+      "artist": "Lil Uzi Vert",
+      "title": "Eternal Atake (Deluxe) - LUV vs. The World 2",
+      "release_year": 2024,
+      "genre_id": "hip-hop",
+      "cover_url": "https://coverartarchive.org/release/103f2304-d125-416a-9bbc-bb13f13455aa/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#70588f",
+        "secondary": "#6f718e"
+      },
+      "total_tracks": 15,
+      "played_tracks": 0,
+      "completion": 0.0,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 28,
+      "missing_tracks": [
+        "Light Year (Practice)",
+        "Meteor Man",
+        "Paars in the Mars",
+        "The Rush",
+        "Not an Option",
+        "She Stank",
+        "Mr Chow",
+        "Lyft Em Up",
+        "Chips and Dip",
+        "Black Hole",
+        "Chill Bae",
+        "Goddard Song",
+        "PerkySex",
+        "Conceited",
+        "Space High"
+      ],
+      "source": "musicbrainz_search",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "hip hop",
+        "rap"
+      ]
+    },
+    {
       "id": "33440f62-4c1a-415d-827f-ef8acc879b5c",
       "artist": "Casiopea",
       "title": "Super Flight",
@@ -27688,49 +27852,6 @@
       "_genre_tags": [
         "jazz fusion",
         "jazz-funk"
-      ]
-    },
-    {
-      "id": "103f2304-d125-416a-9bbc-bb13f13455aa",
-      "artist": "Lil Uzi Vert",
-      "title": "Eternal Atake (Deluxe) - LUV vs. The World 2",
-      "release_year": 2024,
-      "genre_id": "hip-hop",
-      "cover_url": "https://coverartarchive.org/release/103f2304-d125-416a-9bbc-bb13f13455aa/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#70588f",
-        "secondary": "#6f718e"
-      },
-      "total_tracks": 15,
-      "played_tracks": 0,
-      "completion": 0.0,
-      "unlocked": false,
-      "unlocked_at": null,
-      "play_count": 27,
-      "missing_tracks": [
-        "Light Year (Practice)",
-        "Meteor Man",
-        "Paars in the Mars",
-        "The Rush",
-        "Not an Option",
-        "She Stank",
-        "Mr Chow",
-        "Lyft Em Up",
-        "Chips and Dip",
-        "Black Hole",
-        "Chill Bae",
-        "Goddard Song",
-        "PerkySex",
-        "Conceited",
-        "Space High"
-      ],
-      "source": "musicbrainz_search",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "hip hop",
-        "rap"
       ]
     },
     {
@@ -28042,6 +28163,48 @@
       ]
     },
     {
+      "id": "2fdaca3f-8b8c-411a-b1d4-fba166ee4eae",
+      "artist": "Franco Albertini",
+      "title": "The Legend of Zelda: Breath of the Wild for Piano",
+      "release_year": 2017,
+      "genre_id": "other",
+      "cover_url": "https://coverartarchive.org/release/2fdaca3f-8b8c-411a-b1d4-fba166ee4eae/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#616161",
+        "secondary": "#8f8876"
+      },
+      "total_tracks": 17,
+      "played_tracks": 0,
+      "completion": 0.0,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 9,
+      "missing_tracks": [
+        "Main Theme",
+        "Field (day)",
+        "Riding (day)",
+        "Sheikah Tower",
+        "Field Battle",
+        "Shrine",
+        "Hateno Village",
+        "Talus Battle",
+        "The Temple of Time",
+        "Vah Rutah I",
+        "Vah Rutah II",
+        "Rito Village",
+        "Vah Medoh I",
+        "Vah Medoh II",
+        "Field (night)",
+        "The Final Battle",
+        "Life in the Ruins"
+      ],
+      "source": "musicbrainz_search",
+      "color_strategy": "dominant",
+      "_fuzzy_matches": 0,
+      "_genre_tags": []
+    },
+    {
       "id": "35fd671e-2eae-491d-bbc9-4ff4914808d3",
       "artist": "Ahmad Jamal",
       "title": "At The Top: Poinciana Revisited (Live At The Village Gate / 1968)",
@@ -28117,6 +28280,132 @@
       ]
     },
     {
+      "id": "e71bec33-580e-4673-832d-574c2f03b2be",
+      "artist": "Claire Waluch",
+      "title": "The Legend of Zelda: Acoustic Piano Covers",
+      "release_year": 2015,
+      "genre_id": "other",
+      "cover_url": "https://coverartarchive.org/release/e71bec33-580e-4673-832d-574c2f03b2be/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#e3daa9",
+        "secondary": "#72a55c"
+      },
+      "total_tracks": 13,
+      "played_tracks": 0,
+      "completion": 0.0,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 5,
+      "missing_tracks": [
+        "Portal: Still Alive",
+        "Skyrim Piano Medley",
+        "Halo 3: One Final Effort",
+        "The Last of Us Main Theme",
+        "Mass Effect 3: An End Once and for All",
+        "Pokemon: Gotta Catch 'em All",
+        "Zelda Ocarina of Time: Piano Medley",
+        "Zelda Ocarina of Time: Hyrule Field",
+        "Zelda Majora's Mask: Piano Medley",
+        "Super Mario 64: File Select & Dire Dire Docks",
+        "Mario Kart: Rainbow Road",
+        "Skyrim: The City Gates",
+        "Zelda's Lullaby"
+      ],
+      "source": "musicbrainz_search",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": []
+    },
+    {
+      "id": "c0fa7768-36d0-4ab5-8ab0-93bd78a518b5",
+      "artist": "ConcernedApe",
+      "title": "Stardew Valley (Original Game Soundtrack)",
+      "release_year": 2020,
+      "genre_id": "electronic",
+      "cover_url": "https://coverartarchive.org/release/c0fa7768-36d0-4ab5-8ab0-93bd78a518b5/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#0c688e",
+        "secondary": "#385ad8"
+      },
+      "total_tracks": 9,
+      "played_tracks": 0,
+      "completion": 0.0,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 5,
+      "missing_tracks": [
+        "Ginger Island",
+        "Professor Snail’s Radio",
+        "Volcano Mines (Molten Jelly)",
+        "Volcano Mines (Forgotten World)",
+        "Mystery of the Caldera",
+        "The Gourmand’s Cave",
+        "Pirate Theme",
+        "Leo’s Song",
+        "Summit Celebration"
+      ],
+      "source": "musicbrainz_search",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "9a6ddb5e-8b7a-42a8-8522-dbf2d6492d82",
+      "artist": "Lucas Cooper",
+      "title": "Zelda - A Storm of Songs",
+      "release_year": 2025,
+      "genre_id": "other",
+      "cover_url": "https://coverartarchive.org/release/9a6ddb5e-8b7a-42a8-8522-dbf2d6492d82/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#98be3e",
+        "secondary": "#bab9a0"
+      },
+      "total_tracks": 27,
+      "played_tracks": 0,
+      "completion": 0.0,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 5,
+      "missing_tracks": [
+        "Title Screen (From “The Legend of Zelda: Twilight Princess”) – Felt Piano",
+        "Great Fairy Fountain (From “The Legend of Zelda: Ocarina of Time”) – Felt Piano",
+        "Link is Awake / Waking Up at Tarin’s House (From “The Legend of Zelda: Link’s Awakening”) – Felt Piano",
+        "Mabe Village (From “The Legend of Zelda: Link’s Awakening”) – Felt Piano",
+        "Song of Healing / Clock Tower (From “The Legend of Zelda: Majora’s Mask”) – Felt Piano",
+        "Clock Town (From “The Legend of Zelda: Majora’s Mask”) – Felt Piano",
+        "Inside the Houses (From “The Legend of Zelda: Link’s Awakening”) – Felt Piano",
+        "Kakariko Village (From “The Legend of Zelda: Ocarina of Time”) – Felt Piano",
+        "Astral Observatory (From “The Legend of Zelda: Majora’s Mask”) – Felt Piano",
+        "Ilia’s Theme (From “The Legend of Zelda: Twilight Princess”) – Felt Piano",
+        "Zelda’s Lullaby (From “The Legend of Zelda: Ocarina of Time”) – Felt Piano",
+        "The Temple of Time (From “The Legend of Zelda: Breath of the Wild”) – Felt Piano",
+        "Shiek’s Theme (From “The Legend of Zelda: Ocarina of Time”) – Felt Piano",
+        "Mr. Write’s House (From “The Legend of Zelda: Link’s Awakening”) – Felt Piano",
+        "Richard’s Villa (From “The Legend of Zelda: Link’s Awakening”) – Felt Piano",
+        "The Ghost’s House / House at the Bay (From “The Legend of Zelda: Link’s Awakening”) – Felt Piano",
+        "Christine’s House (From “The Legend of Zelda: Link’s Awakening”) – Felt Piano",
+        "Lon Lon Ranch / Epona’s Song (From “The Legend of Zelda: Ocarina of Time”) – Felt Piano",
+        "Cave (From “The Legend of Zelda: Breath of the Wild”) – Felt Piano",
+        "Minuet of Forest (From “The Legend of Zelda: Ocarina of Time”) – Felt Piano",
+        "Song of Storms / Windmill Hut (From “The Legend of Zelda: Ocarina of Time”) – Felt Piano",
+        "Ballad of the Windfish (From “The Legend of Zelda: Link’s Awakening”) – Felt Piano",
+        "Grandma’s Theme (From “The Legend of Zelda: Wind Waker”) – Felt Piano",
+        "Title Theme (From “The Legend of Zelda: Ocarina of Time”) – Felt Piano",
+        "Game Over (From “The Legend of Zelda: Link’s Awakening”) – Felt Piano",
+        "Aryll’s Theme (From “The Legend of Zelda: Wind Waker”) – Felt Piano",
+        "After The Storm ~ Game Over (From “The Legend of Zelda”) – Felt Piano"
+      ],
+      "source": "musicbrainz_search",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": []
+    },
+    {
       "id": "e134976d-4b19-4a89-a2d9-aef7f518d6df",
       "artist": "Mac Miller",
       "title": "Watching Movies With The Sound Off - Sessions (Unreleased)",
@@ -28170,13 +28459,19 @@
       "artist": "Vince Guaraldi Quintet",
       "album": "A Charlie Brown Thanksgiving",
       "reason": "no_mb_match",
-      "play_count": 638
+      "play_count": 641
     },
     {
       "artist": "Ms. Lauryn Hill",
       "album": "The Miseducation of Lauryn Hill",
       "reason": "no_tracklist",
-      "play_count": 466
+      "play_count": 467
+    },
+    {
+      "artist": "Oasis",
+      "album": "(What's The Story) Morning Glory?",
+      "reason": "no_mb_match",
+      "play_count": 175
     },
     {
       "artist": "Max Chambers",
@@ -28188,25 +28483,19 @@
       "artist": "Manhattan Jazz Quartett, Debby Davis",
       "album": "New York Lounge Jazz (Vocal Classics)",
       "reason": "no_mb_match",
-      "play_count": 166
+      "play_count": 172
     },
     {
       "artist": "Vince Guaraldi Trio",
       "album": "Jazz Impressions Of Black Orpheus [Original Jazz Classics Remasters] (OJC Remaster)",
       "reason": "no_mb_match",
-      "play_count": 158
-    },
-    {
-      "artist": "Oasis",
-      "album": "(What's The Story) Morning Glory?",
-      "reason": "no_mb_match",
-      "play_count": 149
+      "play_count": 160
     },
     {
       "artist": "IDK Young J.",
       "album": "By the Skin of His Teeth",
       "reason": "no_mb_match",
-      "play_count": 138
+      "play_count": 139
     },
     {
       "artist": "The Wild Earth",
@@ -28218,7 +28507,7 @@
       "artist": "J. Rawls",
       "album": "Nineteen Ninety Nine (Scene 1)",
       "reason": "no_tracklist",
-      "play_count": 97
+      "play_count": 98
     },
     {
       "artist": "The Wild Earth",
@@ -28248,7 +28537,7 @@
       "artist": "IDK Young J.",
       "album": "Mama Raised A Menace",
       "reason": "no_mb_match",
-      "play_count": 42
+      "play_count": 43
     },
     {
       "artist": "Agustin Pereyra Lucena",
@@ -28365,6 +28654,12 @@
       "play_count": 7
     },
     {
+      "artist": "WebinarTM",
+      "album": "w w w . d e e p d i v e . c o m",
+      "reason": "no_mb_match",
+      "play_count": 7
+    },
+    {
       "artist": "PTY",
       "album": "MONOCHROME",
       "reason": "no_mb_match",
@@ -28373,12 +28668,6 @@
     {
       "artist": "UD 35-90",
       "album": "Jazz Chill MasterTapes Reel 2",
-      "reason": "no_mb_match",
-      "play_count": 5
-    },
-    {
-      "artist": "WebinarTM",
-      "album": "w w w . d e e p d i v e . c o m",
       "reason": "no_mb_match",
       "play_count": 5
     }

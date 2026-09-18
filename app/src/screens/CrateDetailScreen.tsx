@@ -46,7 +46,7 @@ export default function CrateDetailScreen({ crate, onBack }: { crate: Crate; onB
             const isFocus = i === focus;
             return (
               <Pressable
-                key={album.id}
+                key={`${album.id}#${i}`}
                 onPress={() => (isFocus ? setSelected(album) : setFocus(i))}
                 style={{
                   width: step,

@@ -3,4 +3,5 @@ pandas
 altair
 requests
 pyyaml
+Pillow
 pytest

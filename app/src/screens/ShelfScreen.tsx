@@ -10,9 +10,10 @@ interface Props {
   onOpenCrate: (crate: Crate) => void;
   onOpenStats: () => void;
   onOpenAlmost: () => void;
+  onOpenLink: () => void;
 }
 
-export default function ShelfScreen({ onOpenCrate, onOpenStats, onOpenAlmost }: Props) {
+export default function ShelfScreen({ onOpenCrate, onOpenStats, onOpenAlmost, onOpenLink }: Props) {
   const collection = useMemo(loadCollection, []);
   const crates = useMemo(() => buildCrates(collection), [collection]);
   const { width } = useWindowDimensions();
@@ -28,7 +29,7 @@ export default function ShelfScreen({ onOpenCrate, onOpenStats, onOpenAlmost }: 
     <ScrollView style={styles.room} contentContainerStyle={{ paddingBottom: 48 }}>
       <View style={{ width: maxContent, alignSelf: 'center' }}>
         <View style={styles.header}>
-          <Text style={styles.title}>CRATES</Text>
+          <Text style={styles.title}>MILK</Text>
           <Text style={styles.subtitle}>
             {collection.stats.unlocked_count} records earned · {collection.stats.in_progress_count} still filling
           </Text>
@@ -38,6 +39,9 @@ export default function ShelfScreen({ onOpenCrate, onOpenStats, onOpenAlmost }: 
             </Pressable>
             <Pressable style={styles.button} onPress={onOpenAlmost}>
               <Text style={styles.buttonText}>Almost there</Text>
+            </Pressable>
+            <Pressable style={styles.button} onPress={onOpenLink}>
+              <Text style={styles.buttonText}>Link history</Text>
             </Pressable>
           </View>
         </View>

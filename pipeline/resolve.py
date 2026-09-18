@@ -38,7 +38,8 @@ def tracklist_of(release: dict | None) -> list[str]:
     return titles
 
 
-def _credit_name(release: dict) -> str:
+def credit_name(release: dict) -> str:
+    """The release's own artist credit, joined as MusicBrainz presents it."""
     return "".join(
         (c.get("name") or c.get("artist", {}).get("name") or "") + (c.get("joinphrase") or "")
         for c in release.get("artist-credit") or []
@@ -49,7 +50,7 @@ def _score_candidate(group: AlbumGroup, cand: dict) -> float:
     score = float(cand.get("score", 0)) / 100.0
     if title_key(cand.get("title", "")) == group.album_key:
         score += 2.0
-    cand_artist = _credit_name(cand)
+    cand_artist = credit_name(cand)
     if cand_artist and artist_key(cand_artist) == group.artist_key:
         score += 2.0
     tc = cand.get("track-count") or 0

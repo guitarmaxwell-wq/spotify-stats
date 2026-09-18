@@ -1,4 +1,4 @@
-# Crates — Expo client
+# Milk — Expo client
 
 The app half of the project (workstream 2). A shelf of milk crates holding the
 records you have earned: an album only appears once every track on it has been

@@ -104,8 +104,8 @@ rewards           id, kind ('sticker'|'poster'|'community'), name, description,
                   art_url, subject_kind ('artist'|'album'|null), artist_id, album_id
 rules             id, type, params jsonb, reward_id, active, starts_at, ends_at,
                   notes, updated_by, updated_at
-user_rewards      user_id, reward_id, subject_id, rule_id, granted_at, evidence jsonb
-                  pk(user_id, reward_id, subject_id)       -- idempotent grants
+user_rewards      user_id, reward_id, subject_key, rule_id, granted_at, evidence jsonb
+                  pk(user_id, reward_id, subject_key)      -- idempotent grants
 ```
 
 The `unique (provider, external_id)` constraint on `linked_accounts` stops two

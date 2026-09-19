@@ -238,9 +238,38 @@ Everything below is an Edge Function at
   until they get `done: true`.
 - Play counts must be **exact**. An overlap between two syncs must never count
   a play twice.
+- `granted` is **new grants only** — the number of rewards this call handed the
+  user for the first time, straight from `evaluateUser`. Re-granting something
+  already held counts zero, so "3 new stickers" is safe to show.
+- `lastfm-sync` may also return `"busy": true` (with `done: false` and zeroes)
+  when another sync for the same account is still running. One sync runs at a
+  time per account, to stay polite to Last.fm. Wait a few seconds and call
+  again; correctness never depends on the caller obeying this.
+- Calling `lastfm-auth-start` when the account is **already verified** is
+  allowed and is how re-approval works: it mints a fresh nonce and returns a
+  URL. Completing it re-verifies the same account and replaces the stored
+  session key. Approving a *different* Last.fm account returns
+  `reason=already_linked` and changes nothing, because one Milk user has at most
+  one Last.fm account and its plays are already in that user's ledger.
+- There is **no unlink** path in milestone 1. Unlinking has to decide what
+  happens to plays and to rewards already granted from them, and rewards are
+  never revoked (section 4), so it needs its own decision rather than a quiet
+  default.
 
 `reason` codes: `bad_state`, `expired_state`, `already_linked`,
 `lastfm_rejected`, `server_error`.
+
+**Errors.** Like the rules functions, these return `{ "error": string }`.
+
+| status | `error` | meaning |
+|---|---|---|
+| 401 | `unauthorized` | no JWT, or an invalid or expired one |
+| 405 | `method_not_allowed` | wrong HTTP method |
+| 409 | `no_verified_lastfm_account` | the caller has not proven a Last.fm account yet |
+| 500 | `server_error` | anything unexpected; details stay in the function logs |
+
+`lastfm-auth-complete` never returns an error body: it is a browser redirect, so
+every outcome is a `302` carrying `status` and `reason`.
 
 ### Rules
 
@@ -335,7 +364,29 @@ Change the two together.
 ### Artists without a MusicBrainz id
 
 About 28% of scrobbles carry no artist MBID, and `artists.mbid` is `NOT NULL`.
-Those artists get a synthetic key, `name:<artistKey>`, where `artistKey` is the
-output of the existing normalizer (`app/src/link/normalize.ts`, which agrees with
-the Python pipeline on 22 of 22 test cases). Rules can target them the same way
-as any other artist.
+`artistKey` is the existing normalizer (`app/src/link/normalize.ts`, which agrees
+with the Python pipeline on 22 of 22 test cases; the server copy is
+`supabase/functions/_shared/lastfm/normalize.ts`).
+
+A missing MBID must not split one artist in two: 2Pac arrives 786 times with an
+MBID and 25 times without, and a rule at 800 would fail for someone with 811
+plays. The sync therefore resolves identity once, when it aggregates, so the
+evaluator never sees the split:
+
+1. A scrobble **with** an MBID counts for that MBID.
+2. A scrobble **without** one counts for the single MBID whose `artistKey`
+   matches its own. Candidates come from the `artists` catalog and from this
+   user's own MBID-bearing scrobbles. (This is how the one nameless blink-182
+   scrobble reaches the seeded blink-182 row.)
+3. Otherwise it counts for the synthetic artist `name:<artistKey>`: when no MBID
+   matches, and when **two or more** do. An ambiguous name — two unrelated bands
+   both called Nirvana — is never guessed, because a wrong merge hands someone
+   access they did not earn.
+
+Rules can target `name:<artistKey>` the same way as any other artist.
+
+Counts are **derived**, not accumulated: `artist_plays` is recomputed from the
+raw ledger (`lastfm_scrobbles`) on every sync. So consolidation is automatic —
+the day an MBID for a name becomes known, those plays move onto it and the
+`name:` row disappears — and every scrobble always lands in exactly one artist's
+total, so nothing is double counted or lost.

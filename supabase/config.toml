@@ -413,3 +413,11 @@ enabled = true
 # formatted with uppercase keywords, indent 2, max width 180, trailing commas,
 # and column/key alignment. Set to "null" to emit raw, unformatted SQL.
 # format_options = "{\"keywordCase\":\"upper\",\"indent\":2,\"maxWidth\":180,\"commaStyle\":\"trailing\"}"
+
+# Last.fm's web-auth redirect arrives from the user's BROWSER, with no Supabase
+# JWT, so this one function must accept unauthenticated requests. What ties the
+# callback to a Milk user is the single-use `state` nonce, not a JWT. Without
+# this block a plain `supabase functions deploy` would re-enable JWT
+# verification and every approval would fail at the gateway.
+[functions.lastfm-auth-complete]
+verify_jwt = false

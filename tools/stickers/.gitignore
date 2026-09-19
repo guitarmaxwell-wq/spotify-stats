@@ -1,0 +1,3 @@
+# Generated art and previews. Deterministic, so re-running generate.py
+# reproduces them exactly; there is no reason to keep them in the repo.
+out/

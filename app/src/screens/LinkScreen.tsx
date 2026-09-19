@@ -30,7 +30,9 @@ import {
   View,
 } from 'react-native';
 
+import LastfmVerifiedLink from '../components/LastfmVerifiedLink';
 import TopBar from '../components/TopBar';
+import { rewardsApi } from '../rewards';
 import { theme } from '../theme';
 import {
   LASTFM_SETUP_HINT,
@@ -177,6 +179,7 @@ export default function LinkScreen({ onBack }: { onBack: () => void }) {
 
   // ------------------------------------------------------------------- view --
 
+  const rewardsConfigured = rewardsApi.configured;
   const lastfmCursor = store?.cursor('lastfm');
   const spotifyCursor = store?.cursor('spotify_recent');
 
@@ -216,10 +219,20 @@ export default function LinkScreen({ onBack }: { onBack: () => void }) {
           claim="Your whole history, and it keeps up from here."
           limit="Only covers what you have scrobbled. If you have never used Last.fm there is nothing to import yet — you would connect Spotify to Last.fm and start from today."
         >
+          <LastfmVerifiedLink />
           {!isLastfmConfigured() ? (
             <Note text={LASTFM_SETUP_HINT} />
           ) : (
             <>
+              {rewardsConfigured ? (
+                <View style={styles.localHead}>
+                  <Text style={styles.localTitle}>OR BY USERNAME, ON THIS DEVICE ONLY</Text>
+                  <Text style={styles.localWarn}>
+                    Not verified, and won't unlock rewards. Anyone can type any username, so these
+                    plays fill your shelf here but never count toward stickers.
+                  </Text>
+                </View>
+              ) : null}
               <TextInput
                 value={username}
                 onChangeText={setUsername}
@@ -364,8 +377,10 @@ export default function LinkScreen({ onBack }: { onBack: () => void }) {
         ) : null}
 
         <Text style={styles.footnote}>
-          Plays are stored on this device. Last.fm profiles are public, so reading one needs no
-          password. Spotify sign-in uses PKCE and its tokens are kept in the device keychain, never
+          Plays imported here are stored on this device. Last.fm profiles are public, so reading one
+          by username needs no password, which is also why it proves nothing about who you are. A
+          verified link is approved on Last.fm itself, and Milk's server fetches those plays
+          directly; this app never uploads a play count. Spotify sign-in uses PKCE and its tokens are kept in the device keychain, never
           in plain storage.
         </Text>
       </View>
@@ -509,6 +524,15 @@ const styles = StyleSheet.create({
   buttonText: { color: theme.roomDeep, fontSize: 15, fontWeight: '800' },
 
   meta: { color: theme.inkFaint, fontSize: 12 },
+  localHead: {
+    borderTopWidth: 1,
+    borderTopColor: theme.cardEdge,
+    paddingTop: 12,
+    marginTop: 6,
+    gap: 4,
+  },
+  localTitle: { color: theme.inkDim, fontSize: 10.5, fontWeight: '900', letterSpacing: 1.4 },
+  localWarn: { color: theme.inkFaint, fontSize: 12, lineHeight: 17 },
   unlink: { color: theme.inkDim, fontSize: 13, textDecorationLine: 'underline', marginTop: 4 },
   link: { color: theme.gold, fontSize: 13, fontWeight: '600' },
 

@@ -1,0 +1,18 @@
+{
+  "_comment": "Art the seed migration points at. `path` is the object path inside the reward-art bucket; rewards.art_url is the bucket's public URL for that path. To replace a placeholder with real art, upload a file to the same path (see README.md). Keep in sync with supabase/migrations/20260919050000_seed_rewards.sql.",
+  "art": [
+    { "kind": "artist-template", "layout": "badge", "path": "templates/artist-sticker.svg" },
+    { "kind": "community", "path": "templates/community-pass.svg" },
+    { "kind": "poster", "path": "templates/poster.svg" },
+
+    { "kind": "number", "name": "blink-182", "number": 182, "path": "number/blink-182.svg" },
+    { "kind": "number", "name": "Sum 41", "number": 41, "path": "number/sum-41.svg" },
+    { "kind": "number", "name": "50 Cent", "number": 50, "path": "number/50-cent.svg" },
+    { "kind": "number", "name": "21 Savage", "number": 21, "path": "number/21-savage.svg" },
+    { "kind": "number", "name": "702", "number": 702, "path": "number/702.svg" },
+    { "kind": "number", "name": "9th Wonder", "number": 9, "path": "number/9th-wonder.svg" },
+    { "kind": "number", "name": "The Jackson 5", "number": 5, "path": "number/the-jackson-5.svg" },
+    { "kind": "number", "name": "Maroon 5", "number": 5, "path": "number/maroon-5.svg" },
+    { "kind": "number", "name": "Zero 7", "number": 7, "path": "number/zero-7.svg" }
+  ]
+}

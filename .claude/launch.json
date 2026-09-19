@@ -7,6 +7,13 @@
       "runtimeArgs": ["expo", "start", "--web", "--port", "8081"],
       "cwd": "app",
       "port": 8081
+    },
+    {
+      "name": "milk-admin",
+      "runtimeExecutable": "C:\\Program Files\\nodejs\\node.exe",
+      "runtimeArgs": ["node_modules/vite/bin/vite.js", "--port", "5174", "--strictPort"],
+      "cwd": "admin",
+      "port": 5174
     }
   ]
 }

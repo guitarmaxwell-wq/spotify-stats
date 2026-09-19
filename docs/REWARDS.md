@@ -104,8 +104,8 @@ rewards           id, kind ('sticker'|'poster'|'community'), name, description,
                   art_url, subject_kind ('artist'|'album'|null), artist_id, album_id
 rules             id, type, params jsonb, reward_id, active, starts_at, ends_at,
                   notes, updated_by, updated_at
-user_rewards      user_id, reward_id, subject_id, rule_id, granted_at, evidence jsonb
-                  pk(user_id, reward_id, subject_id)       -- idempotent grants
+user_rewards      user_id, reward_id, subject_key, rule_id, granted_at, evidence jsonb
+                  pk(user_id, reward_id, subject_key)      -- idempotent grants
 ```
 
 The `unique (provider, external_id)` constraint on `linked_accounts` stops two
@@ -211,3 +211,182 @@ real art, Spotify-verified sync at scale (25-user cap, see `DATA_SOURCES.md`).
   alone do not trigger that requirement.
 - Before chat ships: App Store Guideline 1.2 obligations for user-generated
   content (filtering, report, block, acting on reports).
+
+---
+
+## 9. Contracts between the pieces
+
+Everything below is an Edge Function at
+`https://<ref>.supabase.co/functions/v1/<name>`. Callers send the user's JWT as
+`Authorization: Bearer <jwt>` plus the publishable key as `apikey`.
+
+### Last.fm ownership and sync
+
+| function | caller | request | response |
+|---|---|---|---|
+| `lastfm-auth-start` | signed-in user | `POST {}` | `{ "url": string }` (open it in a browser) |
+| `lastfm-auth-complete` | Last.fm's redirect | `GET ?token=…&state=…` | `302` → `milk://auth/lastfm?status=ok` or `?status=error&reason=<code>` |
+| `lastfm-sync` | signed-in user | `POST {}` | `{ "done": bool, "pages_processed": int, "plays_added": int, "granted": int }` |
+
+- `state` is a nonce from `lastfm_auth_states`: single-use, 10-minute expiry,
+  bound to the user who called `lastfm-auth-start`.
+- `lastfm-auth-complete` refuses an account that another Milk user already owns
+  (`reason=already_linked`). It never moves the account to the new user.
+- `lastfm-sync` is **resumable**. Edge Functions have a wall-clock limit, and a
+  first backfill can run to hundreds of pages. Each call processes a bounded
+  chunk and returns `done: false` until it has finished; callers keep calling
+  until they get `done: true`.
+- Play counts must be **exact**. An overlap between two syncs must never count
+  a play twice.
+- `granted` is **new grants only** — the number of rewards this call handed the
+  user for the first time, straight from `evaluateUser`. Re-granting something
+  already held counts zero, so "3 new stickers" is safe to show.
+- `lastfm-sync` may also return `"busy": true` (with `done: false` and zeroes)
+  when another sync for the same account is still running. One sync runs at a
+  time per account, to stay polite to Last.fm. Wait a few seconds and call
+  again; correctness never depends on the caller obeying this.
+- Calling `lastfm-auth-start` when the account is **already verified** is
+  allowed and is how re-approval works: it mints a fresh nonce and returns a
+  URL. Completing it re-verifies the same account and replaces the stored
+  session key. Approving a *different* Last.fm account returns
+  `reason=already_linked` and changes nothing, because one Milk user has at most
+  one Last.fm account and its plays are already in that user's ledger.
+- There is **no unlink** path in milestone 1. Unlinking has to decide what
+  happens to plays and to rewards already granted from them, and rewards are
+  never revoked (section 4), so it needs its own decision rather than a quiet
+  default.
+
+`reason` codes: `bad_state`, `expired_state`, `already_linked`,
+`lastfm_rejected`, `server_error`.
+
+**Errors.** Like the rules functions, these return `{ "error": string }`.
+
+| status | `error` | meaning |
+|---|---|---|
+| 401 | `unauthorized` | no JWT, or an invalid or expired one |
+| 405 | `method_not_allowed` | wrong HTTP method |
+| 409 | `no_verified_lastfm_account` | the caller has not proven a Last.fm account yet |
+| 500 | `server_error` | anything unexpected; details stay in the function logs |
+
+`lastfm-auth-complete` never returns an error body: it is a browser redirect, so
+every outcome is a `302` carrying `status` and `reason`.
+
+### Rules
+
+| function | caller | request | response |
+|---|---|---|---|
+| `rules-dry-run` | admin | `POST { "rule": { "type", "params", "reward_id" } }` | see below |
+| `rules-evaluate` | admin, or the server | `POST { "rule_id"?: uuid, "user_id"?: uuid }` | `{ "evaluated_users": int, "granted": int, "skipped_rules": [ { "rule_id": uuid, "error": string } ] }` |
+
+```json
+{
+  "qualifying_users": 412,
+  "new_grants": 38,
+  "already_granted": 374,
+  "subjects": 51,
+  "sample": [ { "subject_key": "<mbid>", "subject_name": "Radiohead", "users": 17 } ]
+}
+```
+
+- A dry run **never writes**.
+- `rules-evaluate` called with neither id evaluates every rule for every user.
+- Server code calls the shared evaluator directly, not over HTTP:
+  `evaluateUser(db, userId): Promise<{ granted: number }>`, exported from
+  `supabase/functions/_shared/rules/evaluate.ts`.
+- Grants are upserts on `(user_id, reward_id, subject_key)`. The evaluator
+  **never** deletes a grant.
+
+**Errors.** Both functions return `{ "error": string }` on failure. The message
+is written for a human and the dashboard shows it verbatim.
+
+| status | meaning |
+|---|---|
+| 400 | malformed rule or request body |
+| 401 | no session, or an invalid or expired one |
+| 403 | signed in, but not in `admins` |
+| 404 | `rules-evaluate` was given a `rule_id` that does not exist |
+
+**`skipped_rules`.** When `rules-evaluate` runs several rules, a malformed rule
+is skipped and listed here, so the other rules still grant. When it is asked for
+exactly one `rule_id` and that rule is malformed, it returns 400 instead.
+
+**Dry-run counting.** `qualifying_users` counts users. `new_grants` and
+`already_granted` count **(user, subject) grants**, not users. For a
+non-wildcard rule the two are the same thing. For a wildcard rule they can
+exceed `qualifying_users`, because one user can qualify for several artists or
+albums. `subjects` is the number of distinct subjects with at least one
+qualifying user. `sample` lists up to 10 of them, most users first.
+`subject_name` is the artist name or album title, or `null` when `subject_key`
+is `''` (`albums_unlocked`). The dry run ignores `active`, `starts_at` and
+`ends_at`: it answers "who meets this rule", whatever the rule's schedule.
+
+**Date window.** `starts_at` and `ends_at` apply to *when the evaluation runs*.
+A rule grants only while `active` and `starts_at <= now < ends_at`, where either
+bound may be null. Aggregates are all-time counts with no timestamps, so a
+window on *when the plays happened* is not computable from them. Such a rule
+would be a new rule type.
+
+**Params, per type.** Any key not listed for a type is rejected, which catches
+typos.
+
+| type | params |
+|---|---|
+| `artist_plays` | `artist`, `threshold` |
+| `album_unlocked` | `album` (no threshold: it means one full pass; use `album_passes` for N) |
+| `album_passes` | `album`, `threshold` |
+| `artist_albums_unlocked` | `artist`, `threshold` |
+| `albums_unlocked` | `threshold` |
+
+- `artist`: a lowercase artist MBID, `"name:<artistKey>"`, or `"*"`.
+- `album`: a lowercase release MBID, or `"*"`. Albums have no `name:` keys.
+- `threshold`: a JSON integer from 1 to 1,000,000. A string such as `"100"` is
+  rejected.
+
+**Reward compatibility.** A wildcard rule grants one reward *per subject*, so
+its reward must be a per-subject **template**: `subject_kind` matching the rule
+type (`artist` for the artist types, `album` for the album types) and no
+`artist_id` or `album_id`. A non-wildcard rule may use a plain reward or a
+template of its own subject kind. `albums_unlocked` has no subject, so it cannot
+use a template.
+
+**`subject_key`.** For the artist types it is `artists.mbid` (a real MBID or
+`name:<artistKey>`). For the album types it is `albums.release_mbid`. For
+`albums_unlocked` it is `''`.
+
+**Enforced in the database.** The `rules_validate` trigger (migration
+`20260919010000_rules_validate.sql`) applies every check above on INSERT or
+UPDATE of `public.rules`. So a malformed rule cannot be saved even by a client
+that skips the dry run. Its messages match the functions' 400 messages, and they
+reach the client as the PostgREST error `message` with SQLSTATE `22023`. The
+TypeScript source of truth is `supabase/functions/_shared/rules/validate.ts`.
+Change the two together.
+
+### Artists without a MusicBrainz id
+
+About 28% of scrobbles carry no artist MBID, and `artists.mbid` is `NOT NULL`.
+`artistKey` is the existing normalizer (`app/src/link/normalize.ts`, which agrees
+with the Python pipeline on 22 of 22 test cases; the server copy is
+`supabase/functions/_shared/lastfm/normalize.ts`).
+
+A missing MBID must not split one artist in two: 2Pac arrives 786 times with an
+MBID and 25 times without, and a rule at 800 would fail for someone with 811
+plays. The sync therefore resolves identity once, when it aggregates, so the
+evaluator never sees the split:
+
+1. A scrobble **with** an MBID counts for that MBID.
+2. A scrobble **without** one counts for the single MBID whose `artistKey`
+   matches its own. Candidates come from the `artists` catalog and from this
+   user's own MBID-bearing scrobbles. (This is how the one nameless blink-182
+   scrobble reaches the seeded blink-182 row.)
+3. Otherwise it counts for the synthetic artist `name:<artistKey>`: when no MBID
+   matches, and when **two or more** do. An ambiguous name — two unrelated bands
+   both called Nirvana — is never guessed, because a wrong merge hands someone
+   access they did not earn.
+
+Rules can target `name:<artistKey>` the same way as any other artist.
+
+Counts are **derived**, not accumulated: `artist_plays` is recomputed from the
+raw ledger (`lastfm_scrobbles`) on every sync. So consolidation is automatic —
+the day an MBID for a name becomes known, those plays move onto it and the
+`name:` row disappears — and every scrobble always lands in exactly one artist's
+total, so nothing is double counted or lost.

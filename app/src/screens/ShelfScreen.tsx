@@ -3,6 +3,7 @@ import { Pressable, ScrollView, StyleSheet, Text, useWindowDimensions, View } fr
 import CrateView from '../components/CrateView';
 import Shelf from '../components/Shelf';
 import { buildCrates, loadCollection } from '../data/collection';
+import { useRewards } from '../rewards';
 import { theme } from '../theme';
 import type { Crate } from '../types';
 
@@ -11,9 +12,19 @@ interface Props {
   onOpenStats: () => void;
   onOpenAlmost: () => void;
   onOpenLink: () => void;
+  onOpenStickers: () => void;
 }
 
-export default function ShelfScreen({ onOpenCrate, onOpenStats, onOpenAlmost, onOpenLink }: Props) {
+export default function ShelfScreen({
+  onOpenCrate,
+  onOpenStats,
+  onOpenAlmost,
+  onOpenLink,
+  onOpenStickers,
+}: Props) {
+  // Signed out this is inert: no request is made and the shelf is unchanged.
+  const { configured, user, rewards } = useRewards();
+  const stickerCount = (rewards ?? []).filter((r) => r.kind === 'sticker').length;
   const collection = useMemo(loadCollection, []);
   const crates = useMemo(() => buildCrates(collection), [collection]);
   const { width } = useWindowDimensions();
@@ -43,6 +54,13 @@ export default function ShelfScreen({ onOpenCrate, onOpenStats, onOpenAlmost, on
             <Pressable style={styles.button} onPress={onOpenLink}>
               <Text style={styles.buttonText}>Link history</Text>
             </Pressable>
+            {configured ? (
+              <Pressable style={[styles.button, styles.stickerButton]} onPress={onOpenStickers}>
+                <Text style={[styles.buttonText, styles.stickerText]}>
+                  {user && stickerCount > 0 ? `Stickers · ${stickerCount}` : 'Stickers'}
+                </Text>
+              </Pressable>
+            ) : null}
           </View>
         </View>
 
@@ -76,7 +94,9 @@ const styles = StyleSheet.create({
   header: { paddingHorizontal: 18, paddingTop: 18, paddingBottom: 22 },
   title: { color: theme.ink, fontSize: 30, fontWeight: '900', letterSpacing: 6 },
   subtitle: { color: theme.inkDim, fontSize: 13, marginTop: 4 },
-  buttons: { flexDirection: 'row', gap: 10, marginTop: 14 },
+  buttons: { flexDirection: 'row', flexWrap: 'wrap', gap: 10, marginTop: 14 },
+  stickerButton: { borderColor: theme.gold },
+  stickerText: { color: theme.gold },
   button: {
     backgroundColor: theme.card,
     borderWidth: 1,

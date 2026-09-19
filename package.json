@@ -1,0 +1,11 @@
+{
+  "name": "milk",
+  "private": true,
+  "description": "Tooling for the Milk repo root. The app itself lives in app/.",
+  "scripts": {
+    "supabase": "supabase"
+  },
+  "devDependencies": {
+    "supabase": "^2.117.0"
+  }
+}

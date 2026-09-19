@@ -17,3 +17,6 @@ app/.env.local
 data/plays.jsonl
 data/plays.csv
 data/ingest_state.json
+
+# Repo-root tooling (the Supabase CLI). app/ has its own.
+node_modules/

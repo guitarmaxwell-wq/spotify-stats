@@ -247,7 +247,7 @@ Everything below is an Edge Function at
 | function | caller | request | response |
 |---|---|---|---|
 | `rules-dry-run` | admin | `POST { "rule": { "type", "params", "reward_id" } }` | see below |
-| `rules-evaluate` | admin, or the server | `POST { "rule_id"?: uuid, "user_id"?: uuid }` | `{ "evaluated_users": int, "granted": int }` |
+| `rules-evaluate` | admin, or the server | `POST { "rule_id"?: uuid, "user_id"?: uuid }` | `{ "evaluated_users": int, "granted": int, "skipped_rules": [ { "rule_id": uuid, "error": string } ] }` |
 
 ```json
 {
@@ -266,6 +266,71 @@ Everything below is an Edge Function at
   `supabase/functions/_shared/rules/evaluate.ts`.
 - Grants are upserts on `(user_id, reward_id, subject_key)`. The evaluator
   **never** deletes a grant.
+
+**Errors.** Both functions return `{ "error": string }` on failure. The message
+is written for a human and the dashboard shows it verbatim.
+
+| status | meaning |
+|---|---|
+| 400 | malformed rule or request body |
+| 401 | no session, or an invalid or expired one |
+| 403 | signed in, but not in `admins` |
+| 404 | `rules-evaluate` was given a `rule_id` that does not exist |
+
+**`skipped_rules`.** When `rules-evaluate` runs several rules, a malformed rule
+is skipped and listed here, so the other rules still grant. When it is asked for
+exactly one `rule_id` and that rule is malformed, it returns 400 instead.
+
+**Dry-run counting.** `qualifying_users` counts users. `new_grants` and
+`already_granted` count **(user, subject) grants**, not users. For a
+non-wildcard rule the two are the same thing. For a wildcard rule they can
+exceed `qualifying_users`, because one user can qualify for several artists or
+albums. `subjects` is the number of distinct subjects with at least one
+qualifying user. `sample` lists up to 10 of them, most users first.
+`subject_name` is the artist name or album title, or `null` when `subject_key`
+is `''` (`albums_unlocked`). The dry run ignores `active`, `starts_at` and
+`ends_at`: it answers "who meets this rule", whatever the rule's schedule.
+
+**Date window.** `starts_at` and `ends_at` apply to *when the evaluation runs*.
+A rule grants only while `active` and `starts_at <= now < ends_at`, where either
+bound may be null. Aggregates are all-time counts with no timestamps, so a
+window on *when the plays happened* is not computable from them. Such a rule
+would be a new rule type.
+
+**Params, per type.** Any key not listed for a type is rejected, which catches
+typos.
+
+| type | params |
+|---|---|
+| `artist_plays` | `artist`, `threshold` |
+| `album_unlocked` | `album` (no threshold: it means one full pass; use `album_passes` for N) |
+| `album_passes` | `album`, `threshold` |
+| `artist_albums_unlocked` | `artist`, `threshold` |
+| `albums_unlocked` | `threshold` |
+
+- `artist`: a lowercase artist MBID, `"name:<artistKey>"`, or `"*"`.
+- `album`: a lowercase release MBID, or `"*"`. Albums have no `name:` keys.
+- `threshold`: a JSON integer from 1 to 1,000,000. A string such as `"100"` is
+  rejected.
+
+**Reward compatibility.** A wildcard rule grants one reward *per subject*, so
+its reward must be a per-subject **template**: `subject_kind` matching the rule
+type (`artist` for the artist types, `album` for the album types) and no
+`artist_id` or `album_id`. A non-wildcard rule may use a plain reward or a
+template of its own subject kind. `albums_unlocked` has no subject, so it cannot
+use a template.
+
+**`subject_key`.** For the artist types it is `artists.mbid` (a real MBID or
+`name:<artistKey>`). For the album types it is `albums.release_mbid`. For
+`albums_unlocked` it is `''`.
+
+**Enforced in the database.** The `rules_validate` trigger (migration
+`20260919010000_rules_validate.sql`) applies every check above on INSERT or
+UPDATE of `public.rules`. So a malformed rule cannot be saved even by a client
+that skips the dry run. Its messages match the functions' 400 messages, and they
+reach the client as the PostgREST error `message` with SQLSTATE `22023`. The
+TypeScript source of truth is `supabase/functions/_shared/rules/validate.ts`.
+Change the two together.
 
 ### Artists without a MusicBrainz id
 

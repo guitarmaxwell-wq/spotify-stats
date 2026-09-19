@@ -211,3 +211,66 @@ real art, Spotify-verified sync at scale (25-user cap, see `DATA_SOURCES.md`).
   alone do not trigger that requirement.
 - Before chat ships: App Store Guideline 1.2 obligations for user-generated
   content (filtering, report, block, acting on reports).
+
+---
+
+## 9. Contracts between the pieces
+
+Everything below is an Edge Function at
+`https://<ref>.supabase.co/functions/v1/<name>`. Callers send the user's JWT as
+`Authorization: Bearer <jwt>` plus the publishable key as `apikey`.
+
+### Last.fm ownership and sync
+
+| function | caller | request | response |
+|---|---|---|---|
+| `lastfm-auth-start` | signed-in user | `POST {}` | `{ "url": string }` (open it in a browser) |
+| `lastfm-auth-complete` | Last.fm's redirect | `GET ?token=…&state=…` | `302` → `milk://auth/lastfm?status=ok` or `?status=error&reason=<code>` |
+| `lastfm-sync` | signed-in user | `POST {}` | `{ "done": bool, "pages_processed": int, "plays_added": int, "granted": int }` |
+
+- `state` is a nonce from `lastfm_auth_states`: single-use, 10-minute expiry,
+  bound to the user who called `lastfm-auth-start`.
+- `lastfm-auth-complete` refuses an account that another Milk user already owns
+  (`reason=already_linked`). It never moves the account to the new user.
+- `lastfm-sync` is **resumable**. Edge Functions have a wall-clock limit, and a
+  first backfill can run to hundreds of pages. Each call processes a bounded
+  chunk and returns `done: false` until it has finished; callers keep calling
+  until they get `done: true`.
+- Play counts must be **exact**. An overlap between two syncs must never count
+  a play twice.
+
+`reason` codes: `bad_state`, `expired_state`, `already_linked`,
+`lastfm_rejected`, `server_error`.
+
+### Rules
+
+| function | caller | request | response |
+|---|---|---|---|
+| `rules-dry-run` | admin | `POST { "rule": { "type", "params", "reward_id" } }` | see below |
+| `rules-evaluate` | admin, or the server | `POST { "rule_id"?: uuid, "user_id"?: uuid }` | `{ "evaluated_users": int, "granted": int }` |
+
+```json
+{
+  "qualifying_users": 412,
+  "new_grants": 38,
+  "already_granted": 374,
+  "subjects": 51,
+  "sample": [ { "subject_key": "<mbid>", "subject_name": "Radiohead", "users": 17 } ]
+}
+```
+
+- A dry run **never writes**.
+- `rules-evaluate` called with neither id evaluates every rule for every user.
+- Server code calls the shared evaluator directly, not over HTTP:
+  `evaluateUser(db, userId): Promise<{ granted: number }>`, exported from
+  `supabase/functions/_shared/rules/evaluate.ts`.
+- Grants are upserts on `(user_id, reward_id, subject_key)`. The evaluator
+  **never** deletes a grant.
+
+### Artists without a MusicBrainz id
+
+About 28% of scrobbles carry no artist MBID, and `artists.mbid` is `NOT NULL`.
+Those artists get a synthetic key, `name:<artistKey>`, where `artistKey` is the
+output of the existing normalizer (`app/src/link/normalize.ts`, which agrees with
+the Python pipeline on 22 of 22 test cases). Rules can target them the same way
+as any other artist.

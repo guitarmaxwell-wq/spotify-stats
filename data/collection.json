@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-18T14:59:45Z",
+  "generated_at": "2026-09-18T15:21:36Z",
   "stats": {
-    "total_plays": 138546,
-    "distinct_artists": 3408,
+    "total_plays": 138551,
+    "distinct_artists": 3409,
     "first_play": "2020-04-24T18:46:05Z",
-    "last_play": "2026-09-18T14:51:54Z",
+    "last_play": "2026-09-18T15:03:45Z",
     "unlocked_count": 248,
     "in_progress_count": 568,
     "resolved_count": 816,
     "unresolved_count": 36,
     "merged_groups": 8,
-    "album_groups_total": 7244,
+    "album_groups_total": 7246,
     "partial": false,
     "artwork": {
       "with_cover": 809,
@@ -28241,6 +28241,42 @@
       ]
     },
     {
+      "id": "c0fa7768-36d0-4ab5-8ab0-93bd78a518b5",
+      "artist": "ConcernedApe",
+      "title": "Stardew Valley (Original Game Soundtrack)",
+      "release_year": 2020,
+      "genre_id": "electronic",
+      "cover_url": "https://coverartarchive.org/release/c0fa7768-36d0-4ab5-8ab0-93bd78a518b5/front-500",
+      "artwork_source": "coverartarchive",
+      "colors": {
+        "primary": "#0c688e",
+        "secondary": "#385ad8"
+      },
+      "total_tracks": 9,
+      "played_tracks": 0,
+      "completion": 0.0,
+      "unlocked": false,
+      "unlocked_at": null,
+      "play_count": 6,
+      "missing_tracks": [
+        "Ginger Island",
+        "Professor Snail’s Radio",
+        "Volcano Mines (Molten Jelly)",
+        "Volcano Mines (Forgotten World)",
+        "Mystery of the Caldera",
+        "The Gourmand’s Cave",
+        "Pirate Theme",
+        "Leo’s Song",
+        "Summit Celebration"
+      ],
+      "source": "musicbrainz_search",
+      "color_strategy": "saturated",
+      "_fuzzy_matches": 0,
+      "_genre_tags": [
+        "electronic"
+      ]
+    },
+    {
       "id": "10904912-a25a-4b6c-a06d-edd97aa0557c",
       "artist": "J Dilla",
       "title": "The King of Beats (Batch #1)",
@@ -28316,42 +28352,6 @@
       "color_strategy": "saturated",
       "_fuzzy_matches": 0,
       "_genre_tags": []
-    },
-    {
-      "id": "c0fa7768-36d0-4ab5-8ab0-93bd78a518b5",
-      "artist": "ConcernedApe",
-      "title": "Stardew Valley (Original Game Soundtrack)",
-      "release_year": 2020,
-      "genre_id": "electronic",
-      "cover_url": "https://coverartarchive.org/release/c0fa7768-36d0-4ab5-8ab0-93bd78a518b5/front-500",
-      "artwork_source": "coverartarchive",
-      "colors": {
-        "primary": "#0c688e",
-        "secondary": "#385ad8"
-      },
-      "total_tracks": 9,
-      "played_tracks": 0,
-      "completion": 0.0,
-      "unlocked": false,
-      "unlocked_at": null,
-      "play_count": 5,
-      "missing_tracks": [
-        "Ginger Island",
-        "Professor Snail’s Radio",
-        "Volcano Mines (Molten Jelly)",
-        "Volcano Mines (Forgotten World)",
-        "Mystery of the Caldera",
-        "The Gourmand’s Cave",
-        "Pirate Theme",
-        "Leo’s Song",
-        "Summit Celebration"
-      ],
-      "source": "musicbrainz_search",
-      "color_strategy": "saturated",
-      "_fuzzy_matches": 0,
-      "_genre_tags": [
-        "electronic"
-      ]
     },
     {
       "id": "9a6ddb5e-8b7a-42a8-8522-dbf2d6492d82",

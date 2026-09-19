@@ -28,19 +28,27 @@ paths=$("$PY" -c 'import json,sys; [print(e["path"]) for e in json.load(open(sys
   tools/stickers/manifest.json | tr -d '\r')
 
 for path in $paths; do
-  if [ ! -f "$SRC/$path" ]; then
-    echo "missing $SRC/$path (run generate.py first)" >&2
-    exit 1
-  fi
-  if printf '%s' "$existing" | grep -qF "\"/reward-art/$path\""; then
-    if [ "${REPLACE:-0}" != "1" ]; then
-      echo "exists   reward-art/$path (REPLACE=1 to overwrite)"
-      continue
+  # Both formats go up: the PNG is what the app shows (React Native's <Image>
+  # cannot render SVG), the SVG is the source for web and print.
+  for file in "$path" "${path%.svg}.png"; do
+    case "$file" in
+      *.png) type=image/png ;;
+      *)     type=image/svg+xml ;;
+    esac
+    if [ ! -f "$SRC/$file" ]; then
+      echo "missing $SRC/$file (run generate.py first)" >&2
+      exit 1
     fi
-    "$SUPABASE" storage rm "ss:///reward-art/$path" --experimental --linked --yes </dev/null >/dev/null
-  fi
-  "$SUPABASE" storage cp "$SRC/$path" "ss:///reward-art/$path" \
-    --experimental --linked --content-type image/svg+xml --cache-control "max-age=300" \
-    </dev/null >/dev/null
-  echo "uploaded reward-art/$path"
+    if printf '%s' "$existing" | grep -qF "\"/reward-art/$file\""; then
+      if [ "${REPLACE:-0}" != "1" ]; then
+        echo "exists   reward-art/$file (REPLACE=1 to overwrite)"
+        continue
+      fi
+      "$SUPABASE" storage rm "ss:///reward-art/$file" --experimental --linked --yes </dev/null >/dev/null
+    fi
+    "$SUPABASE" storage cp "$SRC/$file" "ss:///reward-art/$file" \
+      --experimental --linked --content-type "$type" --cache-control "max-age=300" \
+      </dev/null >/dev/null
+    echo "uploaded reward-art/$file"
+  done
 done

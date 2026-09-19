@@ -45,6 +45,8 @@ COLLECTION = ROOT / "data" / "collection.json"
 MANIFEST = HERE / "manifest.json"
 OUT = HERE / "out"
 BUCKET_DIR = OUT / "reward-art"
+# PNG size, as a multiple of each design's own canvas. See main().
+RASTER_SCALE = 2
 
 FONT = "'Arial Black','Archivo Black','Helvetica Neue',Helvetica,Arial,sans-serif"
 INK = "#15131a"
@@ -736,7 +738,10 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--manifest", type=Path, default=MANIFEST)
     ap.add_argument("--samples", type=int, default=0, help="also render the top N shelf artists to out/samples/")
-    ap.add_argument("--png", action="store_true", help="rasterise a contact sheet with headless Chrome")
+    ap.add_argument("--no-raster", action="store_true",
+                    help="skip the PNG beside each SVG (the app needs it; SVG-only is for web)")
+    ap.add_argument("--png", action="store_true",
+                    help="also rasterise review sheets to out/preview/ (opaque, on a grey wall)")
     args = ap.parse_args(argv)
 
     shelf = Shelf()
@@ -748,6 +753,14 @@ def main(argv: list[str] | None = None) -> int:
         written.append(p)
     print(f"wrote {len(written)} manifest files to {BUCKET_DIR}")
 
+    # A PNG beside every SVG, because React Native's <Image> cannot render SVG
+    # without react-native-svg. Rendered at 2x the design canvas (stickers
+    # 1024x1024, posters 1200x1800): a sticker shown at ~160pt needs 480px on a
+    # 3x phone, and 1024 leaves room for a full-screen look at one. Transparent
+    # background, so a sticker sits on the shelf rather than on a white square.
+    if not args.no_raster:
+        written += rasterise_each(written, BUCKET_DIR, scale=RASTER_SCALE, transparent=True)
+
     sample_paths: list[Path] = []
     if args.samples:
         for entry in samples(shelf, args.samples):
@@ -756,9 +769,10 @@ def main(argv: list[str] | None = None) -> int:
             sample_paths.append(p)
         print(f"wrote {len(sample_paths)} samples to {OUT / 'samples'}")
 
+    svgs = [p for p in written if p.suffix == ".svg"]
     if args.png:
-        contact_sheet(written, OUT / "preview" / "manifest.png")
-        rasterise_each(written, OUT / "preview" / "reward-art")
+        contact_sheet(svgs, OUT / "preview" / "manifest.png")
+        rasterise_each(svgs, OUT / "preview" / "reward-art")
         if sample_paths:
             contact_sheet(sample_paths, OUT / "preview" / "samples.png")
     return 0

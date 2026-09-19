@@ -17,6 +17,15 @@ venv/Scripts/python.exe tools/stickers/generate.py --png         # + PNGs (headl
 Output is deterministic: same inputs, byte-identical SVGs. `out/` is generated
 and git-ignored.
 
+**Two formats, one path.** Every design is written as `<path>.svg` *and*
+`<path>.png`, because React Native's `<Image>` cannot render SVG without
+`react-native-svg`: on a phone the SVG silently falls back to the app's own
+placeholder. `rewards.art_url` therefore points at the **PNG**; the SVG stays in
+the bucket as the source for web and print. The PNGs are 2× each design's canvas
+(stickers 1024×1024, posters 1200×1800) on a transparent background: a sticker
+shown at ~160 pt needs 480 px on a 3× phone, and 1024 leaves headroom for a
+full-screen look at one. `--no-raster` skips them. They are ~130–230 KB each.
+
 What gets drawn:
 
 | kind | what it is |
@@ -44,6 +53,9 @@ bash tools/stickers/upload.sh            # upload anything not in the bucket yet
 REPLACE=1 bash tools/stickers/upload.sh  # also overwrite what is already there
 ```
 
+Each manifest entry uploads both files: the `.svg` as `image/svg+xml` and the
+`.png` as `image/png`.
+
 The script uses the Supabase CLI's own login (`supabase login` + `supabase
 link`); it never reads, prints or stores a key. It touches only the paths in
 `manifest.json`. `storage cp` will not overwrite (409 `KeyAlreadyExists`), so
@@ -68,5 +80,6 @@ entry from `manifest.json` so a re-run cannot overwrite it.
    and the bucket `path`).
 2. Re-run `generate.py`, then `upload.sh`.
 3. Add the `rewards` row (and its `rules` row) in a migration, with `art_url`
-   set to the public URL of that path. The current seed is
-   `supabase/migrations/20260919050000_seed_rewards.sql`.
+   set to the public URL of that path, **`.png`** (see above). The current seed
+   is `supabase/migrations/20260919050000_seed_rewards.sql`, and
+   `20260919050100_reward_art_png.sql` is what moved `art_url` onto the PNGs.
